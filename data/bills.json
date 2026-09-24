@@ -1,0 +1,3376 @@
+{
+  "updated": "2026-09-24",
+  "sourcePage": "https://robertgarza.us/family-court-reform-bills",
+  "sourceNote": "Status comes from Robert Garza\u2019s public bill tracker, read on September 24, 2026. Passed means signed into law. In progress means a bill of this nature has been introduced. Not started means no bill yet.",
+  "bills": [
+    {
+      "id": "a-new-start-at-equality",
+      "title": "A New Start at Equality",
+      "summary": "Creates a rebuttable presumption of equal custody \u2014 the foundation of 50/50 custody laws and shared parenting legislation \u2014 giving every child the benefit of both parents and every custody case a fair starting point.",
+      "page": "https://robertgarza.us/bill/a-new-start-at-equality",
+      "states": {
+        "Alabama": {
+          "status": "progress",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1nb2eOxo2OBHrIjpXDlG7ifGqQhSJcHY3/view",
+          "note": "similar bill, not this model draft"
+        },
+        "Alaska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1VY6U7pKZSPqF9TLnzuc7W9kxQeEwvXO0/view"
+        },
+        "Arizona": {
+          "status": "none",
+          "billId": "SB1720",
+          "url": "https://docs.google.com/file/d/14zmjZ33IWrHL7Ea_vy3V06fQoll79W4R/view"
+        },
+        "Arkansas": {
+          "status": "passed",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1uBZmU2c2Aa6Mib1YJEf__7SOb2JewJhc/view"
+        },
+        "California": {
+          "status": "progress",
+          "billId": "ab1978",
+          "url": "https://docs.google.com/document/d/1p1kw1hGRVfFYmkTPXfdh5L_4wMVZAPTN/edit?usp=sharing&ouid=112759170355036278657&rtpof=true&sd=true"
+        },
+        "Colorado": {
+          "status": "progress",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1bI1hp8p32bf5AuREAkx_HsDfUJqbo5_6/view"
+        },
+        "Connecticut": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1C_V7QU2i5vf9QfniAFvoYCA4YWHk7uqr/view"
+        },
+        "Delaware": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1kxMszoEPPV4QgZcZU1MUexWpW_kD5N6c/view"
+        },
+        "Florida": {
+          "status": "passed",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1i7-zp2dgvYbp7uf_CtHiMfgHdTu-wT40/view"
+        },
+        "Georgia": {
+          "status": "progress",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1sMsEJ7hB-5RO1LGxN_RykyESMqLk2AIS/view"
+        },
+        "Hawaii": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1rg4X7Qw-UlV82RtDoj8FiDbQ-X0UDaaY/view"
+        },
+        "Idaho": {
+          "status": "progress",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1ldr_lg8Rt84lUdYkDhUIimGVj3UC8ALC/view"
+        },
+        "Illinois": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1qznjVXc0gye2DX7McoYE_jie8zhStW23/view"
+        },
+        "Indiana": {
+          "status": "progress",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1M4-GfUUNmOPGfvnlFuYnOayD7KQqXY-Y/view"
+        },
+        "Iowa": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1_pjejnew6wTXFrenRaIW13ldYh8kO0Iy/view"
+        },
+        "Kansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1v7C2zjxlSNvfwBZi3CL7Onds_PwhkB-T/view"
+        },
+        "Kentucky": {
+          "status": "passed",
+          "billId": "",
+          "url": ""
+        },
+        "Louisiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/13voQtcVH-WvCe7vNZZiQc81dJWCRrXLO/view"
+        },
+        "Maine": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1hkMQASGe-m8ofASLtwCJJNcOIa4n-JpB/view"
+        },
+        "Maryland": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1_7iIc-Fp1QgTUqo8Vn1gWLK76vEgIuuE/view",
+          "note": "similar bill, not this model draft"
+        },
+        "Massachusetts": {
+          "status": "progress",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1xEW-Xo6gITk_lWwKlSTgMOCexDzugX11/view"
+        },
+        "Michigan": {
+          "status": "progress",
+          "billId": "HB5211",
+          "url": "https://docs.google.com/file/d/12NB_rDpLhkgjgVKDE7hPO7NYJC6LxImu/view"
+        },
+        "Minnesota": {
+          "status": "progress",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1zvI56OOHwSf_z64GblMpLVmtcaYc0bCR/view"
+        },
+        "Mississippi": {
+          "status": "passed",
+          "billId": "",
+          "url": ""
+        },
+        "Missouri": {
+          "status": "passed",
+          "billId": "",
+          "url": ""
+        },
+        "Montana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Y7nMXtBCBLT247MhaihbT2ZCderXKUxD/view"
+        },
+        "Nebraska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1RmZnMsmNHDiYnKTb2-8ttdB2ZrGPbgoV/view"
+        },
+        "Nevada": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/19cSwEqQL-xfFu0pWhyo3vnVCeoYv21wF/view"
+        },
+        "New Hampshire": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1pSFs11IHxpjZZYvXoY2CgZs6fqqXqXA5/view"
+        },
+        "New Jersey": {
+          "status": "progress",
+          "billId": "A2963",
+          "url": ""
+        },
+        "New Mexico": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1ox0YflAC8Lz-kp38aSpzFanwmMhdlrnF/view"
+        },
+        "New York": {
+          "status": "progress",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1B4Ldo79LTOeBzM-SkYWzzboBZhhMtdlr/view"
+        },
+        "North Carolina": {
+          "status": "progress",
+          "billId": "",
+          "url": ""
+        },
+        "North Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1PrMLyJg2UEd4VT_GoEHfx4MXQJvxe60_/view"
+        },
+        "Ohio": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1MLmdSousgIkuH9USkARXRF7l7_clbZzX/view"
+        },
+        "Oklahoma": {
+          "status": "progress",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1od37yYnerM4fd8vfmrBbwr6lUY4ZQDoL/view"
+        },
+        "Oregon": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1o8l7FHi7uEjC7Mr9x8sssJXCxltmvRDa/view"
+        },
+        "Pennsylvania": {
+          "status": "progress",
+          "billId": "HB1499",
+          "url": "https://docs.google.com/file/d/1v52dAHipH0txeGuKtmQDqXqOQmVQPVb5/view"
+        },
+        "Rhode Island": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1zNG6RazKxy2JWoHgDI74gZeHOXyL2Ct8/view"
+        },
+        "South Carolina": {
+          "status": "progress",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1bfbGBbuV-6ktcNBM5-m_S3r5poY6h-SP/view"
+        },
+        "South Dakota": {
+          "status": "progress",
+          "billId": "hb1067",
+          "url": "https://docs.google.com/file/d/1cDjfV5jBVjF8VI1cS7R_T4UTnCy0Bsm4/view"
+        },
+        "Tennessee": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/11AVgw5L3gdqPqCbz32_iUtyvq0YThNF0/view"
+        },
+        "Texas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/17P2GvG345y5rjM8MXXF1zgSghhCiArBa/view"
+        },
+        "Utah": {
+          "status": "passed",
+          "billId": "",
+          "url": ""
+        },
+        "Vermont": {
+          "status": "progress",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/15WKUt7J9RkjYti10rs7TkF39SE2ckv3q/view"
+        },
+        "Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1h2DKJTgneBnplWNB0kICqRKsepM9MLbY/view"
+        },
+        "Washington": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1H3239ZRrUssSXrvIG-I8-Xpjd5IEZ6qp/view"
+        },
+        "West Virginia": {
+          "status": "passed",
+          "billId": "",
+          "url": ""
+        },
+        "Wisconsin": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1lbX4XstPxhXi-wKlM09rEIJ9t-fHJGWG/view"
+        },
+        "Wyoming": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1P49Sgb6I4q0uY3l7ytpm7UJRVAbAnFjO/view"
+        }
+      },
+      "also": []
+    },
+    {
+      "id": "time-taken-time-back",
+      "title": "Time Taken Time Back",
+      "summary": "Ensures that any parenting time lost due to false allegations in custody or unsubstantiated investigations is automatically restored, protecting non-custodial parent rights and the parent-child bond, and deterring the weaponization of the court system.",
+      "page": "https://robertgarza.us/bill/time-taken-time-back",
+      "states": {
+        "Alabama": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1UbsdvNkkhoNZwKDECYhsh0ZEg6M2KJcs/view"
+        },
+        "Alaska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1vPI0Wf7AUk7ZyBNNJR7wb3uCXnwD5Gv6/view"
+        },
+        "Arizona": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1xa-ta1R_SuQKK2PpoqUZ8WOZyLJRrd5c/view"
+        },
+        "Arkansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1nRe5SLL6EWJtWbzpcRCT9zPH8A_KapQx/view"
+        },
+        "California": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1JCE-wJM1owxvLV0q5y7XnTi8T7wZ_5SV/view"
+        },
+        "Colorado": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1MpvPPzlaP5dD3CnfFFXUxhVdGPfCuq_y/view"
+        },
+        "Connecticut": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1CLMqR7SMwWu--9cAccJYvE2FjinPzhNm/view"
+        },
+        "Delaware": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1fa4d5oX4Tk1ES-EsEkmOs9pjtKwb1pX7/view"
+        },
+        "Florida": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1PAfWU9HmvjIPeNApyXhhThC2Ky6lFBTN/view"
+        },
+        "Georgia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1rHIYiiD143cGVYRuVwTAyAkUjA3XeV4h/view"
+        },
+        "Hawaii": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/18rVVplB-wJ3bR5Ep22rPX-_z5wUi45vX/view"
+        },
+        "Idaho": {
+          "status": "progress",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1NfjM-W-HWoQB3juAOcwIQ2yZgtilF7dQ/view"
+        },
+        "Illinois": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1IrL2aoUYR74PdNeA619rd2ejuq9ok4Pm/view"
+        },
+        "Indiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1bKu4FJdFU5sVjFNFoEWiGexHrU9xr9RI/view"
+        },
+        "Iowa": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/17B4IRQEg6_s3YjVdstHUL_En8SyLmssB/view"
+        },
+        "Kansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1vlHyd8fNfLPl35RyN9UQvu3LrdIwIfHN/view"
+        },
+        "Kentucky": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1uf9omvMOGRwmcscWQFmiVbRukyuCKNQ6/view"
+        },
+        "Louisiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1D0_d7Yve9KZSTNHeNAGS07Np69lKQP03/view"
+        },
+        "Maine": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1mSBxHUTPS3_yZmMgTUOeEQBIOJNMCKun/view"
+        },
+        "Maryland": {
+          "status": "progress",
+          "billId": "HB481 & SB481",
+          "url": "https://docs.google.com/file/d/1OPuaN3H374lnVmmFbMx0i4qWY6uOQZQI/view"
+        },
+        "Massachusetts": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1veZrAi1RjkaWE63Y6oAadO10aIJQE5lO/view"
+        },
+        "Michigan": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1k_3Vb7v_SrSMKQs6eElkDth0-ymLEYTD/view"
+        },
+        "Minnesota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1AWC_L_aNJ2dC2usSPfQt6aJk2TomCDXB/view"
+        },
+        "Mississippi": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/10nlQFiu7QOtHDKLELbuq8SqFdzDYF713/view"
+        },
+        "Missouri": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1sTpOcD6ioF8Gw7o4nwYfjWgPPFWwPc--/view"
+        },
+        "Montana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1mSVbPXvdI3mSo-hbv2YntCYiXKyay5kD/view"
+        },
+        "Nebraska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1ynMj_JL1PA1DaI4DeXheX5EClI6u8hlL/view"
+        },
+        "Nevada": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Q8ikjFfYdNfv6YQtwLNiFKSnNcf5lNwM/view"
+        },
+        "New Hampshire": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1vjwFGf0XZ4eyFiyEip6Zu71SGWsuZW7V/view"
+        },
+        "New Jersey": {
+          "status": "progress",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1M9Gq_qDKVxcd6CYmFM4j3cNd6Rcs2HIq/view"
+        },
+        "New Mexico": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1IvX5jIkXqY7LXuJZCwBZXQRXTahLOGUC/view"
+        },
+        "New York": {
+          "status": "progress",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Y3AuIqz-u-TMlmp-tIJfTm-jwfC-9wDP/view"
+        },
+        "North Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1ZOvNAdx8a1JgXETs3TfMbxDAsB5J6LpX/view"
+        },
+        "North Dakota": {
+          "status": "passed",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1ffpxT-JJBYiM8YT1U0QN11XVZ4XrKC5o/view"
+        },
+        "Ohio": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1JkQ2LUaWiP3Iv4JNd2b5SqHEZMjp2tAB/view"
+        },
+        "Oklahoma": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Q_fgTb03MPYrG3gaWxWRfs6etfYwyVVY/view"
+        },
+        "Oregon": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/11-K5lFKgoJ9TMKl508osORDfCY4mJRc9/view"
+        },
+        "Pennsylvania": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1WtqSCYPZLPK_5S5zjgTvIOeiFijPft9L/view"
+        },
+        "Rhode Island": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/14n5KEw8vYLFFknbwPAYwR3AgE182_-Ck/view"
+        },
+        "South Carolina": {
+          "status": "progress",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1hS75914hexN-VYbxfvtAH_RYAPF9W2WK/view"
+        },
+        "South Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1-OuStwtziP_oXm6NQjFrIL2niDyH994C/view"
+        },
+        "Tennessee": {
+          "status": "progress",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1EuXGyW52B0yHTaJPI5fg2IBPKup0pLiQ/view"
+        },
+        "Texas": {
+          "status": "passed",
+          "billId": "",
+          "url": ""
+        },
+        "Utah": {
+          "status": "passed",
+          "billId": "sb0304",
+          "url": ""
+        },
+        "Vermont": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Rm4fAD-0VMRwyRhDw_KF6oQqavZ_gLAo/view"
+        },
+        "Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1BzAN8Ld23Lo1m-isXX8bvvyMQ97JjNmb/view"
+        },
+        "Washington": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Wxa3LYWs9ChGpJcFMlCBZFxyr_X0pcd2/view"
+        },
+        "West Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1TWbit3qNAxyuu60Xq7phGHE6LuLGgj3-/view"
+        },
+        "Wisconsin": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1tcI-6V5xf0_QR0GN2LFU5jKYhT0p26Vj/view"
+        },
+        "Wyoming": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1JZEpzDce3U6i0RIC_JXLCSo7Py8pG4J8/view"
+        }
+      },
+      "also": []
+    },
+    {
+      "id": "three-strikes",
+      "title": "Three Strikes Law",
+      "summary": "Creates escalating consequences for parents who repeatedly violate court-ordered custody \u2014 misdemeanor for the first two offenses, felony for the third \u2014 ensuring that custody orders are respected and children are protected from ongoing custody interference.",
+      "page": "https://robertgarza.us/bill/three-strikes",
+      "states": {
+        "Alabama": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1hDjq1BUJJsVB8f_PY6oaTeK6f2piFKMy/view"
+        },
+        "Alaska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1BTmVA-ZV1wwYUHeFeQsCUIAVvOCmRM8w/view"
+        },
+        "Arizona": {
+          "status": "none",
+          "billId": "SB1666",
+          "url": "https://docs.google.com/file/d/1Tr31bIxh054uxwNp7OrC9WbWdhwl7Pcd/view"
+        },
+        "Arkansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1T7gPh-5Npg7CEltx_309nfTZ6aUX0sfL/view"
+        },
+        "California": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1OI--tfO29a5FFUQgYi-RDHMig4YTL8Eq/view"
+        },
+        "Colorado": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1rWY3UOKEwpqW0klSKRctj50UfSglqRu1/view"
+        },
+        "Connecticut": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1jbhMkFSQGxWplO8lrAQ1TK9BhVLkQzuS/view"
+        },
+        "Delaware": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/19FQbKq35OD73c_Was9ffNaMoq1NxO0Qh/view"
+        },
+        "Florida": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1T1HT0vsSemGWTgImxGh7EZf1xyEgrCPE/view"
+        },
+        "Georgia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1DW1i5Y8j0kDsfnxXLYYIpWNu-oRrT0e2/view"
+        },
+        "Hawaii": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1ots-OJszgDbHkvcWsxoNvdwR4lbLnufb/view"
+        },
+        "Idaho": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1_v1nZxm1pTZXG0U3F7p4fJFbCleNp3-b/view"
+        },
+        "Illinois": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1ZAjPIRMdkheBfCptSScJx1BrRjv4Tgv6/view"
+        },
+        "Indiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1ly-wIv1LedAN18V5Zc7Uo0aYOlZBkFNW/view"
+        },
+        "Iowa": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/15aypxglXGqemJNFWqp6DPb_Kr9tsXdlk/view"
+        },
+        "Kansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1KwGELdG2Oy45Hs9BnNNTR7vnvEP8omQP/view"
+        },
+        "Kentucky": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1q5dmIZ6m7c8LUY5W5hJ5NFOWPvIbw4Kd/view"
+        },
+        "Louisiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1fdmaA4ErVYYKFNVXaZPvxFavuvYet8z0/view"
+        },
+        "Maine": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1L_JgiFEr6padbNfTiQxOc7BDwwfdlj7w/view"
+        },
+        "Maryland": {
+          "status": "none",
+          "billId": "HB942",
+          "url": "https://docs.google.com/file/d/1EimJGNTxNnEFUiZ7pIq2H3S8GWeuqTf6/view"
+        },
+        "Massachusetts": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1WmTF00St_nECyaYn4V3Ip9qG9S2dTPWN/view"
+        },
+        "Michigan": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1CQS56I4DhpXQvR7FgnSzq_ObKc8ukoIR/view"
+        },
+        "Minnesota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1KYj9QrNGg9BHihGW3TyJ3NayLLEwxdvz/view"
+        },
+        "Mississippi": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/16GDscgmzfTO5_80l7FEVvwI8KXe9gUBP/view"
+        },
+        "Missouri": {
+          "status": "progress",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1cxWVKTCH_GrCMZk9LJ_8sH0OUlYXP-15/view"
+        },
+        "Montana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1d1i61sZ01laotBDAEW0p7YNpRMtB3byk/view"
+        },
+        "Nebraska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1YSdhPn1N0I8eIXfKaNlGoIZ82yN5l4y0/view"
+        },
+        "Nevada": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/19TskKkfBc4iUhkTMuvBJMEAfB6_wBwqc/view"
+        },
+        "New Hampshire": {
+          "status": "none",
+          "billId": "HB194",
+          "url": "https://docs.google.com/file/d/1H8TChlVYtkHHpuLC5nyj0NBB4LygHkp1/view"
+        },
+        "New Jersey": {
+          "status": "none",
+          "billId": "a6261",
+          "url": "https://docs.google.com/file/d/1Z6idpreQOQECgb0fvpK4Xn2PgMGArMvX/view"
+        },
+        "New Mexico": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1lJddnm6Lv7VsQkerfpT_qXgW-ssGgB0s/view"
+        },
+        "New York": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1ITFDN6WWIRQSt9uUEWsZrNhvoB89E3JW/view"
+        },
+        "North Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1X0zpXB61U5knP1uZc0wJjfUXV8GSWnDg/view"
+        },
+        "North Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1HOagBQZVlMxo-hevYRlizKT76SxNZrny/view"
+        },
+        "Ohio": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Z7TtTuItspDJ8gL_FOzYPAtYkxqi9SRH/view"
+        },
+        "Oklahoma": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1MwW7Y8Z8eEzqyOPNowKJWQ0SdZ8Plic1/view"
+        },
+        "Oregon": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1WkEbylJuA3IS2LCfiJ3DPByXpBDh3Z1s/view"
+        },
+        "Pennsylvania": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1K0rpa54qyv4rXlfepftAsKD6z9T3ufJk/view"
+        },
+        "Rhode Island": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1jpyZzgSwFwUI96csF7VGt9uFHQ3ztX-K/view"
+        },
+        "South Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1a38d0TxdGehBrE_8lUxXm7NYWVDSon56/view"
+        },
+        "South Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1rpvICPRLLkuDBdq8SB1aPcTb9rXnwv83/view"
+        },
+        "Tennessee": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1HkofAcYKhLfo4tbPY_SvRGS8Gl3Q8WII/view"
+        },
+        "Texas": {
+          "status": "progress",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1cra3K4G8YTriIAeJV4Cdq9TkDLo9-WN_/view"
+        },
+        "Utah": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1NhJnHmS6vBdrg9FTzw1BJKIFd34XTTIK/view"
+        },
+        "Vermont": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1rsQXDm1GJShhBntHbQPw48aOLhGj-4G8/view"
+        },
+        "Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Qt7HJOS_o5zOia-aH0HjzAV-KqhZeRtA/view"
+        },
+        "Washington": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1iD_gr50k0RIQDFtEZWeQLcCvajc87UCY/view"
+        },
+        "West Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1KwMyM0IPy0tpJ9dfUBuZ_VyoLKQsDUfE/view"
+        },
+        "Wisconsin": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1m-12NxUblh-DeFse5hJFa_YaRddEyj7F/view"
+        },
+        "Wyoming": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1CEO_oFunG55LKdKIJEy2clTfrvSnX8C0/view"
+        }
+      },
+      "also": []
+    },
+    {
+      "id": "justice-delayed-is-justice-denied",
+      "title": "Justice Delayed is Justice Denied",
+      "summary": "Requires family court judges to issue rulings within 10 business days of a hearing, with written justification required for any extension \u2014 because a custody case taking too long leaves families in legal limbo.",
+      "page": "https://robertgarza.us/bill/justice-delayed-is-justice-denied",
+      "states": {
+        "Alabama": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1T2gImCntBGGgyZlKc550revqq8rejEnr/view"
+        },
+        "Alaska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1VGuW1jSbsVJqoJaeBiud6Q4UKkcwtDJX/view"
+        },
+        "Arizona": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1HQGnpVAL8a3KAjQ9yNIqs1G4iyIksTbG/view"
+        },
+        "Arkansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1KilENLJTRJV-G7QIGXtk0I5H0GqY0O9Z/view"
+        },
+        "California": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/12-EfgN9kCkmphcgo898YZAXBRfZoB1Ys/view"
+        },
+        "Colorado": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1IByIYIwa3CQC1iNqhP4aPayb0Sz1JGhk/edit?usp=sharing&ouid=112759170355036278657&rtpof=true&sd=true"
+        },
+        "Connecticut": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1tzpzAG6f9mOepz5SG9woW4PLLDcDaNDS/view"
+        },
+        "Delaware": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1ke_OsDnfD-3Ci0qKc1b4QcuDouY25-lZ/view"
+        },
+        "Florida": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/14nw01NQP8EHCiP7SlV1RKA4K0WkXRAmh/view"
+        },
+        "Georgia": {
+          "status": "passed",
+          "billId": "",
+          "url": ""
+        },
+        "Hawaii": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1APqb8mlV194QSQHzqN5ARbwjbkkJl0Fl/view"
+        },
+        "Idaho": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1J1rjbk5O-vCUOPNmC4SoTtBGcrySiyTq/view"
+        },
+        "Illinois": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1_S6mesHuIscHPa-0sKcOuY67EgUdmhkw/view"
+        },
+        "Indiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/13SqeorZtzRFG6ZmHUEjieWJsf8S3qqvI/view"
+        },
+        "Iowa": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/142b-0eQ5fSNkrQ6gc-e4aJrik7yJVOSK/view"
+        },
+        "Kansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1OCtGUhLdnsQfyPkvjgeijkADfWZ8_5q7/view"
+        },
+        "Kentucky": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1K2TMT2JzE759ufIG-ET4lEPd4KWVyMHZ/view"
+        },
+        "Louisiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1WepHVQt3_sFTL26GNAhkTzA0wlJQCwxE/view"
+        },
+        "Maine": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1FNJAYw2Z9Y8YbmKL97mqG8DmSZ2A_GOt/view"
+        },
+        "Maryland": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1buN2DZHufQTXbL7Z_4csOza_9eR0qeNh/view"
+        },
+        "Massachusetts": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1NUs0vcf61dbborFDS9WAHClaCbkCKmES/view"
+        },
+        "Michigan": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1EQA0y58Kx4V6nnkHQ6WhVf6ie0ceGHvO/view"
+        },
+        "Minnesota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1f80N2UpJEXfI0gde1JzduTrAH9jlhXPu/view"
+        },
+        "Mississippi": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Hv8IBv_AI6q-xd9kLRPm_Xg7_kMk9rbK/view"
+        },
+        "Missouri": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1ReY6Rl4XUK4gO6wogUz_GBc95T3iktQ2/view"
+        },
+        "Montana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1hcj8DsjcEUvtSYd181WV5k-RMvU_3QVb/view"
+        },
+        "Nebraska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1zzrWvw_u2uk01NMWGXrDKcMlvRFTB669/view"
+        },
+        "Nevada": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/140I74MM-gLrvnjPwrvxKsM7QBJbDZL4Y/view"
+        },
+        "New Hampshire": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1wG1ZFKzJRa_fQ1YGeLe0IKutAYuBFHmw/view"
+        },
+        "New Jersey": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1VurW0ln8J4Een3IgX5Y_TGbmbNoedKWU/view"
+        },
+        "New Mexico": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1cqKN9R3rL-hbX_1zYRBeiFPkRUsToECS/view"
+        },
+        "New York": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1JL_2nXZJb1nMxcRBFmK6lL11qkCkZd9f/view"
+        },
+        "North Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1pIooiVpy5wAuaQ04d7kZ4taXr05Qyw5b/view"
+        },
+        "North Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Q5wCwRnKKX91CZzcvqiARrZhUIPLmkoi/view"
+        },
+        "Ohio": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1qMaQyIch0InlTso-hbZWoHSJ83py-aHU/view"
+        },
+        "Oklahoma": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1LuHyfso9pxhFe69C79n6_gWNJtATaKZx/view"
+        },
+        "Oregon": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1abAp5SLckdJXXp678qt8zWVKmuhb09ob/view"
+        },
+        "Pennsylvania": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Tw7K0qtOsiMVj67WgHRjwJ0YvFxGGL-c/view"
+        },
+        "Rhode Island": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1rB8CDbsDMfyNuLyhWhs5Vr3JluxZdAKp/view"
+        },
+        "South Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/14DV0dHnwDYNIPAxk4lOPVgf-AAjQ4Qf7/view"
+        },
+        "South Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1TAtST8JSyqez-Ve9AYhrNfRZixyjzPk_/view"
+        },
+        "Tennessee": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Yc2P8yf065yi8VnjO3f1eSNdgeJtqbl_/view"
+        },
+        "Texas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1DRYK9SrXsdSAGBwzjo0xW7xbfxZx1P9m/view"
+        },
+        "Utah": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Jm2JmQUkXVLN1UkxjegF8XIN3SKjVYHU/view"
+        },
+        "Vermont": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1thkv1NkbReL3k4z3_lZoij60Qck671R-/view"
+        },
+        "Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1aUxt8tOj0u4gAq8GCAfkl1X3boWBiEEq/view"
+        },
+        "Washington": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1aupn_huAdqDm4Kws1C04jFbT2cNP-YbW/view"
+        },
+        "West Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1_FBZzsGAT3dTsFF8gXjz9lgXsYPsoF6z/view"
+        },
+        "Wisconsin": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1UEA0Dq5dP6KfpekhUunIvgRaVWHjmSNV/view"
+        },
+        "Wyoming": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/139MkODYODFX0_u6jSaxyQdAZK53-ZG6o/view"
+        }
+      },
+      "also": []
+    },
+    {
+      "id": "cameras-in-courtrooms",
+      "title": "Cameras in Courtrooms",
+      "summary": "Requires video and audio recording of all court proceedings \u2014 including off-the-record moments \u2014 to ensure family court transparency, protect litigants, and provide appellate courts with a complete record of what happened.",
+      "page": "https://robertgarza.us/bill/cameras-in-courtrooms",
+      "states": {
+        "Alabama": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1eGHl8sPaqG-VzTm0lXLZgAiOcVylP0Vb/view"
+        },
+        "Alaska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1kjFqk4-svzyfpB8402DACTLq2JnjZHxE/view"
+        },
+        "Arizona": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1uahVU_2ZWQTY_MoQPHYG8pewE1kUlwUh/view"
+        },
+        "Arkansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1hCkXkbrRP5UYLZqFwKPH9xvsPdcYZZic/view"
+        },
+        "California": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1IVWSyYoqkGcSFHJackT8jj5FxtRQgm-S/view"
+        },
+        "Colorado": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1oItb0QhRoryXo8wnqwmg12lt-iBH2Ezc/view"
+        },
+        "Connecticut": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1fgjZn1N5YeRG_Ri70airHrgO3Ls9FjUZ/view"
+        },
+        "Delaware": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1wxuaMe4upIigSqP4GgRQXoI8HeLTF7TV/view"
+        },
+        "Florida": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1fWNdB1ko5lRY-GJ05FIJ8xidplwSHwdg/view"
+        },
+        "Georgia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1a_gCoODdWDjdWK3rkEmSA-o6r1Xk54z1/view"
+        },
+        "Hawaii": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1w37wTwENYkKM2kgCn766WwdhN38vi9Cw/view"
+        },
+        "Idaho": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1QL8R7CKlZaFuC7QmYuUbnULxB7HaZyOp/view"
+        },
+        "Illinois": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1OhBEjIF8kEX5sjjx6pBZRgaKNTodSzBE/view"
+        },
+        "Indiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/17EQ0aCtg1smP61mae_0xbtdKGumVDWnt/view"
+        },
+        "Iowa": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1mpkdIGyj_OMO5uErTnuWSDUY241s5k3V/view"
+        },
+        "Kansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1J1_9V8G1fmXHudKZ8m6BfNXOgMvbi95B/view"
+        },
+        "Kentucky": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1uw1Qn_FYwZAG3ri9AGRAbauBBbeAp3pU/view"
+        },
+        "Louisiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1SPqYZSh9pm_QPBreM0jqpRoRKYRPt21W/view"
+        },
+        "Maine": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/110gSMsRo_7ek56IsNzkanTnQUXyOEmaB/view"
+        },
+        "Maryland": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1UFCePk02t5pIs0zVhoOOOGYGIlLbJ_7l/view"
+        },
+        "Massachusetts": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1PDOdv62hnEtzqqU5V-8ic8Fy03YwkDN8/view"
+        },
+        "Michigan": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1SqCTx_uTg3Ic5ey0ARAAVtY5gwdrQJYA/view"
+        },
+        "Minnesota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1EQm1MwnPBtGVKj8HLWzlg1uuZtKIOG72/view"
+        },
+        "Mississippi": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1xAdWbaBbGw8ypk98AMfByzew3R6kr1Gi/view"
+        },
+        "Missouri": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1ScDYaRliFuHUMjlCyfV55cyX8AUK0g5s/view"
+        },
+        "Montana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1ulp1fgl3WIR1oy5Z6pzYNldt8wVA4_jx/view"
+        },
+        "Nebraska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Kzk5LMZHIfmXs-Po3D1TTEU7SJ2hb5Y2/view"
+        },
+        "Nevada": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1YJKWUFBP_T1f6V1CkYk3WIUO8shI3i0m/view"
+        },
+        "New Hampshire": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/17FekC5sXn2bHVBqCVYPrrm65TGxA4vyG/view"
+        },
+        "New Jersey": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Tn_S5iSIqqjCL6JE97QWxpYMkkji73i1/view"
+        },
+        "New Mexico": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1PElY0HRdbRL8HoQuSUioHf186U8dgW56/view"
+        },
+        "New York": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1L47iy7kPt57ZZzpVYaN_f_Tu9fri9vEJ/view"
+        },
+        "North Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1K057x0B3Kn5zjDTNApsPBnNufqR1WbFO/view"
+        },
+        "North Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1iofXF7RqsDwfWx4IFTRZj5pfHKuyYCG7/view"
+        },
+        "Ohio": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1TU7MfU4hKqpE3dts2I0n0ndR7lKROFiR/view"
+        },
+        "Oklahoma": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1MvPL2dvLb80qEkXDqfDNyFBF5Lhh2Qx7/view"
+        },
+        "Oregon": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1vaXbn2WZKi43qTdsbKYYqyWsbx_SHTIo/view"
+        },
+        "Pennsylvania": {
+          "status": "progress",
+          "billId": "HB1397",
+          "url": "https://docs.google.com/file/d/1x7eBaaqjXRwmdA2j_8uHqnho1yXj4oAA/view"
+        },
+        "Rhode Island": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1-FdO1SGQxrosTk4UTwzInTAia4d5c9tG/view"
+        },
+        "South Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1femUThMXo-yS_1G74luxu4znn_DVgD0Q/view"
+        },
+        "South Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1ASHVSYWmmigX-zrkkvypcyrvuK8dLEFx/view"
+        },
+        "Tennessee": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1XEhX5KmTYQ9XJOonYqctEv2dVkumcHZY/view"
+        },
+        "Texas": {
+          "status": "progress",
+          "billId": "",
+          "url": ""
+        },
+        "Utah": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1h-p4oUClDZ5f-_c7WOI3X6V2fR_LRfd6/view"
+        },
+        "Vermont": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/19lnpWLVRBFwwWyzaoYc3CGghIyJMz9Cz/view"
+        },
+        "Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1WlMV_Q36mB_pHAxDIV6fEng6g80BmVHy/view"
+        },
+        "Washington": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1dVum6yB3j-0ytXcpLTdX-L9R2EPVl2XV/view"
+        },
+        "West Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1fdjMj2GqRQ-UeMToj-AoVC4l_m_36T3H/view"
+        },
+        "Wisconsin": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1jXFT8qi1ybQ6Yh79k7ltMu47sb08S3rS/view"
+        },
+        "Wyoming": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1d9aGomz4U4DSMU3O_0Njfg3UKeRo7O9r/view"
+        }
+      },
+      "also": []
+    },
+    {
+      "id": "child-support-dual-calculation-reform",
+      "title": "Child Support Dual Calculation Reform",
+      "summary": "Modernizes child support calculations for 50/50 custody and shared parenting by requiring courts to compute each parent\u2019s obligation based on actual overnight parenting time, offset the amounts, and order only the difference \u2014 ending inconsistent outcomes that assume one primary household.",
+      "page": "https://robertgarza.us/bill/child-support-dual-calculation-reform",
+      "states": {
+        "Alabama": {
+          "status": "passed",
+          "billId": "",
+          "url": ""
+        },
+        "Alaska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1WJ7fKBjxYvFxtOLD7Anvoktd1JVaa7Qq/edit?usp=sharing&ouid=112759170355036278657&rtpof=true&sd=true"
+        },
+        "Arizona": {
+          "status": "passed",
+          "billId": "",
+          "url": ""
+        },
+        "Arkansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1gRe0zaYG1GxXVutVLFR4OwIChAniHjNu/edit?usp=sharing&ouid=112759170355036278657&rtpof=true&sd=true"
+        },
+        "California": {
+          "status": "passed",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1cL9wO8BchmXb8tb8PWCRzrXN4g-iH6yd/edit?usp=sharing&ouid=112759170355036278657&rtpof=true&sd=true"
+        },
+        "Colorado": {
+          "status": "passed",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1bS3BcSOcxLiuFiCbOapf1-9nxPQyx1TE/edit?usp=sharing&ouid=112759170355036278657&rtpof=true&sd=true"
+        },
+        "Connecticut": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1LEvuqbSc0QjmtT8W6zbCs7WR0UPnT1tm/edit?usp=sharing&ouid=112759170355036278657&rtpof=true&sd=true"
+        },
+        "Delaware": {
+          "status": "passed",
+          "billId": "",
+          "url": ""
+        },
+        "Florida": {
+          "status": "passed",
+          "billId": "",
+          "url": ""
+        },
+        "Georgia": {
+          "status": "passed",
+          "billId": "",
+          "url": ""
+        },
+        "Hawaii": {
+          "status": "passed",
+          "billId": "",
+          "url": ""
+        },
+        "Idaho": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1Nbp24taAdkypUawHyPnZPNzegwhh0eTrszk_Oi1rg7I/edit?usp=sharing"
+        },
+        "Illinois": {
+          "status": "passed",
+          "billId": "",
+          "url": ""
+        },
+        "Indiana": {
+          "status": "passed",
+          "billId": "",
+          "url": ""
+        },
+        "Iowa": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1QaS0WcLuW5HgJo1HiS94zNQgvqnB9_fg9jGGgVzSCrY/edit?usp=sharing"
+        },
+        "Kansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1rgjaT-4kgXLYPfFqhSrxiT9zF82XV8U9jjAHTHmNuMU/edit?usp=sharing"
+        },
+        "Kentucky": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1kXUtfsQoH_B9DhF-lv_-1-_-F4aYGhA-pzlUvRzM9to/edit?usp=sharing"
+        },
+        "Louisiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1HeaL6qU4LT8-jKkZxLOzzVGZNfkU4kg1oA-U-UXlQNg/edit?usp=sharing"
+        },
+        "Maine": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1CH46md9hSMfcWGm48z7unbw2XqHR9QEKIVH92Xddacw/edit?usp=sharing"
+        },
+        "Maryland": {
+          "status": "passed",
+          "billId": "",
+          "url": ""
+        },
+        "Massachusetts": {
+          "status": "passed",
+          "billId": "",
+          "url": ""
+        },
+        "Michigan": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1_ZPMHIgP-FCTpJ63DgqgBBqBkn9PONhwcqPkIjLsd68/edit?usp=sharing"
+        },
+        "Minnesota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1AA5zOw_DRxAoDbU4DQ_d5fX2AgomiHZD/edit?usp=sharing&ouid=112759170355036278657&rtpof=true&sd=true"
+        },
+        "Mississippi": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1HpyyGGzC4rOiJ3vtSQI3vFqdkucpt2eXTGYn-oDUiKo/edit?usp=sharing"
+        },
+        "Missouri": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1DVqnQXb1iPARSTVSqx0vA_CDJPQwJb42/edit?usp=sharing&ouid=112759170355036278657&rtpof=true&sd=true"
+        },
+        "Montana": {
+          "status": "passed",
+          "billId": "",
+          "url": ""
+        },
+        "Nebraska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1Bl5YwW4J9o6u35JdP3AXZNqb4jlh2Ozr4bU_D6zPocc/edit?usp=sharing"
+        },
+        "Nevada": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1EY51QDu70SiEabK3J2M0aA8LA46jInp-ZnCw3N0EoUI/edit?usp=sharing"
+        },
+        "New Hampshire": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1TLsmqGjCNR1R4aaGomyWHBkIHhd4wjpbTJ_cozDP2rQ/edit?usp=sharing"
+        },
+        "New Jersey": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/13wKqC9V9-0XWrrcpMQWYyBpnQXuVVwn62M_6H4pnlm4/edit?usp=sharing"
+        },
+        "New Mexico": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1HrhGWfUdQd21GT_R6U_AgkoPCbms6qBXkmmrcMQs1bI/edit?usp=sharing"
+        },
+        "New York": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1oifhLiBeHkSluty_PUy07EyVOV-qJQiuL6Yr7_HrJeY/edit?usp=sharing"
+        },
+        "North Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1r_Y4TfIaf2_-gseRZH-uX3iYxk5ccA7GXTHondqvWyI/edit?usp=sharing"
+        },
+        "North Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1k_U1nXaQV4EsWshwp24xQ7DQR6Xt41gyhLJqegx9NzQ/edit?usp=sharing"
+        },
+        "Ohio": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1hbOiPU3tlQMMdNjdNXdpTSsm40R8Stry/edit?usp=sharing&ouid=112759170355036278657&rtpof=true&sd=true"
+        },
+        "Oklahoma": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1M84z6kxDDLIxJW4Obe-ldxwzJxK7WmoGH8M0n0Eza2w/edit?usp=sharing"
+        },
+        "Oregon": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/15nu46Smua3yfnwHHhWGw7Bk-c2X1XTYqzUob_KGWWbE/edit?usp=sharing"
+        },
+        "Pennsylvania": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1_Ou1BFHfON0k8Dg1x8BXBrS066P3H1uhzj7e12GdPfk/edit?usp=sharing"
+        },
+        "Rhode Island": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/12UVYg-OafOZtoFGzSyqfGm75ODThYTltkeQc8gMm5uY/edit?usp=sharing"
+        },
+        "South Carolina": {
+          "status": "passed",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1El8_asAJfE6BrfHYdVKTQjaCaMvylVPrASxirdUNyIE/edit?usp=sharing"
+        },
+        "South Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1El8_asAJfE6BrfHYdVKTQjaCaMvylVPrASxirdUNyIE/edit?usp=sharing"
+        },
+        "Tennessee": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1LJfBUG4op-uGmOZLYWzdhmATZaE26S0eSE58ZITiMw0/edit?usp=sharing"
+        },
+        "Texas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1T74STPqWlbb7djP_RdjKxs0B3Y2xNd5jeHUmD78cTgU/edit?usp=sharing"
+        },
+        "Utah": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1poQj7xb-qfjepePGSBY7NDn-X0IDGPH3wUVeCM7jRrE/edit?usp=sharing"
+        },
+        "Vermont": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/13BBD0uopiiSA1YhbPMLKLfiXIAxTkff8o27zvRMdMK0/edit?usp=sharing"
+        },
+        "Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1RKyVIrECtkqJGVMyqk4nuZfhW6Soyb6UIXliI8pjuhw/edit?usp=sharing"
+        },
+        "Washington": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/13RB6HJ8EpVfd5lMwLu50ivIkJ22JvRO24MGbBeuyH8c/edit?usp=sharing"
+        },
+        "West Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1uK7ZJLnGQ4LOkH2IznRHCgXax-pI2R_k/edit?usp=sharing&ouid=112759170355036278657&rtpof=true&sd=true"
+        },
+        "Wisconsin": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1Ka6A1pa9RdlSC7YYgzf1NJg0qm8Ynb_FbtlO-IlbiIM/edit?usp=sharing"
+        },
+        "Wyoming": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/spreadsheets/d/1dyqTNCeep1d5CAECdXwo51QRL3X_ksoM7FW2uxyEPvw/edit?usp=sharing"
+        }
+      },
+      "also": []
+    },
+    {
+      "id": "litigant-access-economy-act",
+      "title": "The Litigant Access and Economy Act",
+      "summary": "Guarantees a presumptive right to appear remotely in non-evidentiary family court hearings, protecting working parents and self-represented litigants from default judgments caused by inability to attend in person.",
+      "page": "https://robertgarza.us/bill/litigant-access-economy-act",
+      "states": {
+        "Alabama": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1yO5xdXq-lGANUhCEM4dnwvm68Q2i4vWC/view"
+        },
+        "Alaska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1TqZTbtybkI9GD4cRTEttXPW9rKObDlAD/view"
+        },
+        "Arizona": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Zo4J2J83uRO_GnOVjROrgMwnWnIeu7C2/view"
+        },
+        "Arkansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1TIKku_vW6BGJaBjEgTts9i8QWZuTpOIn/view"
+        },
+        "California": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/15NIFEAiA2Xz81Si9gYzmJ0X_lR5nl2dl/view"
+        },
+        "Colorado": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1cCb4UU-XZlHwHRK99Eh_DJS-bYn3NRDA/view"
+        },
+        "Connecticut": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1BbPXlFCZwxD_gGeAffCPdkoHEP7f9H37/view"
+        },
+        "Delaware": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1vH7hhgscq8vFUVVVl55F-g7prNrkYz3K/view"
+        },
+        "Florida": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1qVwz_rcmIFKERpg6h8UwNwRjJ6I_fgeB/view"
+        },
+        "Georgia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/177Evj5Co0QFyhiDox3OWC4YeGHnYo3OU/view"
+        },
+        "Hawaii": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1i2488xyi832GRbeebxtWxzZ-rQWSnbzh/view"
+        },
+        "Idaho": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1LGfZM4qgXVhOH5E3GWdKO3jA-qOdOQih/view"
+        },
+        "Illinois": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1OoRij3PqgZ8MEKKImvj-UmdMZ7Kmk4Yw/view"
+        },
+        "Indiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1mKoOA26szZmBVRuryq6EUCFDTlU4a99D/view"
+        },
+        "Iowa": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1rYnNgCFWFCJDmr9D_piI5SKJuL-eTmH5/view"
+        },
+        "Kansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1eU6uIQSHpNB4jUNagV1U1MGculIqD09v/view"
+        },
+        "Kentucky": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1TdUWGovlQuumo5Sf4nxy9vzlI3krkf2G/view"
+        },
+        "Louisiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Bm_pmvU6yo9qMo9Z4_FgzTkNaJb7Efee/view"
+        },
+        "Maine": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/18d2V7ianx09VoTSVirOkA74QiQF2uvTv/view"
+        },
+        "Maryland": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1-qAiQL1Iy1kYC9NpVgVyCidNF1AG8149/view"
+        },
+        "Massachusetts": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1GCkDkQt2adKW6mUblVFHYtjS2JcR246z/view"
+        },
+        "Michigan": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Txyf9ntEZX4QOk3pFdqQ_24JNfsSeES5/view"
+        },
+        "Minnesota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1MauU_z95M67PL-IBuoH59VI4H9TqXHwo/view"
+        },
+        "Mississippi": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1dA-Me0JGCsjznBOu2NBd2cOKgb0W9axz/view"
+        },
+        "Missouri": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1XWrhWjmHHESxqkf2_jdUWc669b40y3PQ/view"
+        },
+        "Montana": {
+          "status": "none",
+          "billId": "",
+          "url": ""
+        },
+        "Nebraska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1VOR6au9Z_aoqLcHtX6Yi9JpPgMDX2tDm/view"
+        },
+        "Nevada": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1vlhzitIltx1ovH6Wwar6roxv_8xkQFnh/view"
+        },
+        "New Hampshire": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1c1PwoP66NEeiOdE3jZf7fjSz4u3kaLTX/view"
+        },
+        "New Jersey": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1dDsNpTGli9LXf4CuW_cYLJPcB2Opz0e3/view"
+        },
+        "New Mexico": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/16tglzFlAmzga8UN2W5OJMmDyQ_gA-hcn/view"
+        },
+        "New York": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1amNAf6eMSCEvAywTUdebQf9zDZrV4Ry1/view"
+        },
+        "North Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1BG_7buyhHPy0GL376_T5CQK8X1WpPOoJ/view"
+        },
+        "North Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1D6X0fYVwxknCVH0XQtPXuNFCgyU_pcDW/view"
+        },
+        "Ohio": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1aTm2GheAHgs0triuzi3cretCpySEMlIo/view"
+        },
+        "Oklahoma": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1zmt_ipcYiJR53StOgEwl0F-Hq4EIHn_Y/view"
+        },
+        "Oregon": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1TXf29qb8H2lswqEYmt0RpLBWeyanWQaN/view"
+        },
+        "Pennsylvania": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/17Be-9gJHM70WpnSiztM5TO3nPBuIcjhv/view"
+        },
+        "Rhode Island": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1qLVDYE1NcOE0DlPAfqRnnmcJDtruLivZ/view"
+        },
+        "South Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Od0i6dIAyi0feVT5wqRhGcwws8M51OFF/view"
+        },
+        "South Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1izjFxopMpo_QWktFE0cWLwzHHS9kpWNe/view"
+        },
+        "Tennessee": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1X5cHxkWh1c2i1ABlvJi62AsAWnBDT9pv/view"
+        },
+        "Texas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1gG7UmEQIg-SBrRWcftcAlpcdQhJZLkYI/view"
+        },
+        "Utah": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/11Pv2q2gc86OWa0q7kHH1kA9XBbE-vGui/view"
+        },
+        "Vermont": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1K54mWGcPQYYlwSt_SQCOOmJE-N-vqiLp/view"
+        },
+        "Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1296ttNichFaRV0n6dsI508mQMfjU-yXX/view"
+        },
+        "Washington": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/11SiIxJaDgRz-70cp6JWAwpZZ5Tgj5dvZ/view"
+        },
+        "West Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1zH_HarDf3j7Nopmal1kbPx97v8xpjWJU/view"
+        },
+        "Wisconsin": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1TDWbM1mBc_0SKBzhLXMJ1Lmve48qDDGQ/view"
+        },
+        "Wyoming": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1YZrUz94Ke8oKxawXtRpKLTkXKF2AnML6/view"
+        }
+      },
+      "also": []
+    },
+    {
+      "id": "appealable-temporary-orders",
+      "title": "Appealable Temporary Orders",
+      "summary": "Creates a statutory right to a temporary custody order appeal for visitation and support \u2014 ending the practice of 'temporary' orders that function as permanent judgments without any appellate oversight.",
+      "page": "https://robertgarza.us/bill/appealable-temporary-orders",
+      "states": {
+        "Alabama": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1WX_3CCatKaFB-nRpyR0gC8lRGrfShKjn/view"
+        },
+        "Alaska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1eiggYmhfSd0OCUcDM2VgMb-b_l0B2IHj/view"
+        },
+        "Arizona": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/11W__bmMOZV0KLxDlkpMjUovpeydcu_7f/view"
+        },
+        "Arkansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1F1hanpSQym9_ODxBkiRUBv7vjQYq6Y8h/view"
+        },
+        "California": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/15JpZ5qC6BuCI0YENBwxRGtgShZYTpDGt/view"
+        },
+        "Colorado": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/12DObuEdk_PckOSPIBWg_MjcjYzlSzf6W/view"
+        },
+        "Connecticut": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/18q3QskbU1v4zaU65qmTHaOhp7ztPcoUr/view"
+        },
+        "Delaware": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1M6gjqJ8wYAz5TAVQ-I8JwbwSHIDSr1hz/view"
+        },
+        "Florida": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1oO6872vAwj9YkghaiSnWC-xFb7b4HHwF/view"
+        },
+        "Georgia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/15vXzXgH34Mo882vEjJDuHHQqmaQN9-GO/view"
+        },
+        "Hawaii": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1okttkvt0rit5p6ki_g24MWiqoSx0w0HS/view"
+        },
+        "Idaho": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1NUWVS9giEumQSrLQd49VHHdw6rZGkPDp/view"
+        },
+        "Illinois": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1AGTANrvjWax2-hhirKDbDcKxbj1860nr/view"
+        },
+        "Indiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/15bO8WiCS6qyHPySoPyOWWon0OseGElyb/view"
+        },
+        "Iowa": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Wl2j091exdb5Pc3N4yHAbSIVhGb7Wfah/view"
+        },
+        "Kansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1zZ4bW7UHN1CuTr0qzT3Ni3LkpeVUGZyH/view"
+        },
+        "Kentucky": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1j26TE5iw_EFXj0nAWPAmb6Y_BcSWUeUj/view"
+        },
+        "Louisiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1rZJ-GeJt9fppAKXjZSo-0DgDCl4NVm7F/view"
+        },
+        "Maine": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1ZMbcjVENnBh14s9DvI5Z_V7kT3uSPoEM/view"
+        },
+        "Maryland": {
+          "status": "passed",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1-h4HqO2xjsds9ZVd-sWw8YQbwUJD0An-/view"
+        },
+        "Massachusetts": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1-l7W_98128BGaDSLn1TnPRGwH5zaI6li/view"
+        },
+        "Michigan": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1sDoawRbcWbQ86EAv3gtaXGMU1fXuMk5x/view"
+        },
+        "Minnesota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1ZoaLQ_A6uB1vngUXHRCgzYyHToc6SIdA/view"
+        },
+        "Mississippi": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1pOSldiOL64rGsyfBZMsA5sI7oCJHzTH9/view"
+        },
+        "Missouri": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1JRvI78jw7PssxR59TrZy5bc9gchMuJPJ/view"
+        },
+        "Montana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/10TTs3ciRj4l-8CDTpS07F-EUVcM2QkNi/view"
+        },
+        "Nebraska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1EQj_pMiKJcRwsV0Ifu5Uk58HyAQ0ZQJS/view"
+        },
+        "Nevada": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Deh_jfbYjRk8dBD_E-bxGlL2MOSk0hyC/view"
+        },
+        "New Hampshire": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1UCcBEFWbJK6hRv-gFmaK7i4OPi_Blk8h/view"
+        },
+        "New Jersey": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1wUm2dPGC0QFr6JnONvSznse60UO3GbX5/view"
+        },
+        "New Mexico": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1a4oYaegCtifAgICz4sKSk4i4F7MDKm7p/view"
+        },
+        "New York": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1b_lqvSjAsg97ZxoRhOanro7TwBoT7bNQ/view"
+        },
+        "North Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1PY4D9YcuVqNhJGKfZxTv7AuVdiu0sjhu/view"
+        },
+        "North Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1tjYNHra85sVXtI2_bYRT7ZqpTfkadJdI/view"
+        },
+        "Ohio": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1jm4zTDaWXXLml8gl46UhJjyRpdNlv9Mu/view"
+        },
+        "Oklahoma": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1n4hQ2aCsbOSV3fxExoSi-VKExUO3F7rn/view"
+        },
+        "Oregon": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/14LVMaou8NG7OnJc13lzZ2TrPfN9xhxo-/view"
+        },
+        "Pennsylvania": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/10UALLu_jPTg6Qy6wkKYZ0rqctSioNGlL/view"
+        },
+        "Rhode Island": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1xcCk2Nu8KvKmx13XANLXESxEkXRolBVw/view"
+        },
+        "South Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1NvHXd8XQk6qTfXxUSgrxiphGtefKm8HA/view"
+        },
+        "South Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1uniJEMl_0txU-VK0Til-1iV8DvKvcsLG/view"
+        },
+        "Tennessee": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1g3KN5ixOGPlPLsCII7O7vtM-H_144GhG/view"
+        },
+        "Texas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/11pVqXyKfLjECZHcq6Ie_qi4SfpyEuFni/view"
+        },
+        "Utah": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1YwKT7F2Kdfu221HmMrMqvA0u3t7RbNUZ/view"
+        },
+        "Vermont": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/11_xTm5bD_6TM8_ZqE41cFaOzSFmScFhE/view"
+        },
+        "Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1js7ChZeB1kU0yGmjZ2eLHjAeIIzQHtFj/view"
+        },
+        "Washington": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1gLr5-5QyN63KN6et8eTz-2sd58Ir107j/view"
+        },
+        "West Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1JLsmrv3Yk9IWT97eHqB8gjfbN9qbfOL3/view"
+        },
+        "Wisconsin": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1ImoTNGJ_cFoaBoBaJG2xTqorYIlQmbkr/view"
+        },
+        "Wyoming": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1bQ8tX1Nv7Z6-UsbA9-Eczkxwk5bZ7qYf/view"
+        }
+      },
+      "also": []
+    },
+    {
+      "id": "reimbursement-fees-parental-alienation",
+      "title": "Reimbursement of Fees for Parental Alienating Behaviors",
+      "summary": "Requires courts to order full reimbursement of attorney\u2019s fees, therapy costs, and evaluator expenses when a parent is found to have engaged in alienating behavior \u2014 holding alienators financially accountable and funding the targeted parent\u2019s path to reunification.",
+      "page": "https://robertgarza.us/bill/reimbursement-fees-parental-alienation",
+      "states": {
+        "Alabama": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/14UBCjG6CeuHx2RYC8E2OzruehCnp95M0/view"
+        },
+        "Alaska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1jC67HCVFc9YLKIFlyPjOSRRv6-WTFjb7/view"
+        },
+        "Arizona": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1IwpO4xyY2nBfVGYQyB1Cq8kUn8USrjmQ/view"
+        },
+        "Arkansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1lLnq86ooZhakYSDOYVD8CsFYQlh3zQxO/view"
+        },
+        "California": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1B07ommcJY75cdlEVG9eeZt-teVYBlwNG/view"
+        },
+        "Colorado": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1tjui-M-kxJfydJdVjfrrWtBebleHO4aH/view"
+        },
+        "Connecticut": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/19IXR58G9CKqu03DbprQm_lvip2eLiLJk/view"
+        },
+        "Delaware": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/10LxlzDTwMl6QI_FlR3nnAIGwWl65JON1/view"
+        },
+        "Florida": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/15UJUYkiYvJlJsQ644DCrWLlZKPhZHaJc/view"
+        },
+        "Georgia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1vYLLgl0ASH5lrKx5oXKZOy-LvnCXM6Wp/view"
+        },
+        "Hawaii": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1eNAaNGTeX7HqodI5NSWJaRO3UmL6MbF2/view"
+        },
+        "Idaho": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1NfnHFfhFE7g0ss-bblBvMpnZtdbNg7u1/view"
+        },
+        "Illinois": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1DYXFsbVey3Njlvbn0eLTJw6dBUNYv3kr/view"
+        },
+        "Indiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1W1zLwJH-XErXqgGkeM6hCwYvXLKi8MkA/view"
+        },
+        "Iowa": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1CdK6OInavPCO6b2jzlU-eEBkAe3qWMZK/view"
+        },
+        "Kansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/16_RPxxPvO8lrvekF7n4U6TN8NsD-odUU/view"
+        },
+        "Kentucky": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1tchewpw2O8YcXQ8Qb05pqL-As2J-GuOU/view"
+        },
+        "Louisiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1CyS-Kp5DkizZkcPhQIe6kIVP16MsCJV4/view"
+        },
+        "Maine": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1RqC33sZJOgRYNOKEQs8bmb9cQiTUeZtC/view"
+        },
+        "Maryland": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1lphdG-CPEV9-TrP82fP0vffI5POt54NQ/view"
+        },
+        "Massachusetts": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1rSzP4l7W40kAgPOIv03U1mpTSfMWUas6/view"
+        },
+        "Michigan": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1sEDRafdGdrb9QRZgn7h1-W-6is9pazA1/view"
+        },
+        "Minnesota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1yfnzsDw6q0lwwNZYvUui_LybbeR2Hsmt/view"
+        },
+        "Mississippi": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1iNqmK-GsV-OyRsv5RcOsJzGk19bd4sqW/view"
+        },
+        "Missouri": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1fF6U27mafYoZ8PSNdDFR8wcrnc-XuwYA/view"
+        },
+        "Montana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1tFYFENvB-oTZWmZCcQXqdZXeJ43NhvET/view"
+        },
+        "Nebraska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1vlFYjmTJ671Zq-tApZn8uSDpNJXY1CxG/view"
+        },
+        "Nevada": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1fPjFJw-eyMLio8ghLrHOV50y6fIht83o/view"
+        },
+        "New Hampshire": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Tnhzb_SNIqevvIxun0fKFcQLdBbVieUP/view"
+        },
+        "New Jersey": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1My9K2_4vBDLhewZqVzQ6mZhPvovWEn-2/view"
+        },
+        "New Mexico": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1DkpNmD_4Dqy_c7b8eOQEYGfeAEHZ34nG/view"
+        },
+        "New York": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1twGWWBl-pl4bZmErADYoT6Z9slLPqT0C/view"
+        },
+        "North Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1oRJU3K0GUpToCyiZ6PF1iLFLzyambrOC/view"
+        },
+        "North Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1i7MyE6MSDj4ykNeGwnfdOYCxwoZaO6_p/view"
+        },
+        "Ohio": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1WT1xxtqV_slVRzeLKsorIFsvuUnWDG5z/view"
+        },
+        "Oklahoma": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/11RApvUXV7IcTZwqUhMkLXi-NGshjOGPD/view"
+        },
+        "Oregon": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1GJH_U_cFySzAmTFn0-LrbnyydBPakFYI/view"
+        },
+        "Pennsylvania": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1ZiDCmogLWlRao3zx72UAcOYOSsWYCa8s/view"
+        },
+        "Rhode Island": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1JaKwfrU5r37hT3edgg5E-x43p08crAQT/view"
+        },
+        "South Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1owaBpGfq3cuU5o56gzz2cUz68vlsAhu-/view"
+        },
+        "South Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1QnyLbf3or7flTFgzLu2Waj4kSjH1JWSg/view"
+        },
+        "Tennessee": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/18yQS2jKQEnSH6RKqxHJPYnYIgFs_eFmM/view"
+        },
+        "Texas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Bvhm77as5133vVLArpqRZx0yf7cv1S8h/view"
+        },
+        "Utah": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/10JFQAsTBarE59Yi6mQkIO5msKSMV1Tz1/edit?usp=sharing&ouid=112759170355036278657&rtpof=true&sd=true"
+        },
+        "Vermont": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1brNBRSzwaJh5cdyD9VkkfnlVHqBDzXO7/view"
+        },
+        "Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1gGxXWE1NjeULlYEghntATTx8Q8F24S56/view"
+        },
+        "Washington": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Kw-WJg-8HS4iAV8d_nFGkF7x31CMm5r9/view"
+        },
+        "West Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1KkD3D35vToJekAj6vYdJf_QuRj4wA2gT/view"
+        },
+        "Wisconsin": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1byPj2NSJJvgP4YFq7_W6foQuDeBL16E5/view"
+        },
+        "Wyoming": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1WoLiutompQQOmXjP7NkGvRCFe_zJbB62/view"
+        }
+      },
+      "also": []
+    },
+    {
+      "id": "family-rights-due-process-act",
+      "title": "The Family Rights and Due Process Act",
+      "summary": "Raises the evidentiary standard in family court from \u2018more likely than not\u2019 to \u2018clear and convincing evidence\u2019 and requires judges to issue written findings for every ruling \u2014 ensuring that non-custodial parent rights and all fundamental parental rights are protected by rigorous, transparent decision-making.",
+      "page": "https://robertgarza.us/bill/family-rights-due-process-act",
+      "states": {
+        "Alabama": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1na1VgT9_XxDnANdLihcXLFBphOQQZyAm/view"
+        },
+        "Alaska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1SkazUR7t0Qmju6jnTBhZIXey-j6WdjOl/view"
+        },
+        "Arizona": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/18E2AcHXIAR-lTaHS_ikkDk7ldBK-kyg4/view"
+        },
+        "Arkansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1CCAlDe-I44Y3naAe26nx1xrI9wmZVu-d/view"
+        },
+        "California": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/13G4HVhOo0qmzZam_-Gl1xeWcrsomR_QA/view"
+        },
+        "Colorado": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1C-BzphtJW2HPla8eON-XA98wqhNthpf8/view"
+        },
+        "Connecticut": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1wiKmW_8UT0pxbbjQE3nsBJaDbajcSmg2/view"
+        },
+        "Delaware": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/13LvLUiUwa9V8PysA7K9edonPZ-KbwblL/view"
+        },
+        "Florida": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1VAlfesapMdEs4GfhXqPfFVLx1wT4Ggca/view"
+        },
+        "Georgia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1OdUYPIGNbvCtP_v4FbLI49QgJgulHtmi/view"
+        },
+        "Hawaii": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1pB9pDFeZSMVmbjEGMVJJa38hPvWCzuF7/view"
+        },
+        "Idaho": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/11iroKu7QUiBXaTX-qZCYNGYuLjhxWUPD/view"
+        },
+        "Illinois": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1lV_35tcp-3dJarUtExaSTOVE_znm5eRv/view"
+        },
+        "Indiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1bq8YQ5Nfgmzk94G1x3wpr1ODKVd4zb-C/view"
+        },
+        "Iowa": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1KH9fXiuKXnHSJUrumVknwjxzDKiAePoK/view"
+        },
+        "Kansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1CsSnOm-FngwIq-7GP2LvAuUxvzeQ3WUt/view"
+        },
+        "Kentucky": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1_cnctI23zjN2T3L6gxDRc4UmSVoOI91M/view"
+        },
+        "Louisiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1iTi_aNhCnfdXz9r0nz0Lq0JNmw0GBH62/view"
+        },
+        "Maine": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1pTgzkYngkIIA9s9T2we7aRE5e-BK-s1V/view"
+        },
+        "Maryland": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1KerixHLEIUGhw_yABKKR7fAQ4B4CLfBX/view"
+        },
+        "Massachusetts": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/16Hah1d3E3NA0R8_9z3dY8lWnJ8UwiT5l/view"
+        },
+        "Michigan": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1SZN7VQS-xdGuK51JyLkBstRQzb90lmy1/view"
+        },
+        "Minnesota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/18Fi-dXup84kQSqz09AOkXFpDY3FV7RGv/view"
+        },
+        "Mississippi": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1apAU3wafDifDz52GGR6OnJ_QkFy7Zyaw/view"
+        },
+        "Missouri": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1xDDJbfRCCHZdxIpy1yRKNnkNQTRuTwnw/view"
+        },
+        "Montana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/113OSLu1Hq5L5x_FoOnxkhlBgl2RaHBD5/view"
+        },
+        "Nebraska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Xe1tV9Abj6tGlzdBeMyZzub1jSV8tFKi/view"
+        },
+        "Nevada": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1pQRK7IjDD-0aYsBLsLndXihhmk5cIV6z/view"
+        },
+        "New Hampshire": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1krbdsNoOy0gwgYY_QZacBqUmXN6zL_yG/view"
+        },
+        "New Jersey": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1hSo6GbqdLrOMZP9gR9vjJTx97EVSaRLy/view"
+        },
+        "New Mexico": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1BiL96LwEuqho6F0MBlavgS_pjjl-CJGf/view"
+        },
+        "New York": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1JdfGo9MH8OYh1_siZ8TTMwXoq088LuQe/view"
+        },
+        "North Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1UNR9k7Fd1VCJQLcMRAh4ojS5p9Fnu7Sg/view"
+        },
+        "North Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1wPZZhniqpnZNEyB4ZAn-VpjK8DQJx5VJ/view"
+        },
+        "Ohio": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/16IhkOktWnUbUKEwn-6_DBVcgwdjLtXvm/view"
+        },
+        "Oklahoma": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1E0VxqCEr1pLnzw-xVBlKTbGlp3fbVtCY/view"
+        },
+        "Oregon": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1gr2Xn05DbCFlTzxghmMsft6XaeNWz9kn/view"
+        },
+        "Pennsylvania": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1ztB729J7aue_rYyoDnm7biGpr684DRvE/view"
+        },
+        "Rhode Island": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/13HEMSIN1G94k50F7KE_sf-fkOgxRTrxF/view"
+        },
+        "South Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1hDARRR2EkVSskFZZz_QmFHgIXj2R2LKF/view"
+        },
+        "South Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1L7GoWU-SPz8KJemsPofEVm0KFgqs9FpX/view"
+        },
+        "Tennessee": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1lA0vKaKKIl6enjEnAwz2Apm9VqOjZZdx/view"
+        },
+        "Texas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1ky69unozaEbaSHLXmfnnlk1OLM7uBYhX/view"
+        },
+        "Utah": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/13LyaYzuUe1Wd8NU9nleCGfrMwh03wmdZ/view"
+        },
+        "Vermont": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1cUvb5tFV8d6CzGMZrFCo92CyoccQxZ3p/view"
+        },
+        "Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1V0lVV0-h0Mu9_OEL79Q5ZWEgBlm_Xkmn/view"
+        },
+        "Washington": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1PoHPwfiVqdsmGJaW-jlrDtIPIDjGdUn9/view"
+        },
+        "West Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1hQfTEnsFbvLO4Gq3WBOgu5p9fq2qOSD5/view"
+        },
+        "Wisconsin": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1FjWiK_HqtU05JSiE0IR3bMh8T1330UHU/view"
+        },
+        "Wyoming": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/18cA470JNZonoLgTOdXhlK-L7gJ78gv9d/view"
+        }
+      },
+      "also": []
+    },
+    {
+      "id": "child-support-integrity-act",
+      "title": "Child Support Integrity Act",
+      "summary": "Requires genetic verification of parentage before any child support order can be entered and provides immediate relief when later DNA testing proves non-parentage \u2014 protecting children, preventing wrongful obligations based on false allegations in custody, and restoring integrity to the child support system.",
+      "page": "https://robertgarza.us/bill/child-support-integrity-act",
+      "states": {
+        "Alabama": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1eVrcPHf9tVqRkea2SkIYhScs8J1qnnXq/view"
+        },
+        "Alaska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1-OGXFagcl0mGO57jUantWVON8bB6mcVa/view"
+        },
+        "Arizona": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1rtAyFGTfl3DjOseeeCvGaUrlUeogf3-b/view"
+        },
+        "Arkansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1etwPRIBYE7cyWTUFI9Gl0sjaTkxFvgwm/view"
+        },
+        "California": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Nyk_wSWkcdko67y8ErXagkoGQTH3nMHO/view"
+        },
+        "Colorado": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1pWq2uwuENudKLuskiwfJ4lUATjrkDg7J/view"
+        },
+        "Connecticut": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1y_uih3Vya850NnOdmzDhErWoUL4z0fdU/view"
+        },
+        "Delaware": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1TmuvI8Xa4NhmEtGiBeSHj2GKfSQcCpuy/view"
+        },
+        "Florida": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/12kh3BTcvAuxwP9NFbXC_1pCCL88Clwsv/view"
+        },
+        "Georgia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1fzmth9_el1rAYev3MHWhmcY1YlfaA89r/view"
+        },
+        "Hawaii": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1tVIEXspuCl1latEIMkHIH_L5RIS4p_1I/view"
+        },
+        "Idaho": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1J8UA7dDMeBK1Fe49uUcEjUxs5_-_ZGll/view"
+        },
+        "Illinois": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1HvnBVxxEb4bVUvtghQnUWBd4OzaHdVJ8/view"
+        },
+        "Indiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1A2T6b3O9V6QtZzawXdbcA6lIeGY9-m11/view"
+        },
+        "Iowa": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1Mmi0flVriniLJsAqIGmwYj6ngDHM0ZhO/view"
+        },
+        "Kansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1DPu1qcjN1PIuf3c10ctCV1evTZaKj4r5/view"
+        },
+        "Kentucky": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1jC2o2ffL0HOI9mHhJqhKJ16s2xNtLVfD/view"
+        },
+        "Louisiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1aBinB_8fLIrazoOg-vkZxH6hrM2Ntfi0/view"
+        },
+        "Maine": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1z5ED90XnGJZ6wH88fR4kfY80A2-o7Qv3/view"
+        },
+        "Maryland": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/17yS-YDaaeGSm82MsvKQkj0QZxjm44Rnr/view"
+        },
+        "Massachusetts": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1D6ckuS8VY-UixWQMyKUHJMC6kLrk6pMv/view"
+        },
+        "Michigan": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1LE6EEkGS1sTc5qlSveb7K9OuBGPoM-Zc/view"
+        },
+        "Minnesota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1l39kbNo7Xrv_iNRq7qEMPkGXqiowwKCC/view"
+        },
+        "Mississippi": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1J3vDGTH9Z933cpxlupH-6G99a5CcLq9H/view"
+        },
+        "Missouri": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1e3hNeydSdIaoalqKFPhsHUkKotKK5-Zq/view"
+        },
+        "Montana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1ADK-FSSbYFOBpTCDNCVSamQ76r-WxzSS/view"
+        },
+        "Nebraska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1WN0lhLZ2PGWeesCMg89lfJoXfWDFwLub/view"
+        },
+        "Nevada": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1yL-deA1IGvWTpDWfvl1ZhuWSSnmTTopN/view"
+        },
+        "New Hampshire": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1r-dWH17WQ-tK-Enua-06j8XeINPwsyaO/view"
+        },
+        "New Jersey": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/14uxQ0Fcx3xmVLcRAX1V7gwd2EEdymHqV/view"
+        },
+        "New Mexico": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1dOdD2Qs1Rvk7JtRksnvo7eHteiIwrUtV/view"
+        },
+        "New York": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1fTdv4PtpsSKEqo4mQbw75kCYWq5Jk_CH/view"
+        },
+        "North Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/144UCtXm856a2t09pxLcYc_xZTBEEwHhT/view"
+        },
+        "North Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1SMYpRebCC_Pr4mcjwHT6HL6uoPEBMxZr/view"
+        },
+        "Ohio": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1mVoTmOnhUY9XcQfg4M4FdWlq-r5X1inp/view"
+        },
+        "Oklahoma": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1EwoGzBYerzt2On3SraRqSyPzDK6UH8al/view"
+        },
+        "Oregon": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/15dtXrbe9xTROVHWbJelJ1FzxUTTSGyw4/view"
+        },
+        "Pennsylvania": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/10UicqraISmf9xYDw3fyx2O3pRDyDO93R/view"
+        },
+        "Rhode Island": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/13St9tLvZkWK870l99sGyLDEbObNivAay/view"
+        },
+        "South Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/115tyBFrKqlolaNABZHm7jiJaq5aRTSQp/view"
+        },
+        "South Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1NTBayMNPAy9TdU1f4ZFFfMZbDxNtfjwH/view"
+        },
+        "Tennessee": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1kZo-C_qMNHt53eVxndWgegtGYRo6st5Y/view"
+        },
+        "Texas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/12ub2wHHd9u52CM8Vi2JK9ySDbqFfnvju/view"
+        },
+        "Utah": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/135LEvJmDnB7nGvwvKIi61xMOvmG6PQJ3/view"
+        },
+        "Vermont": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1vUM8iSUAgTUCzSVmuLd1PuYRphExgfUE/view"
+        },
+        "Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1cwBkPpXwc2Lf3ZJQVjD-TCWim9cvCuFN/view"
+        },
+        "Washington": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1yWIt31wQsclqGnGUio_PVxpmyTvod48W/view"
+        },
+        "West Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1qLDOYR4NMgKKJIrrdOOAIwBSOPYfnLxe/view"
+        },
+        "Wisconsin": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/14BPzYPgm9Y0woLaTO_hpyY1VNemKLlL3/view"
+        },
+        "Wyoming": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/file/d/1CdTbsXTV7L9-DnFLWF5IsnRgUJ_Q8tlB/view"
+        }
+      },
+      "also": []
+    },
+    {
+      "id": "best-interest-of-the-child-definition-act",
+      "title": "Best Interest of the Child Definition Act",
+      "summary": "Establishes a clear statutory definition of 'best interest of the child,' requiring courts to base custody decisions on evidence \u2014 not assumptions, speculation, or personal preference. Courts retain full authority to protect children from abuse, neglect, family violence, and harm; this definition ensures that authority is exercised consistently and reviewably across every state.",
+      "page": "https://robertgarza.us/bill/best-interest-of-the-child-definition-act",
+      "states": {
+        "Alabama": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1GLUFXHzOnJSyQWmAJra1QzOZkZS3h6fnNOTAQbidZgw/edit?usp=sharing"
+        },
+        "Alaska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1Hd2gr4dItiQe_Va59uUCzCe0DlaXZZUDYGT5csWiL30/edit?usp=sharing"
+        },
+        "Arizona": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1es3LjqkVsMaw_FNL0BnaATVS-OqsmbqC2GLgo8MWrKg/edit?usp=sharing"
+        },
+        "Arkansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1ejThg3DTO4AUHbGBrf9-dR5GXuBMq5izHCF7-JXf7YU/edit?usp=sharing"
+        },
+        "California": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1jQQ0vogA3Exb3Q8K59hxAX_UkkRyPZrQsNt-BSOP4o0/edit?usp=sharing"
+        },
+        "Colorado": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1bxWlpFLQ5W45yjDVyQgb7ckfl2RNNa6KvRJ1hVHhcns/edit?usp=sharing"
+        },
+        "Connecticut": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1n3ttJXhON8doIL2LWQ9w-cv6Yl_zUYwNt9ryxtm1eIY/edit?usp=sharing"
+        },
+        "Delaware": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1uGctUExnV7dzc42EXz75VBoysWVU6hbFP4h6qe31wjI/edit?usp=sharing"
+        },
+        "Florida": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1hzUkuGDXdJtYyb3N29QQHfc1Otvi8mkk3m81VAfaOcA/edit?usp=sharing"
+        },
+        "Georgia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1AOwLY_AqShAY3pOyAfEcZuVS2TfigslUvpV2NTxzCy4/edit?usp=sharing"
+        },
+        "Hawaii": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/19GXHXTh5BCQkjRsPr8MVpshys4ylUXkcHGiAhC3A_uo/edit?usp=sharing"
+        },
+        "Idaho": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1onvFQMoJDYep5DMJdMRjQO8IRaISK4ZR_jgf73FQOxs/edit?usp=sharing"
+        },
+        "Illinois": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1wFmqo6PEYU67EWFlTlfB1sfyP-l7a248a8fpavL3oFI/edit?usp=sharing"
+        },
+        "Indiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1t-yIY1X8hj1kaufuUysinzGCK85K9um0FUfN5bCuXq4/edit?usp=sharing"
+        },
+        "Iowa": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1pSWYAPwghq8mWXcDaz6klrEOC2tyATBvLqOKQXhNvjo/edit?usp=sharing"
+        },
+        "Kansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1N1W0jo5d5q4j1lSnW_J2IFsWihBOt1GtUPpwhWVjgAI/edit?usp=sharing"
+        },
+        "Kentucky": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1Xrqr2rqQjz3aDw-JU090rmrn2vTS-_tLiOvqYAtgcRs/edit?usp=sharing"
+        },
+        "Louisiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/16IF7g5EV33lMQHIDKoRbW9MzlFs5Ay4bsMTCvH8YuoA/edit?usp=sharing"
+        },
+        "Maine": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1pLLSyz6Uxh_VbsiKKEyTl7xx2rzSmzGKNyJddugSL94/edit?usp=sharing"
+        },
+        "Maryland": {
+          "status": "passed",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1ByahdjXzWTPM1N3ZJ86GNaladT4XIFGOljXzUM2Hfhc/edit?usp=sharing"
+        },
+        "Massachusetts": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1zVR6oaIOOLwvVEMbxaS-T7NietcMOsjZhza1w-QNYYI/edit?usp=sharing"
+        },
+        "Michigan": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1vS7VwGD9UE6ZlxE1GaFF4kD9FBbs1Xlw3c-pLKxmbV4/edit?usp=sharing"
+        },
+        "Minnesota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1MacPXLIM3bxRVNRaoBtjlPITN1kPL22fkjTa7nEAlcw/edit?usp=sharing"
+        },
+        "Mississippi": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1WlPcflcMtuEkvNk53vgjaR0b16nJYy8mmUgew2EB5Eo/edit?usp=sharing"
+        },
+        "Missouri": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1gUlDmU2mj8Vrgy8mLF-3bYwF6NCoM716q5UsGaitQwQ/edit?usp=sharing"
+        },
+        "Montana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1XKw5fw6rO4wl1iFsYesvyp-ZL-btofWBTi9XXYpEl1Q/edit?usp=sharing"
+        },
+        "Nebraska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1lvsKOd-HQfNNQeKQlFlENxzspNdARVUMKYjukLB9_LE/edit?usp=sharing"
+        },
+        "Nevada": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1YliyiFjrZq0_7w5fwyHoBCZB0vI4PRfKtFStnUHVwrM/edit?usp=sharing"
+        },
+        "New Hampshire": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1-HVoedSdhgL52_W8bXp1qxgpmU-8nzvWFiZ-CG5ZyBM/edit?usp=sharing"
+        },
+        "New Jersey": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/178JUHWCKCzAh270fD0SY-84rHSuWzRfe6xlrPexBEco/edit?usp=sharing"
+        },
+        "New Mexico": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1ItMVO6iXu8xuttZjsXIiVmwZZuqBhAXhSHXxTcdtG2s/edit?usp=sharing"
+        },
+        "New York": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1XAVFzXptlvSpWELoq4ifq-K4HTyRwJ_yK5rJKJESbm8/edit?usp=sharing"
+        },
+        "North Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1qjJbtJz4Pl178KXeUs4EiQgDhPoYSy4O1LoEycA9ByU/edit?usp=sharing"
+        },
+        "North Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1X7NTuqOzlc8GLc4XPFv50OpwfjJ7EZQdgoYpEhmtVI8/edit?usp=sharing"
+        },
+        "Ohio": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1VMTiWaYlxyg3wDqDxzxalnla4vjYOn903YEZpi3dyz8/edit?usp=sharing"
+        },
+        "Oklahoma": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1AbSxrIsHGLE-z1j-2Bt8BTfXPXM-kSVnLE5NwwDx_wg/edit?usp=sharing"
+        },
+        "Oregon": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1e4HlwUhT19c1cM75Hmq_heNF0RuC8iHeSaeiXnKozYE/edit?usp=sharing"
+        },
+        "Pennsylvania": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1yg7ah-zKODn0l76fSe-Eto7vKe9MmfLq2U5rADUIWJc/edit?usp=sharing"
+        },
+        "Rhode Island": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1-5Rd4vxbPyekdc22avSxwZU4eMfOfHvCKl3qRx4FMx8/edit?usp=sharing"
+        },
+        "South Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1dvW_5Duhxo7_SKW1pt75IGqr554OuPA76HWPs5jAudg/edit?usp=sharing"
+        },
+        "South Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1NDRJ4dHwwIs-OhSq__B5IJoUfKDtYj7auxo-OBrpN-M/edit?usp=sharing"
+        },
+        "Tennessee": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1TNMMtSWrLxauYgmB3MlzPIMvPRsY_JP-WDnVe3-fUVw/edit?usp=sharing"
+        },
+        "Texas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1hl6sgxb3bQNWs0CdVTIBXz_qV7P3iatez1ShR3C-F8s/edit?usp=sharing"
+        },
+        "Utah": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1H1rhd1XeMh5T6clP2mfB-PIn7WcW_fh_jAOO6brJTHI/edit?usp=sharing"
+        },
+        "Vermont": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/19uXjWii-WGygnH_4k9_Vrr1fN-UZmM1BM7zjJJylcvQ/edit?usp=sharing"
+        },
+        "Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1d08SJyIy1M3vHdJbCI4mZWDkWucjtd6puDkGgEnChNw/edit?usp=sharing"
+        },
+        "Washington": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1iHbTPgi245ALdINt4LwksOZ72OLY5sQ1Cbj_8Q4KOAA/edit?usp=sharing"
+        },
+        "West Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1_yFzuJQ_p0ZGbysjVXxBfibjetsvPtlhIGOgJfTyvy4/edit?usp=sharing"
+        },
+        "Wisconsin": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1bTDf2-feu6Pr286dMaOGqj5TqDoVT_IVBFMjgpUVDcQ/edit?usp=sharing"
+        },
+        "Wyoming": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/13J2AdvtENOvg6_L2ZDX8sa3bY4mWH58HWmgCMje5FzA/edit?usp=sharing"
+        }
+      },
+      "also": []
+    },
+    {
+      "id": "parent-child-restoration-act",
+      "title": "Parent-Child Restoration Act",
+      "summary": "When allegations that led to temporary custody or visitation restrictions are not substantiated, families should not remain separated by unsupported orders. This act requires prompt restoration of the prior parenting arrangement and compensatory parenting time while preserving protections when clear and convincing evidence shows continued restrictions are necessary.",
+      "page": "https://robertgarza.us/bill/parent-child-restoration-act",
+      "states": {
+        "Alabama": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1-KT4-Q3voGEKqaY582AkGFdnEjEKagRpIdJVtNZJ11o/edit?usp=sharing"
+        },
+        "Alaska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1C8hc6rP0SXH-aaRiLq3Sv5_jQiAn-QfWRKNs3V3KmLk/edit?usp=sharing"
+        },
+        "Arizona": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1QK2htWm2m7o-eOfiCrBxXdXeGxJOC9J6IacCYCI-JTg/edit?usp=sharing"
+        },
+        "Arkansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1ck6nYu_lGycjfrSBw7vYNL-YeNFT9WDv7hPwf0zuAeA/edit?usp=sharing"
+        },
+        "California": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1PnC1LmwtfR6gnbfGH9SqZ8_0W0pMypb9ClefMQA4wKw/edit?usp=sharing"
+        },
+        "Colorado": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/13vcuskmYtNEYTXTOv-kcGtVKdF8zASoU-E8FgcHA17Y/edit?usp=sharing"
+        },
+        "Connecticut": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/16xsayuR2WQQzgXFB8Tmn5qCrCP_cG9njaKmO9cCFvqo/edit?usp=sharing"
+        },
+        "Delaware": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1FJRzhozG01am2ipuTNVbFa5bJj4-NxQSpppJ7hbS47g/edit?usp=sharing"
+        },
+        "Florida": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1g3mk--tbwkus2fmJq1cGQn-pmFTrF-_qOqW6GZGvB2w/edit?usp=sharing"
+        },
+        "Georgia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1DWweyghcBcL7BINpKa7aU7P5s1iaZl8PpkTm034gQM8/edit?usp=sharing"
+        },
+        "Hawaii": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1WwI0778BPG0TU3U680gW5cm8AVB06PMEhEShhGTeyzE/edit?usp=sharing"
+        },
+        "Idaho": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1EFG4arPiuuH3xYZfo8PkRUryiZjCdFRVrg_0ttAz1xY/edit?usp=sharing"
+        },
+        "Illinois": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1qB7bjsQxM5b1JD1otpsmCnUvliv451YKoNC_MnGxUuA/edit?usp=sharing"
+        },
+        "Indiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1WWMOfCuGvNOsbsC6ZomO1oXTyVP5FG_qRzwzFm8pJ-Y/edit?usp=sharing"
+        },
+        "Iowa": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1I7OY8K69UwUaTxCeQ2Njq26dHSIOiahIMdna_5Z7QJY/edit?usp=sharing"
+        },
+        "Kansas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1nPn1WKasET2kKzbjG5N0RENLRNJadZYfwT5OC55T4Gg/edit?usp=sharing"
+        },
+        "Kentucky": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1odUmh5F0Vyxk0JThbloa40bOvsnEi6y_X2zG75u0cVU/edit?usp=sharing"
+        },
+        "Louisiana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1lxHleq6o6XITyebVA7WdigL8WhNL3LHUpTMQX8SnHIQ/edit?usp=sharing"
+        },
+        "Maine": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1aJGd6LHlN_CT9tT6EQuUyVRJoWftFQzlR9ar2qzSHfs/edit?usp=sharing"
+        },
+        "Maryland": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1gwfMaMd-3dXP76kJtMQYGsenBEz10pcX5xiHcXIfqzc/edit?usp=sharing"
+        },
+        "Massachusetts": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1S9YIDTFim-FHWEtU0cMfqZdCdmFF71bhT3SKzBehKjg/edit?usp=sharing"
+        },
+        "Michigan": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1W4IcR9OIqB1hEa14fa-PA0Wb6CteXYk9IrxOD36bGU4/edit?usp=sharing"
+        },
+        "Minnesota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1FFZ_SUVyWZOXdfJIAYTBXw360PHa1RFo3ql8h9Xbeqo/edit?usp=sharing"
+        },
+        "Mississippi": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1w4SwMMbMFLi9n-LdjAkD2Ah50M4kG8qbTm4lXgfv6_g/edit?usp=sharing"
+        },
+        "Missouri": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1w0B6FJI8tFnFnkwjLO4KJklDt9mWzelXvMesCFiOLfQ/edit?usp=sharing"
+        },
+        "Montana": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1qAonVfwywEf_T2WWbOZwdZIDmXdk6DATXkI7Id-hhdM/edit?usp=sharing"
+        },
+        "Nebraska": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1QhGqYaX14GFlPCcLMCsOVxI6GbCh4M68OL0MTGVFGu4/edit?usp=sharing"
+        },
+        "Nevada": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1YtnH4mya28_dUBtz5cFfOVjQFPf3qh1itVgHbaLmruU/edit?usp=sharing"
+        },
+        "New Hampshire": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/12LT5WS4Oq4R35Ptm9a6Ru5yNIZhEuF2ENLCDDtcqIGA/edit?usp=sharing"
+        },
+        "New Jersey": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/14YyYV16p0_j8Cyt5oYNeBx3YjG2yXnzXjcjOiRCIaZQ/edit?usp=sharing"
+        },
+        "New Mexico": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1Uf7YzheOV-sbnShMEgv8B684L9RU7wYcaV_7QRHEzTk/edit?usp=sharing"
+        },
+        "New York": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1dsuf_6fr6QFsRkFQP3_vbfRG0TMB3sFwNweyg-AXY9k/edit?usp=sharing"
+        },
+        "North Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1YP_4pJZSQti6avUJCnoXHNovPYhyKpXvZgyGmmfDm1M/edit?usp=sharing"
+        },
+        "North Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/19hJ-_Gisy7dRbnYp9GeLZHhLEAUAiXFNmaoFECWKb2A/edit?usp=sharing"
+        },
+        "Ohio": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1AO52q5DHN7OS0e6MptHb6PdzOP5OUFwyqpyB2lDcPiI/edit?usp=sharing"
+        },
+        "Oklahoma": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1PcEd_G7UyUrljR9swhRB73I02AxS3j1PH74at1ewWJM/edit?usp=sharing"
+        },
+        "Oregon": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1pN47rWht3l3F8bo4v758QGyEcaIZJqXswaUXgJuEn-s/edit?usp=sharing"
+        },
+        "Pennsylvania": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1W-1C8EQICb-8ASLHfO9zYuU-x1Dr3SEWu3tZoV7h3Gs/edit?usp=sharing"
+        },
+        "Rhode Island": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1urJD0kFhZNK1nBVBxd4q_2hpUJAWl-6RuFCAhsa_Ti0/edit?usp=sharing"
+        },
+        "South Carolina": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1y_dN7YgoPnopQz_kO76pPWLHdPVAmVjfeBLzNtoeZOI/edit?usp=sharing"
+        },
+        "South Dakota": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1UeUYIAsJKRiOBqHZy0t7bO5ZIzQwRPXS2Jl9R-KD_F4/edit?usp=sharing"
+        },
+        "Tennessee": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1tU2dd08FNyHQNYgCHCulQKPAnunStfDqMJcWF6__7ao/edit?usp=sharing"
+        },
+        "Texas": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1I45osZzDXXeQA89zFrDtPzXtqEXF45huOD6SKmv7XGs/edit?usp=sharing"
+        },
+        "Utah": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1FjV1UOFMixG975KICQ7ZT6ZRxjujxvR1UWbGJT4pwQ0/edit?usp=sharing"
+        },
+        "Vermont": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1TeQzk2VcI7aOuG3GvdweUz2i4d77PWlqPv7OR-oICfs/edit?usp=sharing"
+        },
+        "Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1yWFD8zmyQmKPtxtgBd4VPcZCktopVt-mWHsQgVygBH8/edit?usp=sharing"
+        },
+        "Washington": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1hZK0ICo_k3IAYehauypL4ceI8EJk0QpL0ntS9GcR8gc/edit?usp=sharing"
+        },
+        "West Virginia": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1UTpnbqKd20ezBN7JuPqled-Bh6QDAu8a4rwl8kQR3hc/edit?usp=sharing"
+        },
+        "Wisconsin": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1U1x4sLXtyQdn3iqkCyJtvSgAzNsWw18I-TTO4kWsIWw/edit?usp=sharing"
+        },
+        "Wyoming": {
+          "status": "none",
+          "billId": "",
+          "url": "https://docs.google.com/document/d/1DBpgs0qGF1UM0C8yH9Y48WSQpW2rIZ0Wd-7giPYdx_A/edit?usp=sharing"
+        }
+      },
+      "also": []
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Equal Shared Parenting Map</title>
+  <meta name="description" content="Interactive map of Robert Garza’s Equal Shared Parenting bill stack: where each bill is passed, in progress, or not yet introduced.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,640&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="kicker">Family court reform · 50 states</p>
+    <h1>Equal Shared Parenting Map</h1>
+    <p class="lede">Choose a bill from Robert Garza’s stack. The map shows where that kind of law is already passed, where a bill is moving, and where nothing has been introduced.</p>
+  </header>
+
+  <main>
+    <section class="toolbar" aria-label="Bill and legend">
+      <div class="bill-picker">
+        <label for="bill">Bill</label>
+        <select id="bill"></select>
+        <p id="bill-summary" class="bill-summary"></p>
+      </div>
+      <div class="legend" role="group" aria-label="Filter by status">
+        <button type="button" class="legend-btn" data-status="passed" aria-pressed="false">
+          <span class="swatch swatch-passed" aria-hidden="true"></span>
+          Passed
+          <span class="count" data-count="passed">0</span>
+        </button>
+        <button type="button" class="legend-btn" data-status="progress" aria-pressed="false">
+          <span class="swatch swatch-progress" aria-hidden="true"></span>
+          Bill in progress
+          <span class="count" data-count="progress">0</span>
+        </button>
+        <button type="button" class="legend-btn" data-status="none" aria-pressed="false">
+          <span class="swatch swatch-none" aria-hidden="true"></span>
+          No bill yet
+          <span class="count" data-count="none">0</span>
+        </button>
+      </div>
+    </section>
+
+    <div class="layout">
+      <section class="map-panel" aria-labelledby="map-heading">
+        <div class="map-head">
+          <h2 id="map-heading">United States</h2>
+          <p id="hover-readout" class="hover-readout" aria-live="polite">Hover or select a state</p>
+        </div>
+        <svg id="map" class="map-svg" role="group" aria-label="United States map. Choose a state to see its bill status.">
+          <defs>
+            <pattern id="progress-hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+              <rect width="7" height="7" fill="#f6e2c0"></rect>
+              <rect width="3.2" height="7" fill="#e0a04a"></rect>
+            </pattern>
+          </defs>
+        </svg>
+      </section>
+
+      <aside class="side" aria-label="State details">
+        <article id="detail" class="detail" aria-live="polite"></article>
+        <div id="lists" class="lists"></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p id="source-note"></p>
+    <p><a id="source-link" href="https://robertgarza.us/family-court-reform-bills">Bill stack on RobertGarza.us</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

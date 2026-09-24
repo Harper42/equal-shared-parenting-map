@@ -1,0 +1,299 @@
+:root {
+  --paper: #f4f0e7;
+  --panel: #fbf8f2;
+  --ink: #1c1915;
+  --muted: #5e574e;
+  --line: #d8d0c3;
+  --passed: #1d6b43;
+  --progress: #9a5b10;
+  --none: #6d675e;
+  --chip: #fffdf9;
+  --focus: #1c1915;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 500px at 10% -10%, #efe6d4 0%, transparent 55%),
+    var(--paper);
+  color: var(--ink);
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+a { color: #1d4f36; }
+a:hover { color: #143828; }
+
+.site-header,
+main,
+.site-footer {
+  width: min(1180px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.site-header { padding: 2.25rem 0 0.5rem; }
+
+.kicker {
+  margin: 0 0 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--progress);
+}
+
+h1 {
+  margin: 0;
+  font-family: Fraunces, Georgia, serif;
+  font-weight: 560;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.lede {
+  max-width: 42rem;
+  margin: 0.85rem 0 0;
+  color: var(--muted);
+  font-size: 1.12rem;
+}
+
+.toolbar {
+  display: grid;
+  grid-template-columns: minmax(16rem, 1.1fr) minmax(18rem, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+  margin: 1.6rem 0 1.1rem;
+}
+
+.bill-picker label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+select {
+  width: 100%;
+  appearance: none;
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  background: var(--panel) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%231c1915' d='M1 1l5 5 5-5'/%3E%3C/svg%3E") right 0.9rem center no-repeat;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 600;
+  padding: 0.75rem 2.4rem 0.75rem 0.85rem;
+}
+
+select:focus-visible,
+button:focus-visible,
+.map-svg path:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.bill-summary {
+  margin: 0.7rem 0 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-content: start;
+  justify-content: flex-end;
+}
+
+.legend-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 600;
+  padding: 0.45rem 0.7rem 0.45rem 0.5rem;
+  cursor: pointer;
+}
+
+.legend-btn[aria-pressed="true"] {
+  border-color: var(--ink);
+  background: #fff;
+}
+
+.swatch {
+  width: 0.95rem;
+  height: 0.95rem;
+  border: 1px solid rgba(28, 25, 21, 0.25);
+  flex: none;
+}
+
+.swatch-passed { background: var(--passed); border-color: var(--passed); }
+.swatch-progress {
+  background: repeating-linear-gradient(-45deg, #e0a04a, #e0a04a 3px, #f6e2c0 3px, #f6e2c0 6px);
+}
+.swatch-none { background: #ddd6c8; }
+
+.count {
+  min-width: 1.4rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(17rem, 0.85fr);
+  gap: 1rem;
+  align-items: start;
+  padding-bottom: 2rem;
+}
+
+.map-panel,
+.detail,
+.list-block {
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+
+.map-panel { padding: 0.85rem 0.9rem 0.7rem; }
+
+.map-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+  margin-bottom: 0.25rem;
+}
+
+h2 {
+  margin: 0;
+  font-family: Fraunces, Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 560;
+}
+
+.hover-readout {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-align: right;
+  flex: none;
+}
+
+.map-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.map-svg path {
+  stroke: #fbf8f2;
+  stroke-width: 0.9;
+  cursor: pointer;
+}
+
+.map-svg path.status-passed { fill: var(--passed); }
+.map-svg path.status-progress { fill: url(#progress-hatch); }
+.map-svg path.status-none { fill: #ddd6c8; }
+
+.map-svg path.is-selected {
+  stroke: var(--ink);
+  stroke-width: 2.4;
+}
+
+.map-svg.is-filtering path { opacity: 0.28; }
+.map-svg.is-filtering path.is-match { opacity: 1; }
+
+.side { display: flex; flex-direction: column; gap: 0.75rem; }
+
+.detail { padding: 1rem 1.05rem 1.1rem; min-height: 9.5rem; }
+
+.detail h3 {
+  margin: 0 0 0.2rem;
+  font-family: Fraunces, Georgia, serif;
+  font-size: 1.55rem;
+  font-weight: 560;
+  line-height: 1.15;
+}
+
+.status-line {
+  margin: 0 0 0.55rem;
+  font-weight: 700;
+}
+
+.status-line.passed { color: var(--passed); }
+.status-line.progress { color: var(--progress); }
+.status-line.none { color: var(--none); }
+
+.detail p { margin: 0.35rem 0; }
+.detail .meta { color: var(--muted); font-size: 0.95rem; }
+
+.links { display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; margin-top: 0.75rem; }
+.links a { font-weight: 700; }
+
+.list-block { padding: 0.75rem 0.85rem 0.9rem; }
+.list-block h3 {
+  margin: 0 0 0.45rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.chips.scroll {
+  max-height: 11.5rem;
+  overflow: auto;
+  padding-right: 0.15rem;
+}
+
+.chip {
+  border: 1px solid var(--line);
+  background: var(--chip);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 0.18rem 0.55rem;
+  cursor: pointer;
+}
+
+.chip.is-current {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: #fbf8f2;
+}
+
+.empty { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+.site-footer {
+  padding: 0 0 2.5rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.site-footer p { margin: 0.2rem 0; }
+
+@media (max-width: 860px) {
+  .toolbar,
+  .layout { grid-template-columns: 1fr; }
+  .legend { justify-content: flex-start; }
+  .hover-readout { text-align: left; }
+  .map-head { flex-direction: column; gap: 0.15rem; }
+}
