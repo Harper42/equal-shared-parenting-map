@@ -16,12 +16,23 @@ const state = {
   billId: null,
   stateName: null,
   filter: null,
+  countyView: false,
+  countyShapes: null,
+  countyName: null,
 };
+
+const countyCache = new Map();
+let countyRequest = 0;
 
 const els = {
   bill: document.getElementById("bill"),
   summary: document.getElementById("bill-summary"),
   map: document.getElementById("map"),
+  nation: document.getElementById("nation"),
+  countyLayer: document.getElementById("counties"),
+  heading: document.getElementById("map-heading"),
+  backNation: document.getElementById("back-nation"),
+  openCounties: document.getElementById("open-counties"),
   readout: document.getElementById("hover-readout"),
   detail: document.getElementById("detail"),
   lists: document.getElementById("lists"),
@@ -56,34 +67,68 @@ function statusFor(name) {
 
 function readHash() {
   const raw = decodeURIComponent(location.hash.replace(/^#/, ""));
-  if (!raw) return { billId: null, stateSlug: null };
-  const [billId, stateSlug] = raw.split("/");
-  return { billId, stateSlug: stateSlug || null };
+  if (!raw) return { billId: null, stateSlug: null, counties: false };
+  const [billId, stateSlug, extra] = raw.split("/");
+  return { billId, stateSlug: stateSlug || null, counties: extra === "counties" };
 }
 
 function writeHash() {
-  const next = state.stateName
-    ? `${state.billId}/${slugify(state.stateName)}`
-    : state.billId;
+  let next = state.billId;
+  if (state.stateName) next += `/${slugify(state.stateName)}`;
+  if (state.countyView && state.stateName) next += "/counties";
   if (location.hash.replace(/^#/, "") !== next) {
     history.replaceState(null, "", `#${next}`);
   }
 }
 
 function setReadout(name) {
+  if (state.countyView && state.stateName) {
+    const status = STATUS_LABEL[statusFor(state.stateName)];
+    const county = name || state.countyName;
+    els.readout.textContent = county
+      ? `${county} — ${status}`
+      : `${state.stateName} counties — ${status}`;
+    return;
+  }
   if (!name) {
     els.readout.textContent = state.stateName
       ? `${state.stateName} — ${STATUS_LABEL[statusFor(state.stateName)]}`
-      : "Hover or select a state";
+      : "Hover or select a state. Double-click a state for counties.";
     return;
   }
   els.readout.textContent = `${name} — ${STATUS_LABEL[statusFor(name)]}`;
 }
 
+function countyMapReady() {
+  return state.countyView && state.countyShapes && state.countyShapes.state === state.stateName;
+}
+
 function renderMap() {
   const bill = currentBill();
+  const counties = countyMapReady();
   els.map.classList.toggle("is-filtering", Boolean(state.filter));
-  for (const path of els.map.querySelectorAll("path[data-name]")) {
+  els.nation.style.display = counties ? "none" : "";
+  els.countyLayer.style.display = counties ? "" : "none";
+  els.heading.textContent = counties ? state.stateName : "United States";
+  els.backNation.hidden = !counties;
+  els.openCounties.hidden = !state.stateName || counties;
+  els.map.setAttribute(
+    "aria-label",
+    counties
+      ? `${state.stateName} counties. Bill status is statewide.`
+      : "United States map. Choose a state to see its bill status. Double-click a state to see its counties.",
+  );
+
+  if (counties) {
+    els.map.setAttribute("viewBox", `0 0 ${state.countyShapes.width} ${state.countyShapes.height}`);
+    renderCountyMap();
+    return;
+  }
+
+  if (state.paths) {
+    els.map.setAttribute("viewBox", `0 0 ${state.paths.width} ${state.paths.height}`);
+  }
+  for (const path of els.nation.querySelectorAll("path[data-name]")) {
     const name = path.dataset.name;
     const status = bill.states[name] ? bill.states[name].status : "none";
     path.setAttribute("class", `status-${status}`);
@@ -92,6 +137,87 @@ function renderMap() {
     path.setAttribute("aria-label", `${name}, ${STATUS_LABEL[status]}`);
     path.setAttribute("aria-pressed", name === state.stateName ? "true" : "false");
   }
+}
+
+function renderCountyMap() {
+  if (els.countyLayer.dataset.state !== state.stateName) {
+    const svgNS = "http://www.w3.org/2000/svg";
+    els.countyLayer.replaceChildren();
+    els.countyLayer.dataset.state = state.stateName;
+    for (const shape of state.countyShapes.counties) {
+      const path = document.createElementNS(svgNS, "path");
+      path.setAttribute("d", shape.d);
+      path.dataset.county = shape.name;
+      path.setAttribute("role", "button");
+      path.setAttribute("tabindex", "0");
+      path.addEventListener("click", () => {
+        state.countyName = shape.name;
+        renderCountyMap();
+        setReadout(shape.name);
+      });
+      path.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          state.countyName = shape.name;
+          renderCountyMap();
+          setReadout(shape.name);
+        }
+      });
+      path.addEventListener("mouseenter", () => setReadout(shape.name));
+      path.addEventListener("mouseleave", () => setReadout(null));
+      path.addEventListener("focus", () => setReadout(shape.name));
+      path.addEventListener("blur", () => setReadout(null));
+      els.countyLayer.appendChild(path);
+    }
+  }
+
+  const status = statusFor(state.stateName);
+  for (const path of els.countyLayer.querySelectorAll("path[data-county]")) {
+    path.setAttribute("class", `county status-${status}`);
+    path.classList.toggle("is-match", status === state.filter);
+    path.classList.toggle("is-current", path.dataset.county === state.countyName);
+    path.setAttribute("aria-label", `${path.dataset.county}, ${STATUS_LABEL[status]}`);
+    path.setAttribute("aria-pressed", path.dataset.county === state.countyName ? "true" : "false");
+  }
+}
+
+async function openCounties(stateName) {
+  if (!stateName || !Object.keys(currentBill().states).includes(stateName)) return;
+  const request = ++countyRequest;
+  if (state.stateName !== stateName) {
+    state.stateName = stateName;
+    state.countyName = null;
+    state.countyView = false;
+    render();
+  }
+  els.readout.textContent = `Loading ${stateName} counties…`;
+  try {
+    let data = countyCache.get(stateName);
+    if (!data) {
+      const response = await fetch(`data/counties/${slugify(stateName)}.json`);
+      if (!response.ok) throw new Error(`County map failed to load (${response.status})`);
+      data = await response.json();
+      countyCache.set(stateName, data);
+    }
+    if (request !== countyRequest || state.stateName !== stateName) return;
+    state.countyShapes = data;
+    state.countyView = true;
+    state.countyName = null;
+    render();
+  } catch (error) {
+    if (request !== countyRequest) return;
+    state.countyView = false;
+    console.error(error);
+    render();
+    els.readout.textContent = "The county map could not be loaded.";
+  }
+}
+
+function closeCounties() {
+  countyRequest += 1;
+  state.countyView = false;
+  state.countyName = null;
+  render();
 }
 
 function overallBreakdown() {
@@ -206,6 +332,9 @@ function renderDetail() {
   const bits = [`<h3>${escapeHtml(state.stateName)}</h3>`];
   bits.push(`<p class="status-line ${record.status}">${STATUS_LABEL[record.status]}</p>`);
   bits.push(`<p>${STATUS_DETAIL[record.status]}</p>`);
+  if (state.countyView) {
+    bits.push("<p class=\"meta\">Counties use this state’s bill status. Status is not tracked county by county.</p>");
+  }
   if (record.note) {
     bits.push("<p class=\"meta\">Garza’s tracker marks this as a similar bill, not his model draft.</p>");
   }
@@ -267,7 +396,12 @@ function selectBill(billId, stateName) {
   state.billId = known ? billId : state.catalog.bills[0].id;
   els.bill.value = state.billId;
   const names = Object.keys(currentBill().states);
-  state.stateName = names.includes(stateName) ? stateName : null;
+  const nextName = names.includes(stateName) ? stateName : null;
+  if (nextName !== state.stateName) {
+    state.countyView = false;
+    state.countyName = null;
+  }
+  state.stateName = nextName;
   render();
 }
 
@@ -287,6 +421,10 @@ function drawMap(paths) {
     path.setAttribute("role", "button");
     path.setAttribute("tabindex", "0");
     path.addEventListener("click", () => selectBill(state.billId, shape.name));
+    path.addEventListener("dblclick", (event) => {
+      event.preventDefault();
+      openCounties(shape.name);
+    });
     path.addEventListener("keydown", (event) => {
       if (event.key === "Enter" || event.key === " ") {
         event.preventDefault();
@@ -297,7 +435,7 @@ function drawMap(paths) {
     path.addEventListener("mouseleave", () => setReadout(null));
     path.addEventListener("focus", () => setReadout(shape.name));
     path.addEventListener("blur", () => setReadout(null));
-    els.map.appendChild(path);
+    els.nation.appendChild(path);
   }
 }
 
@@ -352,18 +490,25 @@ async function init() {
     selectBill(state.billId, chip.dataset.state);
   });
 
+  els.openCounties.addEventListener("click", () => {
+    if (state.stateName) openCounties(state.stateName);
+  });
+  els.backNation.addEventListener("click", closeCounties);
+
   window.addEventListener("hashchange", () => {
     const hash = readHash();
     const billId = hash.billId || state.catalog.bills[0].id;
     selectBill(billId, null);
     const name = stateFromSlug(hash.stateSlug);
     if (name) selectBill(billId, name);
+    if (hash.counties && name) openCounties(name);
   });
 
   const hash = readHash();
   selectBill(hash.billId || catalog.bills[0].id, null);
   const named = stateFromSlug(hash.stateSlug);
   if (named) selectBill(state.billId, named);
+  if (hash.counties && named) openCounties(named);
 }
 
 init().catch((error) => {

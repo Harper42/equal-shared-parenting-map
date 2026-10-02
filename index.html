@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,640&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
   <header class="site-header">
@@ -46,16 +46,22 @@
     <div class="layout">
       <section class="map-panel" aria-labelledby="map-heading">
         <div class="map-head">
-          <h2 id="map-heading">United States</h2>
-          <p id="hover-readout" class="hover-readout" aria-live="polite">Hover or select a state</p>
+          <div class="map-title">
+            <button type="button" id="back-nation" class="map-nav" hidden>All states</button>
+            <h2 id="map-heading">United States</h2>
+            <button type="button" id="open-counties" class="map-nav" hidden>Counties</button>
+          </div>
+          <p id="hover-readout" class="hover-readout" aria-live="polite">Hover or select a state. Double-click a state for counties.</p>
         </div>
-        <svg id="map" class="map-svg" role="group" aria-label="United States map. Choose a state to see its bill status.">
+        <svg id="map" class="map-svg" role="group" aria-label="United States map. Choose a state to see its bill status. Double-click a state to see its counties.">
           <defs>
             <pattern id="progress-hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
               <rect width="7" height="7" fill="#f6e2c0"></rect>
               <rect width="3.2" height="7" fill="#e0a04a"></rect>
             </pattern>
           </defs>
+          <g id="nation"></g>
+          <g id="counties" style="display: none"></g>
         </svg>
       </section>
 
@@ -98,6 +104,6 @@
     <div id="totals-dialog-body" class="totals-dialog-body"></div>
   </dialog>
 
-  <script src="app.js?v=7"></script>
+  <script src="app.js?v=8"></script>
 </body>
 </html>

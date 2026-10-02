@@ -333,6 +333,26 @@ button:focus-visible,
   margin-bottom: 0.25rem;
 }
 
+.map-title {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-width: 0;
+}
+
+.map-nav {
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.22rem 0.55rem;
+  cursor: pointer;
+}
+
+.map-nav:hover { border-color: var(--ink); }
+
 h2 {
   margin: 0;
   font-family: Fraunces, Georgia, serif;
@@ -364,7 +384,8 @@ h2 {
 .map-svg path.status-progress { fill: url(#progress-hatch); }
 .map-svg path.status-none { fill: #ddd6c8; }
 
-.map-svg path.is-selected {
+.map-svg path.is-selected,
+.map-svg path.county.is-current {
   stroke: var(--ink);
   stroke-width: 2.4;
 }
