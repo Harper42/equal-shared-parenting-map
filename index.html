@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,640&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <header class="site-header">
@@ -67,21 +67,21 @@
 
     <section class="totals" aria-label="Overall totals for the full bill stack">
       <p class="totals-kicker">Across the full stack</p>
-      <dl class="totals-grid">
-        <div>
-          <dt>Bills passed</dt>
-          <dd id="total-passed" class="passed"></dd>
-        </div>
-        <div>
-          <dt>Bills in progress</dt>
-          <dd id="total-progress" class="progress"></dd>
-        </div>
-        <div>
-          <dt>States still needing a bill</dt>
-          <dd id="total-states" class="none"></dd>
-        </div>
-      </dl>
-      <p class="totals-note">Passed and in progress count every state law in the stack. A state still needs a bill when none of these bills has been introduced or signed there.</p>
+      <div class="totals-grid">
+        <button type="button" class="total-card" data-total="passed">
+          <span class="total-label">Bills passed</span>
+          <span id="total-passed" class="total-value passed"></span>
+        </button>
+        <button type="button" class="total-card" data-total="progress">
+          <span class="total-label">Bills in progress</span>
+          <span id="total-progress" class="total-value progress"></span>
+        </button>
+        <button type="button" class="total-card" data-total="needing">
+          <span class="total-label">States still needing a bill</span>
+          <span id="total-states" class="total-value none"></span>
+        </button>
+      </div>
+      <p class="totals-note">Passed and in progress count every state law in the stack. A state still needs a bill when none of these bills has been introduced or signed there. Select a number to see the bills and states it includes.</p>
     </section>
   </main>
 
@@ -90,6 +90,14 @@
     <p><a id="source-link" href="https://robertgarza.us/family-court-reform-bills">Bill stack on RobertGarza.us</a></p>
   </footer>
 
-  <script src="app.js?v=4"></script>
+  <dialog id="totals-dialog" class="totals-dialog" aria-labelledby="totals-dialog-title">
+    <div class="totals-dialog-head">
+      <h2 id="totals-dialog-title"></h2>
+      <button type="button" class="dialog-close" data-close-dialog>Close</button>
+    </div>
+    <div id="totals-dialog-body" class="totals-dialog-body"></div>
+  </dialog>
+
+  <script src="app.js?v=5"></script>
 </body>
 </html>

@@ -90,34 +90,89 @@ function renderMap() {
   }
 }
 
-function renderOverallTotals() {
-  if (!state.catalog) return;
-
-  let passed = 0;
-  let progress = 0;
-  const hasBill = new Map();
+function overallBreakdown() {
+  const passed = [];
+  const progress = [];
+  const started = new Map();
+  const byName = (a, b) => a.name.localeCompare(b.name);
 
   for (const bill of state.catalog.bills) {
+    const passedStates = [];
+    const progressStates = [];
     for (const [name, record] of Object.entries(bill.states)) {
-      if (!hasBill.has(name)) hasBill.set(name, false);
+      if (!started.has(name)) started.set(name, false);
+      const entry = { name, billId: record.billId || "" };
       if (record.status === "passed") {
-        passed += 1;
-        hasBill.set(name, true);
+        passedStates.push(entry);
+        started.set(name, true);
       } else if (record.status === "progress") {
-        progress += 1;
-        hasBill.set(name, true);
+        progressStates.push(entry);
+        started.set(name, true);
       }
+    }
+    if (passedStates.length) {
+      passedStates.sort(byName);
+      passed.push({ title: bill.title, states: passedStates });
+    }
+    if (progressStates.length) {
+      progressStates.sort(byName);
+      progress.push({ title: bill.title, states: progressStates });
     }
   }
 
-  let statesNeeding = 0;
-  for (const started of hasBill.values()) {
-    if (!started) statesNeeding += 1;
+  const needing = [...started.keys()].filter((name) => !started.get(name)).sort();
+  return { passed, progress, needing };
+}
+
+function statePills(states) {
+  return states.map((entry) => {
+    const billNumber = entry.billId
+      ? `<span class="pill-id">${escapeHtml(entry.billId.toUpperCase())}</span>`
+      : "";
+    return `<span class="pill">${escapeHtml(entry.name)}${billNumber}</span>`;
+  }).join("");
+}
+
+function breakdownMarkup(kind) {
+  const data = overallBreakdown();
+  if (kind === "needing") {
+    const pills = data.needing.map((name) => `<span class="pill">${escapeHtml(name)}</span>`).join("");
+    return `
+      <p class="modal-lead">No bill in the stack has been introduced or signed in these states.</p>
+      <div class="pills">${pills}</div>
+    `;
   }
 
+  const groups = kind === "passed" ? data.passed : data.progress;
+  return groups.map((group) => `
+    <section class="modal-group">
+      <h3>${escapeHtml(group.title)} <span class="modal-count">${group.states.length}</span></h3>
+      <div class="pills">${statePills(group.states)}</div>
+    </section>
+  `).join("");
+}
+
+const TOTAL_TITLES = {
+  passed: "Bills passed",
+  progress: "Bills in progress",
+  needing: "States still needing a bill",
+};
+
+function openTotalsDialog(kind) {
+  const dialog = document.getElementById("totals-dialog");
+  document.getElementById("totals-dialog-title").textContent = TOTAL_TITLES[kind];
+  document.getElementById("totals-dialog-body").innerHTML = breakdownMarkup(kind);
+  if (!dialog.open) dialog.showModal();
+}
+
+function renderOverallTotals() {
+  if (!state.catalog) return;
+  const data = overallBreakdown();
+  const passed = data.passed.reduce((count, group) => count + group.states.length, 0);
+  const progress = data.progress.reduce((count, group) => count + group.states.length, 0);
   document.getElementById("total-passed").textContent = String(passed);
   document.getElementById("total-progress").textContent = String(progress);
-  document.getElementById("total-states").textContent = String(statesNeeding);
+  document.getElementById("total-states").textContent = String(data.needing.length);
 }
 
 function renderCounts() {
@@ -264,6 +319,20 @@ async function init() {
 
   els.bill.addEventListener("change", () => {
     selectBill(els.bill.value, state.stateName);
+  });
+
+  document.querySelector(".totals-grid").addEventListener("click", (event) => {
+    const card = event.target.closest("[data-total]");
+    if (!card) return;
+    openTotalsDialog(card.dataset.total);
+  });
+
+  const totalsDialog = document.getElementById("totals-dialog");
+  totalsDialog.addEventListener("click", (event) => {
+    if (event.target === totalsDialog) totalsDialog.close();
+  });
+  document.querySelector("[data-close-dialog]").addEventListener("click", () => {
+    totalsDialog.close();
   });
 
   document.querySelector(".legend").addEventListener("click", (event) => {

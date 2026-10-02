@@ -83,13 +83,26 @@ h1 {
   margin: 0;
 }
 
-.totals-grid > div {
+.total-card {
+  display: block;
+  width: 100%;
+  text-align: left;
   background: var(--panel);
   border: 1px solid var(--line);
   padding: 0.8rem 1rem 0.95rem;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
 }
 
-.totals-grid dt {
+.total-card:hover,
+.total-card:focus-visible {
+  border-color: var(--ink);
+  background: #fff;
+}
+
+.total-label {
+  display: block;
   margin: 0;
   font-size: 0.78rem;
   font-weight: 700;
@@ -98,7 +111,8 @@ h1 {
   color: var(--muted);
 }
 
-.totals-grid dd {
+.total-value {
+  display: block;
   margin: 0.2rem 0 0;
   font-family: Fraunces, Georgia, serif;
   font-size: clamp(2rem, 4vw, 2.7rem);
@@ -108,9 +122,97 @@ h1 {
   font-variant-numeric: tabular-nums;
 }
 
-.totals-grid dd.passed { color: var(--passed); }
-.totals-grid dd.progress { color: var(--progress); }
-.totals-grid dd.none { color: var(--none); }
+.total-value.passed { color: var(--passed); }
+.total-value.progress { color: var(--progress); }
+.total-value.none { color: var(--none); }
+
+.totals-dialog {
+  width: min(46rem, calc(100vw - 2rem));
+  max-height: min(85vh, 44rem);
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.totals-dialog::backdrop {
+  background: rgba(28, 25, 21, 0.48);
+}
+
+.totals-dialog-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1rem 0.8rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.totals-dialog-head h2 { font-size: 1.55rem; }
+
+.dialog-close {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 700;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  flex: none;
+}
+
+.dialog-close:hover { border-color: var(--ink); }
+
+.totals-dialog-body {
+  overflow: auto;
+  max-height: calc(85vh - 5.2rem);
+  padding: 0.95rem 1rem 1.15rem;
+}
+
+.modal-lead {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+}
+
+.modal-group { margin: 0 0 1rem; }
+.modal-group:last-child { margin-bottom: 0; }
+
+.modal-group h3 {
+  margin: 0 0 0.45rem;
+  font-family: Fraunces, Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 560;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.modal-count {
+  color: var(--muted);
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.pill {
+  border: 1px solid var(--line);
+  background: var(--chip);
+  padding: 0.18rem 0.55rem;
+  font-size: 0.9rem;
+}
+
+.pill-id {
+  margin-left: 0.35rem;
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 0.82rem;
+}
 
 .totals-note {
   max-width: 46rem;
