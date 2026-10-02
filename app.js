@@ -41,6 +41,10 @@ function slugify(name) {
   return name.toLowerCase().replace(/\s+/g, "-");
 }
 
+function stateBillPage(bill, stateName) {
+  return `https://robertgarza.us/bill/united-states/${slugify(stateName)}/${bill.id}/`;
+}
+
 function currentBill() {
   return state.catalog.bills.find((bill) => bill.id === state.billId);
 }
@@ -212,7 +216,7 @@ function renderDetail() {
       : `Bill number: ${billNumber}`;
     bits.push(`<p class="meta">${line}</p>`);
   }
-  const links = [`<a href="${escapeHtml(bill.page)}">About this bill</a>`];
+  const links = [`<a href="${escapeHtml(stateBillPage(bill, state.stateName))}">About this bill</a>`];
   if (record.url && record.status !== "none") {
     links.push(`<a href="${escapeHtml(record.url)}">Source document</a>`);
   }
