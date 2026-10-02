@@ -65,7 +65,7 @@ h1 {
   font-size: 1.12rem;
 }
 
-.totals { margin-top: 1.35rem; }
+.totals { margin: 0.25rem 0 1.75rem; }
 
 .totals-kicker {
   margin: 0 0 0.55rem;
@@ -212,7 +212,7 @@ button:focus-visible,
   grid-template-columns: minmax(0, 1.55fr) minmax(17rem, 0.85fr);
   gap: 1rem;
   align-items: start;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .map-panel,

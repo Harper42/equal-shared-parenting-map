@@ -27,9 +27,6 @@ const els = {
   lists: document.getElementById("lists"),
   source: document.getElementById("source-note"),
   sourceLink: document.getElementById("source-link"),
-  totalPassed: document.getElementById("total-passed"),
-  totalProgress: document.getElementById("total-progress"),
-  totalStates: document.getElementById("total-states"),
 };
 
 function escapeHtml(value) {
@@ -94,6 +91,8 @@ function renderMap() {
 }
 
 function renderOverallTotals() {
+  if (!state.catalog) return;
+
   let passed = 0;
   let progress = 0;
   const hasBill = new Map();
@@ -116,9 +115,9 @@ function renderOverallTotals() {
     if (!started) statesNeeding += 1;
   }
 
-  els.totalPassed.textContent = String(passed);
-  els.totalProgress.textContent = String(progress);
-  els.totalStates.textContent = String(statesNeeding);
+  document.getElementById("total-passed").textContent = String(passed);
+  document.getElementById("total-progress").textContent = String(progress);
+  document.getElementById("total-states").textContent = String(statesNeeding);
 }
 
 function renderCounts() {
@@ -194,6 +193,7 @@ function render() {
   document.title = `${bill.title} · Equal Shared Parenting Map`;
   renderMap();
   renderCounts();
+  renderOverallTotals();
   renderDetail();
   renderLists();
   setReadout(null);

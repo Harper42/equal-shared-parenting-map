@@ -8,31 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,640&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
   <header class="site-header">
     <p class="kicker">Family court reform · 50 states</p>
     <h1>Equal Shared Parenting Map</h1>
     <p class="lede">Choose a bill from Robert Garza’s stack. The map shows where that kind of law is already passed, where a bill is moving, and where nothing has been introduced.</p>
-    <section class="totals" aria-label="Overall totals for the full bill stack">
-      <p class="totals-kicker">Across the full stack</p>
-      <dl class="totals-grid">
-        <div>
-          <dt>Bills passed</dt>
-          <dd id="total-passed" class="passed">—</dd>
-        </div>
-        <div>
-          <dt>Bills in progress</dt>
-          <dd id="total-progress" class="progress">—</dd>
-        </div>
-        <div>
-          <dt>States still needing a bill</dt>
-          <dd id="total-states" class="none">—</dd>
-        </div>
-      </dl>
-      <p class="totals-note">Passed and in progress count every state law in the stack. A state still needs a bill when none of these bills has been introduced or signed there.</p>
-    </section>
   </header>
 
   <main>
@@ -82,6 +64,25 @@
         <div id="lists" class="lists"></div>
       </aside>
     </div>
+
+    <section class="totals" aria-label="Overall totals for the full bill stack">
+      <p class="totals-kicker">Across the full stack</p>
+      <dl class="totals-grid">
+        <div>
+          <dt>Bills passed</dt>
+          <dd id="total-passed" class="passed"></dd>
+        </div>
+        <div>
+          <dt>Bills in progress</dt>
+          <dd id="total-progress" class="progress"></dd>
+        </div>
+        <div>
+          <dt>States still needing a bill</dt>
+          <dd id="total-states" class="none"></dd>
+        </div>
+      </dl>
+      <p class="totals-note">Passed and in progress count every state law in the stack. A state still needs a bill when none of these bills has been introduced or signed there.</p>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -89,6 +90,6 @@
     <p><a id="source-link" href="https://robertgarza.us/family-court-reform-bills">Bill stack on RobertGarza.us</a></p>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>
