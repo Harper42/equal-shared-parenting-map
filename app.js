@@ -217,7 +217,7 @@ function renderDetail() {
     bits.push(`<p class="meta">${line}</p>`);
   }
   const links = [`<a href="${escapeHtml(stateBillPage(bill, state.stateName))}">About this bill</a>`];
-  if (record.url && record.status !== "none") {
+  if (record.url && record.url.trim()) {
     links.push(`<a href="${escapeHtml(record.url)}">Source document</a>`);
   }
   bits.push(`<div class="links">${links.join("")}</div>`);
