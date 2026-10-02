@@ -27,6 +27,9 @@ const els = {
   lists: document.getElementById("lists"),
   source: document.getElementById("source-note"),
   sourceLink: document.getElementById("source-link"),
+  totalPassed: document.getElementById("total-passed"),
+  totalProgress: document.getElementById("total-progress"),
+  totalStates: document.getElementById("total-states"),
 };
 
 function escapeHtml(value) {
@@ -88,6 +91,34 @@ function renderMap() {
     path.setAttribute("aria-label", `${name}, ${STATUS_LABEL[status]}`);
     path.setAttribute("aria-pressed", name === state.stateName ? "true" : "false");
   }
+}
+
+function renderOverallTotals() {
+  let passed = 0;
+  let progress = 0;
+  const hasBill = new Map();
+
+  for (const bill of state.catalog.bills) {
+    for (const [name, record] of Object.entries(bill.states)) {
+      if (!hasBill.has(name)) hasBill.set(name, false);
+      if (record.status === "passed") {
+        passed += 1;
+        hasBill.set(name, true);
+      } else if (record.status === "progress") {
+        progress += 1;
+        hasBill.set(name, true);
+      }
+    }
+  }
+
+  let statesNeeding = 0;
+  for (const started of hasBill.values()) {
+    if (!started) statesNeeding += 1;
+  }
+
+  els.totalPassed.textContent = String(passed);
+  els.totalProgress.textContent = String(progress);
+  els.totalStates.textContent = String(statesNeeding);
 }
 
 function renderCounts() {
@@ -220,6 +251,7 @@ async function init() {
   state.paths = paths;
   els.source.textContent = catalog.sourceNote;
   els.sourceLink.href = catalog.sourcePage;
+  renderOverallTotals();
 
   for (const bill of catalog.bills) {
     const option = document.createElement("option");
