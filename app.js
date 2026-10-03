@@ -56,6 +56,10 @@ function slugify(name) {
 }
 
 function stateBillPage(bill, stateName) {
+  const record = bill.states[stateName];
+  if (record && (record.status === "passed" || record.status === "progress")) {
+    return `bill.html?bill=${encodeURIComponent(bill.id)}&state=${encodeURIComponent(stateName)}`;
+  }
   return `https://robertgarza.us/bill/united-states/${slugify(stateName)}/${bill.id}/`;
 }
 

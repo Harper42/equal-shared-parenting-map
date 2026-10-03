@@ -830,11 +830,55 @@ h2 {
 }
 .profile-stance p { margin: 0.35rem 0; }
 .profile-source { margin-top: 1rem; }
+
+.bill-actions {
+  list-style: none;
+  margin: 0.4rem 0 0;
+  padding: 0;
+}
+
+.bill-actions li {
+  display: grid;
+  grid-template-columns: 9.5rem minmax(0, 1fr);
+  gap: 0.75rem;
+  padding: 0.38rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.bill-actions time {
+  color: var(--muted);
+}
+
+.tie-bars {
+  margin-top: 1.25rem;
+  padding: 0.95rem 1rem 0.35rem;
+  background: #f6efe2;
+  border: 3px solid #9a5b10;
+}
+
+.tie-bars h2 { margin-top: 0; }
+
+.tie-bar {
+  padding: 0.75rem 0;
+  border-top: 1px solid #e0c9a4;
+}
+
+.tie-bar h3 {
+  margin: 0;
+  font-family: Fraunces, Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 560;
+}
+
+.tie-bar p { margin: 0.3rem 0; }
+
+.tie-bar a { font-weight: 700; }
 .profile-message { margin-top: 1rem; }
 
 @media (max-width: 560px) {
   .profile-head { flex-direction: column; }
-  .profile-fact { grid-template-columns: 1fr; gap: 0.1rem; }
+  .profile-fact,
+  .bill-actions li { grid-template-columns: 1fr; gap: 0.1rem; }
 }
 
 @media (max-width: 1100px) {

@@ -1,0 +1,480 @@
+{
+  "a-new-start-at-equality": {
+    "Michigan": {
+      "introduced": "November 4, 2025",
+      "introducedBy": "Rep. Gina Johnsen (District 78)",
+      "sponsors": [
+        "Gina Johnsen (District 78)",
+        "Brian BeGole (District 71)",
+        "Ron Robinson (District 58)",
+        "Luke Meerman (District 89)",
+        "Kimberly Edwards (District 12)",
+        "John Roth (District 104)",
+        "David Prestin (District 108)",
+        "Douglas Wozniak (District 59)",
+        "Jason Woolford (District 50)",
+        "Gregory Alexander (District 98)",
+        "Jaime Greene (District 65)",
+        "Cameron Cavitt (District 106)",
+        "Gregory Markkanen (District 110)",
+        "Karl Bohnak (District 109)",
+        "Brad Paquette (District 37)",
+        "Jay DeBoyer (District 63)",
+        "Jamie Thompson (District 28)",
+        "Rylee Linting (District 27)",
+        "Brenda Carter (District 53)",
+        "Timothy Beson (District 96)",
+        "Noah Arbit (District 20)",
+        "Joey Andrews (District 38)",
+        "Amos O'Neal (District 94)",
+        "Cynthia Neeley (District 70)",
+        "Helena Scott (District 8)"
+      ],
+      "where": "In the House, on second reading. The House Judiciary Committee reported it without amendment on June 24, 2026. It has not passed the House or the Senate.",
+      "contents": [
+        "In a custody dispute between the parents, the court would presume that equal or approximately equal parenting time is in the child’s best interest.",
+        "That presumption could be rebutted only by clear and convincing evidence, placed on the record, that equal or approximately equal parenting time is not in the child’s best interest.",
+        "When the court decides the best interests of the child, it would have to put its findings and conclusions of law in writing.",
+        "The bill amends sections 3 and 5 of the Child Custody Act of 1970. It keeps the existing limits on custody when a parent is convicted of criminal sexual conduct."
+      ],
+      "tieNote": "House Bill 5211 does not take effect unless both of these bills are also enacted.",
+      "tieBars": [
+        {
+          "billId": "HB 5212",
+          "title": "Joint custody and agreed parenting time",
+          "where": "Introduced November 4, 2025, by Rep. Jimmie Wilson Jr. Reported from House Judiciary without amendment on June 24, 2026, and referred to second reading.",
+          "summary": "Amends sections 6a and 7a of the Child Custody Act. The court would have to tell parents about joint custody and the equal-parenting-time presumption, and serve a notice of that right at the start of a case. Parenting time the parents agree on would be ordered unless clear and convincing evidence shows those terms are not in the child’s best interest. Joint custody would mean alternating equal or approximately equal periods with each parent, and shared decision-making.",
+          "url": "https://www.legislature.mi.gov/Bills/Bill?ObjectName=2025-HB-5212"
+        },
+        {
+          "billId": "HB 5213",
+          "title": "Friend of the court notice",
+          "where": "Introduced November 4, 2025, by Rep. Brian BeGole. Reported from House Judiciary without amendment on June 24, 2026, and referred to second reading.",
+          "summary": "Amends the Friend of the Court Act so the office’s informational pamphlet explains the presumption of equal or approximately equal parenting time.",
+          "url": "https://www.legislature.mi.gov/Bills/Bill?ObjectName=2025-HB-5213"
+        }
+      ],
+      "actions": [
+        {
+          "date": "November 4, 2025",
+          "text": "Introduced by Rep. Gina Johnsen, read a first time, and referred to the Committee on Judiciary."
+        },
+        {
+          "date": "November 5, 2025",
+          "text": "Bill electronically reproduced."
+        },
+        {
+          "date": "June 24, 2026",
+          "text": "Reported with recommendation without amendment and referred to second reading."
+        }
+      ]
+    },
+    "Colorado": {
+      "introduced": "January 14, 2026",
+      "introducedBy": "Sen. Lynda Zamora Wilson",
+      "sponsors": [
+        "Sen. Lynda Zamora Wilson"
+      ],
+      "where": "Stalled. The Senate State, Veterans, and Military Affairs Committee postponed it indefinitely on February 3, 2026, by a vote of 3–2. The official status is Lost.",
+      "contents": [
+        "The introduced bill, the Parental Equality and Child Empowerment Act, would create a rebuttable presumption of equal parenting time when both parents live within 25 miles of a reasonable location set by the court, such as the child’s school or child care.",
+        "The presumption could be rebutted by clear and convincing evidence that equal parenting time is not in the child’s best interest.",
+        "Committee amendments were adopted on February 3, 2026, but the motion to send the bill to the full Senate failed, 2–3. Those amendments were not adopted by the Senate."
+      ],
+      "actions": [
+        {
+          "date": "January 14, 2026",
+          "text": "Introduced in the Senate and assigned to State, Veterans, and Military Affairs."
+        },
+        {
+          "date": "February 3, 2026",
+          "text": "Committee postponed the bill indefinitely, 3–2."
+        }
+      ]
+    },
+    "Florida": {
+      "introduced": "March 1, 2023",
+      "introducedBy": "Rep. Persons-Mulicka",
+      "sponsors": [
+        "Rep. Persons-Mulicka",
+        "Judiciary Committee (committee substitute)",
+        "Basabe",
+        "Benjamin",
+        "Borrero",
+        "Daniels",
+        "Garcia",
+        "Leek",
+        "Lopez, V.",
+        "Michael",
+        "Mooney",
+        "Plasencia",
+        "Rizo",
+        "Salzman"
+      ],
+      "where": "Law. The Governor approved it on June 27, 2023. It is Chapter 2023-301 and took effect July 1, 2023.",
+      "contents": [
+        "Creates a rebuttable presumption that equal time-sharing is in the best interests of the child, and sets the standard of evidence to rebut that presumption.",
+        "Removes the requirement of an unanticipated change in circumstances before a court can modify a parenting plan or time-sharing schedule.",
+        "Requires the court to evaluate listed factors and make specific written findings when it creates or modifies a time-sharing schedule."
+      ],
+      "related": [
+        {
+          "billId": "CS/SB 1416",
+          "summary": "A related dissolution-of-marriage bill. It also passed, as Chapter 2023-315.",
+          "url": "https://www.flsenate.gov/Session/Bill/2023/1416"
+        }
+      ],
+      "actions": [
+        {
+          "date": "March 1, 2023",
+          "text": "Filed in the House."
+        },
+        {
+          "date": "April 26, 2023",
+          "text": "House passed the committee substitute, 105–7."
+        },
+        {
+          "date": "April 28, 2023",
+          "text": "Senate passed the committee substitute, 34–3."
+        },
+        {
+          "date": "June 27, 2023",
+          "text": "Approved by the Governor."
+        },
+        {
+          "date": "June 29, 2023",
+          "text": "Chapter 2023-301."
+        }
+      ]
+    },
+    "Kentucky": {
+      "introduced": "February 26, 2018",
+      "introducedBy": "Rep. J. Petrie",
+      "sponsors": [
+        "J. Petrie",
+        "K. Bratcher",
+        "J. DuPlessis",
+        "J. Fischer",
+        "M. Hart",
+        "K. Imes",
+        "D. Meade",
+        "R. Mills",
+        "J. Nemes",
+        "D. Osborne",
+        "W. Thomas"
+      ],
+      "where": "Law. The Governor signed it on April 26, 2018, as Acts chapter 198. The House passed the final version 81–2 after agreeing to the Senate changes.",
+      "contents": [
+        "Creates a presumption that joint custody and equally shared parenting time are in the best interest of the child, including when a court modifies a custody decree.",
+        "The version that became law, after the Senate committee substitute and a floor amendment, says that presumption does not apply when a domestic violence order has been entered between the parties, or when a domestic violence order is being entered.",
+        "The court also considers how domestic violence affects the relationship between the child and each parent."
+      ],
+      "actions": [
+        {
+          "date": "February 26, 2018",
+          "text": "Introduced in the House."
+        },
+        {
+          "date": "March 19, 2018",
+          "text": "House passed it, 83–1."
+        },
+        {
+          "date": "April 13, 2018",
+          "text": "Senate passed it with a committee substitute and a floor amendment, 38–0. The House concurred, 81–2."
+        },
+        {
+          "date": "April 26, 2018",
+          "text": "Signed by the Governor. Acts chapter 198."
+        }
+      ]
+    },
+    "Massachusetts": {
+      "introduced": "February 27, 2025",
+      "introducedBy": "Rep. Colleen M. Garry",
+      "sponsors": [
+        "Rep. Colleen M. Garry of Dracut"
+      ],
+      "where": "Stalled for this session. On March 26, 2026, the House accompanied it with study order H5281. A study order under House Rule 27 sets the bill aside.",
+      "contents": [
+        "House Bill 1710 is a petition of Rep. Colleen M. Garry relative to shared parenting in cases of divorce. It was referred to the Judiciary Committee."
+      ],
+      "actions": [
+        {
+          "date": "February 27, 2025",
+          "text": "Referred to the Joint Committee on the Judiciary. The Senate concurred."
+        },
+        {
+          "date": "April 22, 2025",
+          "text": "Hearing held."
+        },
+        {
+          "date": "March 26, 2026",
+          "text": "Accompanied a study order, H5281."
+        }
+      ]
+    },
+    "Idaho": {
+      "introduced": "March 16, 2026",
+      "introducedBy": "Senate Judiciary and Rules Committee",
+      "sponsors": [
+        "Senate Judiciary and Rules Committee"
+      ],
+      "where": "In the Senate Judiciary and Rules Committee. It was introduced and referred for printing on March 16, 2026, and referred to that committee on March 17.",
+      "contents": [
+        "The official short title is a child-custody bill that amends and adds to Idaho custody law. Senate Bill 1395 would presume substantially equal parenting time and joint legal custody, unless clear and convincing evidence shows otherwise."
+      ],
+      "actions": [
+        {
+          "date": "March 16, 2026",
+          "text": "Introduced, read the first time, and referred for printing."
+        },
+        {
+          "date": "March 17, 2026",
+          "text": "Reported printed and referred to Judiciary and Rules."
+        }
+      ]
+    },
+    "North Carolina": {
+      "introduced": "February 25, 2025",
+      "introducedBy": "Sens. Hanig and Jones",
+      "sponsors": [
+        "Hanig (primary)",
+        "Jones (primary)",
+        "Sanderson"
+      ],
+      "where": "In the Senate Committee on Rules and Operations of the Senate, where it was referred on February 26, 2025.",
+      "contents": [
+        "Senate Bill 162 is titled Shared Parenting. It would establish a presumption of joint custody and shared parenting, with a policy that the child spend as close as possible to equal time with each parent."
+      ],
+      "actions": [
+        {
+          "date": "February 25, 2025",
+          "text": "Filed."
+        },
+        {
+          "date": "February 26, 2025",
+          "text": "Passed first reading and referred to Rules and Operations of the Senate."
+        }
+      ]
+    },
+    "Oklahoma": {
+      "introduced": "February 2, 2026",
+      "introducedBy": "Rep. Harris",
+      "sponsors": [
+        "Rep. Harris"
+      ],
+      "where": "In the House Rules Committee. On February 4, 2026, it was withdrawn from the Civil Judiciary Committee and from Judiciary and Public Safety Oversight, and referred to Rules.",
+      "contents": [
+        "House Bill 3582 is the Equal Parenting Act. It would presume joint custody and equally shared parenting time, with exceptions for abuse and domestic violence."
+      ],
+      "actions": [
+        {
+          "date": "February 2, 2026",
+          "text": "First reading. Authored by Rep. Harris."
+        },
+        {
+          "date": "February 3, 2026",
+          "text": "Second reading. Referred to Judiciary and Public Safety Oversight, then to Civil Judiciary."
+        },
+        {
+          "date": "February 4, 2026",
+          "text": "Withdrawn from those committees and referred to Rules."
+        }
+      ]
+    },
+    "Pennsylvania": {
+      "introducedBy": "Rep. Jamie Flick (House District 83)",
+      "sponsors": [
+        "Rep. Jamie Flick (House District 83)"
+      ],
+      "where": "In the House Judiciary Committee. Last action: referred to Judiciary on May 28, 2025. The official page lists additional cosponsors.",
+      "contents": [
+        "House Bill 1499 would amend the child-custody chapter of Title 23. It would presume shared physical and legal custody and equal parenting time, unless clear and convincing evidence shows that is not in the child’s best interest."
+      ],
+      "actions": [
+        {
+          "date": "May 28, 2025",
+          "text": "Referred to the House Judiciary Committee."
+        }
+      ]
+    },
+    "South Carolina": {
+      "introduced": "January 13, 2026",
+      "introducedBy": "Rep. Gatch",
+      "sponsors": [
+        "Gatch",
+        "Brewer",
+        "Edgerton",
+        "Gagnon",
+        "Guffey",
+        "Martin",
+        "Long",
+        "Sessions",
+        "M.M. Smith",
+        "Teeple",
+        "McCravy",
+        "Pope",
+        "Magnuson",
+        "Taylor",
+        "Lawson",
+        "Caskey",
+        "Landing",
+        "Ford",
+        "Willis",
+        "Erickson",
+        "Bradley",
+        "Bowers",
+        "Vaughan",
+        "J.L. Johnson",
+        "Lastinger",
+        "Burns",
+        "Alexander"
+      ],
+      "where": "In the House Judiciary Committee. It was prefiled on December 16, 2025, and introduced on January 13, 2026. The official page lists companion bill 901.",
+      "contents": [
+        "House Bill 4622 is the Equal Parenting Act. It would presume that equal parenting time is in the child’s best interest in a custody case.",
+        "It would also set protections against guardian ad litem bias, address how guardian fees are split, and make interference with the other parent’s parenting time a ground to modify a custody order."
+      ],
+      "actions": [
+        {
+          "date": "December 16, 2025",
+          "text": "Prefiled and referred to the House Judiciary Committee."
+        },
+        {
+          "date": "January 13, 2026",
+          "text": "Introduced, read the first time, and referred again to Judiciary."
+        }
+      ]
+    },
+    "Vermont": {
+      "introduced": "January 23, 2026",
+      "introducedBy": "Sen. Terry Williams",
+      "sponsors": [
+        "Sen. Terry Williams"
+      ],
+      "where": "In the Senate Judiciary Committee, where it was referred on January 23, 2026.",
+      "contents": [
+        "Senate Bill 304 would presume that shared parental rights and responsibilities are in the child’s best interest."
+      ],
+      "actions": [
+        {
+          "date": "January 23, 2026",
+          "text": "Read the first time and referred to the Committee on Judiciary."
+        }
+      ]
+    },
+    "West Virginia": {
+      "introduced": "January 21, 2022",
+      "introducedBy": "Sen. Smith",
+      "sponsors": [
+        "Smith",
+        "Rucker",
+        "Grady",
+        "Sypolt",
+        "Maynard",
+        "Azinger",
+        "Phillips",
+        "Takubo",
+        "Woodrum",
+        "Tarr",
+        "Roberts"
+      ],
+      "where": "Law. The Governor approved it on March 30, 2022. It is Chapter 88 of the 2022 regular session and took effect June 10, 2022.",
+      "contents": [
+        "Senate Bill 463, the Best Interests of Child Protection Act of 2022, creates a rebuttable presumption that an equal 50/50 custodial allocation is in the child’s best interest."
+      ],
+      "actions": [
+        {
+          "date": "January 21, 2022",
+          "text": "Filed and introduced in the Senate, and sent to Judiciary."
+        },
+        {
+          "date": "February 24, 2022",
+          "text": "Passed the Senate and was sent to the House."
+        },
+        {
+          "date": "March 30, 2022",
+          "text": "Approved by the Governor."
+        },
+        {
+          "date": "June 10, 2022",
+          "text": "Effective, ninety days from passage."
+        }
+      ]
+    }
+  },
+  "time-taken-time-back": {
+    "Maryland": {
+      "introduced": "January 23, 2026",
+      "introducedBy": "Del. S. Johnson",
+      "sponsors": [
+        "Del. S. Johnson"
+      ],
+      "where": "In the House Judiciary Committee. A hearing was set for February 12, 2026. It is cross-filed with Senate Bill 481. The bill text says it would take effect October 1, 2026, if enacted.",
+      "contents": [
+        "The official synopsis requires, rather than merely allows, a court to reschedule visitation when it finds that a party unjustifiably denied or interfered with visitation.",
+        "The makeup time would be the same type and double the duration, chosen by the other party, within two years, and consistent with the child’s best interests."
+      ],
+      "related": [
+        {
+          "billId": "SB 481",
+          "summary": "The Senate cross-file of this bill.",
+          "url": "https://mgaleg.maryland.gov/mgawebsite/legislation/details/sb0481?ys=2026RS"
+        }
+      ],
+      "actions": [
+        {
+          "date": "January 23, 2026",
+          "text": "First reading in the House and referred to Judiciary."
+        },
+        {
+          "date": "January 29, 2026",
+          "text": "Hearing scheduled for February 12, 2026, at 1:00 p.m."
+        }
+      ]
+    }
+  },
+  "three-strikes": {
+    "Texas": {
+      "introduced": "March 14, 2025",
+      "introducedBy": "Sen. Paxton",
+      "sponsors": [
+        "Sen. Paxton",
+        "Coauthors Bettencourt and Parker",
+        "House sponsor Rep. Dutton"
+      ],
+      "where": "Stalled. The Senate passed it on May 12, 2025. The last House action was a committee report sent to Calendars on May 23, 2025. It did not pass the 2025 regular session.",
+      "contents": [
+        "The caption is “Relating to the criminal offense of interference with child custody.”",
+        "It would make a third custody-interference offense a state jail felony. The first offense would be a Class C misdemeanor with a $500 fine. It would also remove the limit that applies the offense only to a noncustodial parent.",
+        "The Senate Criminal Justice Committee reported it favorably, 7–0. The House Criminal Jurisprudence Committee reported it favorably without amendment, 9–0, with 2 absent."
+      ],
+      "actions": [
+        {
+          "date": "March 14, 2025",
+          "text": "Filed and received by the Secretary of the Senate."
+        },
+        {
+          "date": "April 3, 2025",
+          "text": "Read first time and referred to Criminal Justice."
+        },
+        {
+          "date": "May 7, 2025",
+          "text": "Senate committee reported it favorably without amendments."
+        },
+        {
+          "date": "May 12, 2025",
+          "text": "Passed the Senate."
+        },
+        {
+          "date": "May 14, 2025",
+          "text": "Received by the House, read first time, and referred to Criminal Jurisprudence."
+        },
+        {
+          "date": "May 23, 2025",
+          "text": "House committee report sent to Calendars. No further action."
+        }
+      ]
+    }
+  }
+}
