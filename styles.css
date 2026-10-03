@@ -107,6 +107,26 @@ body[data-view="directory"] #map-lede { display: none; }
   font-size: 1.12rem;
 }
 
+.petition-banner {
+  display: block;
+  margin: 1rem 0 0;
+  padding: 0.9rem 1.15rem;
+  background: #e10600;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  line-height: 1.35;
+  text-align: center;
+  text-decoration: none;
+}
+
+.petition-banner:hover,
+.petition-banner:focus-visible {
+  background: #c10500;
+  color: #fff;
+  text-decoration: underline;
+}
+
 .guide-body {
   max-width: 42rem;
   padding-bottom: 0.5rem;
