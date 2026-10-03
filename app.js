@@ -22,6 +22,8 @@ const state = {
 };
 
 const countyCache = new Map();
+const officialCache = new Map();
+const officialLoading = new Set();
 let countyRequest = 0;
 
 const els = {
@@ -35,6 +37,7 @@ const els = {
   openCounties: document.getElementById("open-counties"),
   readout: document.getElementById("hover-readout"),
   detail: document.getElementById("detail"),
+  officials: document.getElementById("county-officials"),
   lists: document.getElementById("lists"),
   source: document.getElementById("source-note"),
   sourceLink: document.getElementById("source-link"),
@@ -99,6 +102,13 @@ function setReadout(name) {
   els.readout.textContent = `${name} — ${STATUS_LABEL[statusFor(name)]}`;
 }
 
+function selectCounty(name) {
+  state.countyName = name;
+  renderCountyMap();
+  setReadout(name);
+  renderOfficials();
+}
+
 function countyMapReady() {
   return state.countyView && state.countyShapes && state.countyShapes.state === state.stateName;
 }
@@ -150,17 +160,11 @@ function renderCountyMap() {
       path.dataset.county = shape.name;
       path.setAttribute("role", "button");
       path.setAttribute("tabindex", "0");
-      path.addEventListener("click", () => {
-        state.countyName = shape.name;
-        renderCountyMap();
-        setReadout(shape.name);
-      });
+      path.addEventListener("click", () => selectCounty(shape.name));
       path.addEventListener("keydown", (event) => {
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
-          state.countyName = shape.name;
-          renderCountyMap();
-          setReadout(shape.name);
+          selectCounty(shape.name);
         }
       });
       path.addEventListener("mouseenter", () => setReadout(shape.name));
@@ -204,6 +208,7 @@ async function openCounties(stateName) {
     state.countyView = true;
     state.countyName = null;
     render();
+    loadOfficials(stateName);
   } catch (error) {
     if (request !== countyRequest) return;
     state.countyView = false;
@@ -353,6 +358,86 @@ function renderDetail() {
   els.detail.innerHTML = bits.join("");
 }
 
+function officialLine(person) {
+  const meta = [person.district, person.party].filter(Boolean).join(" · ");
+  const name = person.url
+    ? `<a href="${escapeHtml(person.url)}">${escapeHtml(person.name)}</a>`
+    : escapeHtml(person.name);
+  return `<li>${name}${meta ? `<span class="official-meta">${escapeHtml(meta)}</span>` : ""}</li>`;
+}
+
+function officialGroup(title, people) {
+  const body = people.length
+    ? `<ul>${people.map(officialLine).join("")}</ul>`
+    : `<p class="meta">None listed.</p>`;
+  return `<section><h4>${title}</h4>${body}</section>`;
+}
+
+function renderOfficials() {
+  if (!state.countyView || !state.stateName || !state.countyName) {
+    els.officials.hidden = true;
+    els.officials.innerHTML = "";
+    return;
+  }
+  const countyName = state.countyName;
+  const data = officialCache.get(state.stateName);
+  els.officials.hidden = false;
+  if (!data) {
+    els.officials.innerHTML = `
+      <h3>${escapeHtml(countyName)}</h3>
+      <p class="meta">Loading legislators…</p>
+    `;
+    loadOfficials(state.stateName);
+    return;
+  }
+  const county = data.counties[countyName];
+  if (!county) {
+    els.officials.innerHTML = `
+      <h3>${escapeHtml(countyName)}</h3>
+      <p class="meta">Legislators for this county are not in the current roster.</p>
+    `;
+    return;
+  }
+  const sections = [officialGroup("State senators", county.stateSenate)];
+  if (state.stateName === "Nebraska") {
+    sections.push(`<p class="meta">Nebraska’s legislature has one chamber.</p>`);
+  } else {
+    sections.push(officialGroup("State representatives", county.stateHouse));
+  }
+  sections.push(officialGroup("U.S. senators", data.federalSenate));
+  sections.push(officialGroup("U.S. representatives", county.federalHouse));
+  els.officials.innerHTML = `
+    <h3>${escapeHtml(countyName)}</h3>
+    <div class="official-groups">${sections.join("")}</div>
+    <p class="meta source-note">Current legislators whose districts include part of this county. U.S. senators represent the whole state. A district is listed when it covers at least 1% of the county.</p>
+  `;
+}
+
+async function loadOfficials(stateName) {
+  if (officialCache.has(stateName)) {
+    if (state.stateName === stateName) renderOfficials();
+    return;
+  }
+  if (officialLoading.has(stateName)) return;
+  officialLoading.add(stateName);
+  try {
+    const response = await fetch(`data/legislators/${slugify(stateName)}.json`);
+    if (!response.ok) throw new Error(`Legislator file failed to load (${response.status})`);
+    officialCache.set(stateName, await response.json());
+    if (state.stateName === stateName) renderOfficials();
+  } catch (error) {
+    if (state.stateName !== stateName || !state.countyName) return;
+    console.error(error);
+    els.officials.hidden = false;
+    els.officials.innerHTML = `
+      <h3>${escapeHtml(state.countyName)}</h3>
+      <p class="meta">Legislators for this county could not be loaded.</p>
+    `;
+  } finally {
+    officialLoading.delete(stateName);
+  }
+}
+
 function renderLists() {
   const bill = currentBill();
   const groups = { passed: [], progress: [], none: [] };
@@ -383,6 +468,7 @@ function render() {
   renderCounts();
   renderOverallTotals();
   renderDetail();
+  renderOfficials();
   renderLists();
   setReadout(null);
   writeHash();
