@@ -450,7 +450,7 @@ function callToAction(county, countyName, stateName) {
 
   return `
     <section class="cta">
-      <h4>Call or email your local representatives</h4>
+      <h4>This is YOUR Call to Action!</h4>
       <p>${escapeHtml(ask)}</p>
       ${billList}
       ${people ? `<ul class="cta-people">${people}</ul>` : ""}

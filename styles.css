@@ -469,7 +469,7 @@ h2 {
   margin-top: 1rem;
   padding: 0.95rem 1rem 0.85rem;
   background: #f6efe2;
-  border: 1px solid var(--line);
+  border: 3px dotted #c23b2e;
 }
 .officials .cta h4 {
   margin: 0 0 0.35rem;
