@@ -704,7 +704,7 @@ function drawMap(paths) {
 
 async function init() {
   const [catalog, paths] = await Promise.all([
-    fetch("data/bills.json?v=3").then((response) => response.json()),
+    fetch("data/bills.json?v=4").then((response) => response.json()),
     fetch("data/paths.json").then((response) => response.json()),
   ]);
   state.catalog = catalog;
