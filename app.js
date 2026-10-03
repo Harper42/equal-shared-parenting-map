@@ -403,6 +403,7 @@ function telHref(phone) {
 }
 
 function callToAction(county, countyName, stateName) {
+  if (statusFor(stateName) !== "progress") return "";
   const bills = inProgressBills(stateName);
   if (!bills.length) return "";
 
