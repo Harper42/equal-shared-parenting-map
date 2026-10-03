@@ -571,7 +571,7 @@ function showTab(tab, historyMode) {
     if (historyMode === "push") history.pushState(null, "", url);
     else history.replaceState(null, "", url);
   }
-  if (view === "guide") document.title = "Instructions · Family Court Reforms Map";
+  if (view === "guide") document.title = "CALL TO ACTION! · Family Court Reforms Map";
   else if (view === "directory") document.title = "Advocate Directory · Family Court Reforms Map";
   else if (state.catalog) document.title = `${currentBill().title} · Family Court Reforms Map`;
 }

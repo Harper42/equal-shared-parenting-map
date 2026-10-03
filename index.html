@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,640&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=21">
+  <link rel="stylesheet" href="styles.css?v=22">
 </head>
 <body>
   <header class="site-header">
@@ -16,7 +16,7 @@
     <h1>Family Court Reforms Map</h1>
     <nav class="view-tabs" role="tablist" aria-label="Site sections">
       <button type="button" class="view-tab" id="tab-map" role="tab" data-tab="map" aria-selected="true" aria-controls="panel-map">Map</button>
-      <button type="button" class="view-tab" id="tab-guide" role="tab" data-tab="guide" aria-selected="false" aria-controls="panel-guide" tabindex="-1">Instructions</button>
+      <button type="button" class="view-tab" id="tab-guide" role="tab" data-tab="guide" aria-selected="false" aria-controls="panel-guide" tabindex="-1">CALL TO ACTION!</button>
       <button type="button" class="view-tab" id="tab-directory" role="tab" data-tab="directory" aria-selected="false" aria-controls="panel-directory" tabindex="-1">Advocate Directory</button>
     </nav>
     <p class="lede" id="map-lede">Choose a bill from Robert Garza’s stack. The map shows where that kind of law is already passed, where a bill is moving, and where nothing has been introduced.</p>
@@ -99,7 +99,11 @@
 
   <section id="panel-guide" class="guide" role="tabpanel" aria-labelledby="tab-guide" hidden>
     <div class="guide-body">
-      <p class="lede">When you call or email a legislator about family court reform, you usually have about two minutes. These are the rules for using them.</p>
+      <div class="cta-blurb">
+        <p>We won’t see any change unless we bring a chorus of grassroots voices from people who have been affected by the family courts in their current state. If we want reform, we must reach out to our local and federal senators and representatives about making the family court system more equal.</p>
+        <p>If your state already has bills in progress to reform the family court system, please contact your state representatives and senators and ask them to support the bill.</p>
+      </div>
+      <p class="lede">When you call or email a legislator, you usually have about two minutes. These are the rules for using them.</p>
       <ol class="guide-rules">
         <li>
           <h2>Keep your story to about two minutes</h2>
@@ -209,6 +213,6 @@
     <div id="totals-dialog-body" class="totals-dialog-body"></div>
   </dialog>
 
-  <script src="app.js?v=20"></script>
+  <script src="app.js?v=21"></script>
 </body>
 </html>
