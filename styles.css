@@ -463,6 +463,8 @@ h2 {
 }
 .officials li:last-child { border-bottom: 0; }
 .official-meta { color: var(--muted); font-size: 0.92rem; }
+.profile-link { font-weight: 700; text-decoration: underline; }
+.cta-person a { font-weight: 700; text-decoration: underline; }
 .officials .source-note { margin-top: 0.8rem; }
 
 .officials .cta {

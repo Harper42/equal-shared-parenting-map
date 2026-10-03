@@ -371,7 +371,8 @@ function officialLine(person) {
   const name = href
     ? `<a href="${escapeHtml(href)}">${escapeHtml(person.name)}</a>`
     : escapeHtml(person.name);
-  return `<li>${name}${meta ? `<span class="official-meta">${escapeHtml(meta)}</span>` : ""}</li>`;
+  const profile = href ? `<a class="profile-link" href="${escapeHtml(href)}">Profile</a>` : "";
+  return `<li>${name}${meta ? `<span class="official-meta">${escapeHtml(meta)}</span>` : ""}${profile}</li>`;
 }
 
 function officialGroup(title, people) {
@@ -431,15 +432,13 @@ function callToAction(county, countyName, stateName) {
   const people = local.map((person) => {
     const meta = [person.role, person.district, person.party].filter(Boolean).join(" · ");
     const actions = [];
+    const href = profileHref(person);
+    if (href) actions.push(`<a href="${escapeHtml(href)}">Profile</a>`);
     const phoneLink = person.phone ? telHref(person.phone) : "";
     if (phoneLink) actions.push(`<a href="${phoneLink}">Call ${escapeHtml(person.phone)}</a>`);
     if (person.email) {
-      const href = `mailto:${person.email}?subject=${encodeURIComponent(subject)}`;
-      actions.push(`<a href="${escapeHtml(href)}">Email</a>`);
-    }
-    const href = profileHref(person);
-    if (!actions.length && href) {
-      actions.push(`<a href="${escapeHtml(href)}">Profile</a>`);
+      const mail = `mailto:${person.email}?subject=${encodeURIComponent(subject)}`;
+      actions.push(`<a href="${escapeHtml(mail)}">Email</a>`);
     }
     const actionHtml = actions.length ? `<span class="cta-actions">${actions.join("")}</span>` : "";
     const name = href
