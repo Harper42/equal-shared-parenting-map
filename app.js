@@ -463,7 +463,7 @@ function renderLists() {
 
 function render() {
   const bill = currentBill();
-  document.title = `${bill.title} · Equal Shared Parenting Map`;
+  document.title = `${bill.title} · Family Court Reforms Map`;
   renderMap();
   renderCounts();
   renderOverallTotals();
