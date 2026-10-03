@@ -554,6 +554,74 @@ h2 {
 
 .site-footer p { margin: 0.2rem 0; }
 
+.profile-back { margin: 0.75rem 0 0; font-weight: 700; }
+.profile-page {
+  width: min(44rem, calc(100% - 2rem));
+  margin: 0.5rem auto 3rem;
+}
+.profile-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 1.2rem 1.25rem 1.3rem;
+}
+.profile-head {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.profile-photo {
+  width: 7.25rem;
+  height: 9rem;
+  object-fit: cover;
+  object-position: center top;
+  background: var(--paper);
+  flex: none;
+}
+.profile-page h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+}
+.profile-role {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+}
+.profile-facts {
+  margin: 1rem 0 0;
+}
+.profile-fact {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  gap: 0.75rem;
+  padding: 0.42rem 0;
+  border-top: 1px solid var(--line);
+}
+.profile-fact dt { margin: 0; color: var(--muted); }
+.profile-fact dd { margin: 0; overflow-wrap: anywhere; }
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.1rem;
+  margin-top: 0.95rem;
+  font-weight: 700;
+}
+.profile-stance {
+  margin-top: 1.15rem;
+  padding-top: 0.15rem;
+}
+.profile-stance h2 {
+  margin: 0 0 0.35rem;
+  font-family: Fraunces, Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 560;
+}
+.profile-stance p { margin: 0.35rem 0; }
+.profile-source { margin-top: 1rem; }
+.profile-message { margin-top: 1rem; }
+
+@media (max-width: 560px) {
+  .profile-head { flex-direction: column; }
+  .profile-fact { grid-template-columns: 1fr; gap: 0.1rem; }
+}
+
 @media (max-width: 1100px) {
   .side,
   .lists,

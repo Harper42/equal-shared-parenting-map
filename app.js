@@ -358,10 +358,18 @@ function renderDetail() {
   els.detail.innerHTML = bits.join("");
 }
 
+function profileHref(person) {
+  if (!person.id || !state.stateName) return "";
+  const from = location.hash.replace(/^#/, "");
+  const query = from ? `?from=${encodeURIComponent(from)}` : "";
+  return `profile.html${query}#${slugify(state.stateName)}/${person.id}`;
+}
+
 function officialLine(person) {
   const meta = [person.district, person.party].filter(Boolean).join(" · ");
-  const name = person.url
-    ? `<a href="${escapeHtml(person.url)}">${escapeHtml(person.name)}</a>`
+  const href = profileHref(person);
+  const name = href
+    ? `<a href="${escapeHtml(href)}">${escapeHtml(person.name)}</a>`
     : escapeHtml(person.name);
   return `<li>${name}${meta ? `<span class="official-meta">${escapeHtml(meta)}</span>` : ""}</li>`;
 }
@@ -429,11 +437,15 @@ function callToAction(county, countyName, stateName) {
       const href = `mailto:${person.email}?subject=${encodeURIComponent(subject)}`;
       actions.push(`<a href="${escapeHtml(href)}">Email</a>`);
     }
-    if (!actions.length && person.url) {
-      actions.push(`<a href="${escapeHtml(person.url)}">Contact page</a>`);
+    const href = profileHref(person);
+    if (!actions.length && href) {
+      actions.push(`<a href="${escapeHtml(href)}">Profile</a>`);
     }
     const actionHtml = actions.length ? `<span class="cta-actions">${actions.join("")}</span>` : "";
-    return `<li><span class="cta-person">${escapeHtml(person.name)}<span class="official-meta">${escapeHtml(meta)}</span></span>${actionHtml}</li>`;
+    const name = href
+      ? `<a href="${escapeHtml(href)}">${escapeHtml(person.name)}</a>`
+      : escapeHtml(person.name);
+    return `<li><span class="cta-person">${name}<span class="official-meta">${escapeHtml(meta)}</span></span>${actionHtml}</li>`;
   }).join("");
 
   return `
