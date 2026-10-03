@@ -796,6 +796,7 @@ h2 {
 @media (max-width: 860px) {
   .totals-grid,
   .toolbar { grid-template-columns: 1fr; }
+  select { font-size: 0.84rem; }
   .legend { justify-content: flex-start; }
   .hover-readout { text-align: left; }
   .map-head { flex-direction: column; gap: 0.15rem; }

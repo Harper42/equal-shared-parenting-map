@@ -41,10 +41,14 @@ function fact(label, valueHtml) {
   return `<div class="profile-fact"><dt>${escapeHtml(label)}</dt><dd>${valueHtml}</dd></div>`;
 }
 
+function billName(bill) {
+  return bill.label ? `${bill.title} (${bill.label})` : bill.title;
+}
+
 function billLabel(bill, record) {
   const number = record.billId ? ` (${record.billId.toUpperCase()})` : "";
   const href = `index.html#${bill.id}/${slugify(record.stateName)}`;
-  return `<a href="${escapeHtml(href)}">${escapeHtml(bill.title + number)}</a>`;
+  return `<a href="${escapeHtml(href)}">${escapeHtml(billName(bill) + number)}</a>`;
 }
 
 function reformBlurb(person, catalog) {
@@ -159,7 +163,7 @@ async function init() {
   try {
     const [profileResponse, billResponse] = await Promise.all([
       fetch(`data/profiles/${stateSlug}.json`),
-      fetch("data/bills.json"),
+      fetch("data/bills.json?v=3"),
     ]);
     if (!profileResponse.ok) throw new Error("Profile file missing");
     const [profiles, catalog] = await Promise.all([profileResponse.json(), billResponse.json()]);

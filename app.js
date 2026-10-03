@@ -63,6 +63,10 @@ function currentBill() {
   return state.catalog.bills.find((bill) => bill.id === state.billId);
 }
 
+function billName(bill) {
+  return bill.label ? `${bill.title} (${bill.label})` : bill.title;
+}
+
 function statusFor(name) {
   const record = currentBill().states[name];
   return record ? record.status : "none";
@@ -247,11 +251,11 @@ function overallBreakdown() {
     }
     if (passedStates.length) {
       passedStates.sort(byName);
-      passed.push({ title: bill.title, states: passedStates });
+      passed.push({ title: billName(bill), states: passedStates });
     }
     if (progressStates.length) {
       progressStates.sort(byName);
-      progress.push({ title: bill.title, states: progressStates });
+      progress.push({ title: billName(bill), states: progressStates });
     }
   }
 
@@ -326,7 +330,7 @@ function renderDetail() {
 
   if (!state.stateName) {
     els.detail.innerHTML = `
-      <h3>${escapeHtml(bill.title)}</h3>
+      <h3>${escapeHtml(billName(bill))}</h3>
       <p class="meta">Select a state on the map, or pick one from the lists.</p>
       <div class="links"><a href="${escapeHtml(bill.page)}">About this bill</a></div>
     `;
@@ -395,7 +399,7 @@ function inProgressBills(stateName) {
 function billMention(bill, stateName) {
   const record = bill.states[stateName] || {};
   const number = record.billId ? ` (${record.billId.toUpperCase()})` : "";
-  return `${bill.title}${number}`;
+  return `${billName(bill)}${number}`;
 }
 
 function telHref(phone) {
@@ -576,7 +580,7 @@ function showTab(tab, historyMode) {
   }
   if (view === "guide") document.title = "CALL TO ACTION! · Family Court Reforms Map";
   else if (view === "directory") document.title = "Advocate Directory · Family Court Reforms Map";
-  else if (state.catalog) document.title = `${currentBill().title} · Family Court Reforms Map`;
+  else if (state.catalog) document.title = `${billName(currentBill())} · Family Court Reforms Map`;
 }
 
 function loadVisitorCount() {
@@ -636,7 +640,7 @@ function setupTabs() {
 
 function render() {
   const bill = currentBill();
-  if (currentView() === "map") document.title = `${bill.title} · Family Court Reforms Map`;
+  if (currentView() === "map") document.title = `${billName(bill)} · Family Court Reforms Map`;
   renderMap();
   renderCounts();
   renderOverallTotals();
@@ -700,7 +704,7 @@ function drawMap(paths) {
 
 async function init() {
   const [catalog, paths] = await Promise.all([
-    fetch("data/bills.json?v=2").then((response) => response.json()),
+    fetch("data/bills.json?v=3").then((response) => response.json()),
     fetch("data/paths.json").then((response) => response.json()),
   ]);
   state.catalog = catalog;
@@ -712,7 +716,7 @@ async function init() {
   for (const bill of catalog.bills) {
     const option = document.createElement("option");
     option.value = bill.id;
-    option.textContent = bill.title;
+    option.textContent = billName(bill);
     els.bill.appendChild(option);
   }
 
