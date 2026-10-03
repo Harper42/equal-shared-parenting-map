@@ -61,6 +61,7 @@ h1 {
 
 .view-tabs {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.25rem;
   margin: 1.15rem 0 0;
   border-bottom: 1px solid var(--line);
@@ -86,7 +87,8 @@ h1 {
   border-bottom-color: var(--passed);
 }
 
-body[data-view="guide"] #map-lede { display: none; }
+body[data-view="guide"] #map-lede,
+body[data-view="directory"] #map-lede { display: none; }
 
 .lede {
   max-width: 42rem;
@@ -143,6 +145,30 @@ body[data-view="guide"] #map-lede { display: none; }
 }
 
 .guide-back:hover { color: #143828; }
+
+.advocate-list {
+  list-style: none;
+  margin: 1.35rem 0 0;
+  padding: 0;
+}
+
+.advocate-list li {
+  padding: 0.95rem 0 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.advocate-list a {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 560;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
+.advocate-list p {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+}
 
 .totals { margin: 0.25rem 0 1.75rem; }
 

@@ -547,29 +547,32 @@ function renderLists() {
   }).join("");
 }
 
+const VIEWS = ["map", "guide", "directory"];
+
 function currentView() {
-  return new URLSearchParams(location.search).get("tab") === "guide" ? "guide" : "map";
+  const tab = new URLSearchParams(location.search).get("tab");
+  return VIEWS.includes(tab) ? tab : "map";
 }
 
 function showTab(tab, historyMode) {
-  const guide = tab === "guide";
-  document.body.dataset.view = guide ? "guide" : "map";
-  document.getElementById("panel-map").hidden = guide;
-  document.getElementById("panel-guide").hidden = !guide;
-  const mapTab = document.getElementById("tab-map");
-  const guideTab = document.getElementById("tab-guide");
-  mapTab.setAttribute("aria-selected", guide ? "false" : "true");
-  guideTab.setAttribute("aria-selected", guide ? "true" : "false");
-  mapTab.tabIndex = guide ? -1 : 0;
-  guideTab.tabIndex = guide ? 0 : -1;
+  const view = VIEWS.includes(tab) ? tab : "map";
+  document.body.dataset.view = view;
+  for (const name of VIEWS) {
+    document.getElementById(`panel-${name}`).hidden = name !== view;
+    const button = document.getElementById(`tab-${name}`);
+    const selected = name === view;
+    button.setAttribute("aria-selected", selected ? "true" : "false");
+    button.tabIndex = selected ? 0 : -1;
+  }
   const url = new URL(location.href);
-  if (guide) url.searchParams.set("tab", "guide");
-  else url.searchParams.delete("tab");
+  if (view === "map") url.searchParams.delete("tab");
+  else url.searchParams.set("tab", view);
   if (url.href !== location.href) {
     if (historyMode === "push") history.pushState(null, "", url);
     else history.replaceState(null, "", url);
   }
-  if (guide) document.title = "Instructions · Family Court Reforms Map";
+  if (view === "guide") document.title = "Instructions · Family Court Reforms Map";
+  else if (view === "directory") document.title = "Advocate Directory · Family Court Reforms Map";
   else if (state.catalog) document.title = `${currentBill().title} · Family Court Reforms Map`;
 }
 
@@ -599,7 +602,7 @@ function setupTabs() {
 
 function render() {
   const bill = currentBill();
-  if (currentView() !== "guide") document.title = `${bill.title} · Family Court Reforms Map`;
+  if (currentView() === "map") document.title = `${bill.title} · Family Court Reforms Map`;
   renderMap();
   renderCounts();
   renderOverallTotals();
