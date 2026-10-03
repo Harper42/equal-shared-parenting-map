@@ -400,7 +400,10 @@ h2 {
   align-items: start;
 }
 
-.officials { grid-column: 1 / -1; }
+.officials {
+  order: -1;
+  grid-column: 1 / -1;
+}
 
 .lists {
   display: grid;
@@ -511,8 +514,8 @@ h2 {
   .side,
   .lists,
   .official-groups { grid-template-columns: 1fr; }
-  .detail { order: 1; }
-  .officials { order: 2; }
+  .detail { order: 2; }
+  .detail.officials { order: 1; }
   .lists { order: 3; }
 }
 
