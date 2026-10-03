@@ -109,6 +109,22 @@ body[data-view="directory"] #map-lede { display: none; }
 
 .cta-blurb p:last-child { margin-bottom: 0; }
 
+.cta-steps {
+  margin: 1.35rem 0 0;
+  padding: 0 0 0 1.4rem;
+  font-size: 1.12rem;
+}
+
+.cta-steps li {
+  margin: 0.4rem 0;
+  padding-left: 0.2rem;
+}
+
+.cta-steps li::marker {
+  color: var(--progress);
+  font-weight: 700;
+}
+
 .guide-rules {
   list-style: none;
   margin: 1.35rem 0 0;
