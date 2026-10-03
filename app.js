@@ -373,6 +373,79 @@ function officialGroup(title, people) {
   return `<section><h4>${title}</h4>${body}</section>`;
 }
 
+function inProgressBills(stateName) {
+  return state.catalog.bills.filter((bill) => {
+    const record = bill.states[stateName];
+    return record && record.status === "progress";
+  });
+}
+
+function billMention(bill, stateName) {
+  const record = bill.states[stateName] || {};
+  const number = record.billId ? ` (${record.billId.toUpperCase()})` : "";
+  return `${bill.title}${number}`;
+}
+
+function telHref(phone) {
+  const digits = String(phone).replace(/\D/g, "");
+  if (digits.length === 10) return `tel:+1${digits}`;
+  if (digits.length === 11 && digits.startsWith("1")) return `tel:+${digits}`;
+  return digits ? `tel:${digits}` : "";
+}
+
+function callToAction(county, countyName, stateName) {
+  const bills = inProgressBills(stateName);
+  if (!bills.length) return "";
+
+  const selected = bills.find((bill) => bill.id === state.billId);
+  const ordered = selected
+    ? [selected, ...bills.filter((bill) => bill.id !== selected.id)]
+    : bills;
+  const chamber = stateName === "Nebraska" ? "state senators" : "state senators and representatives";
+  const ask = ordered.length === 1
+    ? `${billMention(ordered[0], stateName)} is already in the ${stateName} legislature. Call or email the ${chamber} for ${countyName} and ask them to support it.`
+    : `These bills are already in the ${stateName} legislature. Call or email the ${chamber} for ${countyName} and ask them to support them.`;
+  const subject = ordered.length === 1
+    ? `Please support ${billMention(ordered[0], stateName)}`
+    : "Please support these family court reform bills";
+  const billList = ordered.length > 1
+    ? `<ul class="cta-bills">${ordered.map((bill) => `<li>${escapeHtml(billMention(bill, stateName))}</li>`).join("")}</ul>`
+    : "";
+
+  const local = [
+    ...county.stateSenate.map((person) => ({ ...person, role: "State senator" })),
+    ...county.stateHouse.map((person) => ({
+      ...person,
+      role: stateName === "Nebraska" ? "State senator" : "State representative",
+    })),
+  ].filter((person) => person.name && person.name !== "Vacant seat");
+
+  const people = local.map((person) => {
+    const meta = [person.role, person.district, person.party].filter(Boolean).join(" · ");
+    const actions = [];
+    const phoneLink = person.phone ? telHref(person.phone) : "";
+    if (phoneLink) actions.push(`<a href="${phoneLink}">Call ${escapeHtml(person.phone)}</a>`);
+    if (person.email) {
+      const href = `mailto:${person.email}?subject=${encodeURIComponent(subject)}`;
+      actions.push(`<a href="${escapeHtml(href)}">Email</a>`);
+    }
+    if (!actions.length && person.url) {
+      actions.push(`<a href="${escapeHtml(person.url)}">Contact page</a>`);
+    }
+    const actionHtml = actions.length ? `<span class="cta-actions">${actions.join("")}</span>` : "";
+    return `<li><span class="cta-person">${escapeHtml(person.name)}<span class="official-meta">${escapeHtml(meta)}</span></span>${actionHtml}</li>`;
+  }).join("");
+
+  return `
+    <section class="cta">
+      <h4>Call or email your local representatives</h4>
+      <p>${escapeHtml(ask)}</p>
+      ${billList}
+      ${people ? `<ul class="cta-people">${people}</ul>` : ""}
+    </section>
+  `;
+}
+
 function renderOfficials() {
   if (!state.countyView || !state.stateName || !state.countyName) {
     els.officials.hidden = true;
@@ -410,6 +483,7 @@ function renderOfficials() {
     <h3>${escapeHtml(countyName)}</h3>
     <div class="official-groups">${sections.join("")}</div>
     <p class="meta source-note">Current legislators whose districts include part of this county. U.S. senators represent the whole state. A district is listed when it covers at least 1% of the county.</p>
+    ${callToAction(county, countyName, state.stateName)}
   `;
 }
 

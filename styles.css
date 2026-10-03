@@ -465,6 +465,50 @@ h2 {
 .official-meta { color: var(--muted); font-size: 0.92rem; }
 .officials .source-note { margin-top: 0.8rem; }
 
+.officials .cta {
+  margin-top: 1rem;
+  padding: 0.95rem 1rem 0.85rem;
+  background: #f6efe2;
+  border: 1px solid var(--line);
+}
+.officials .cta h4 {
+  margin: 0 0 0.35rem;
+  font-family: Fraunces, Georgia, serif;
+  font-size: 1.28rem;
+  font-weight: 560;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  text-transform: none;
+}
+.officials .cta p { margin: 0.15rem 0 0.65rem; }
+.officials .cta-bills {
+  margin: 0 0 0.75rem;
+  padding-left: 1.15rem;
+  list-style: disc;
+}
+.officials .cta-bills li {
+  display: list-item;
+  padding: 0.08rem 0;
+  border-bottom: 0;
+}
+.officials .cta-people li {
+  justify-content: space-between;
+  gap: 0.3rem 1rem;
+  padding: 0.45rem 0;
+}
+.cta-person {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1rem 0.55rem;
+  min-width: 0;
+}
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.9rem;
+  font-weight: 700;
+}
+
 .list-block { padding: 0.75rem 0.85rem 0.9rem; }
 .list-block h3 {
   margin: 0 0 0.45rem;
