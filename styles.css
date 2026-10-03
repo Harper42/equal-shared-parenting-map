@@ -541,6 +541,7 @@ h2 {
 .map-svg path.status-passed { fill: var(--passed); }
 .map-svg path.status-passed.is-caveat { fill: url(#passed-hatch); }
 .map-svg path.status-progress { fill: url(#progress-hatch); }
+.map-svg path.status-progress.is-stalled { fill: url(#stalled-hatch); }
 .map-svg path.status-none { fill: #ddd6c8; }
 
 .map-svg path.is-selected,
@@ -598,6 +599,17 @@ h2 {
   border: 1px solid #1d6b43;
 }
 .status-line.progress { color: var(--progress); }
+.status-line.progress.stalled { color: #9a2a22; }
+.status-line.progress.stalled::before {
+  content: "";
+  display: inline-block;
+  width: 0.95rem;
+  height: 0.95rem;
+  margin-right: 0.4rem;
+  vertical-align: -0.12rem;
+  background: repeating-linear-gradient(-45deg, #c23b2e, #c23b2e 3px, #f8d4ce 3px, #f8d4ce 6px);
+  border: 1px solid #c23b2e;
+}
 .status-line.none { color: var(--none); }
 
 .detail p { margin: 0.35rem 0; }
@@ -712,6 +724,11 @@ h2 {
 .chip.is-caveat,
 .pill.is-caveat {
   background: repeating-linear-gradient(-45deg, #fbf8f2, #fbf8f2 3px, #d7efe3 3px, #d7efe3 6px);
+}
+
+.chip.is-stalled,
+.pill.is-stalled {
+  background: repeating-linear-gradient(-45deg, #fbf8f2, #fbf8f2 3px, #f8d4ce 3px, #f8d4ce 6px);
 }
 
 .chip.is-current {

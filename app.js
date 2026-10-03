@@ -77,8 +77,15 @@ function isCaveat(name) {
   return !!(record && record.status === "passed" && record.caveat);
 }
 
+function isStalled(name) {
+  const record = currentBill().states[name];
+  return !!(record && record.status === "progress" && record.stalled);
+}
+
 function statusPhrase(name) {
-  return isCaveat(name) ? "Passed, with a caveat" : STATUS_LABEL[statusFor(name)];
+  if (isCaveat(name)) return "Passed, with a caveat";
+  if (isStalled(name)) return "Stalled";
+  return STATUS_LABEL[statusFor(name)];
 }
 
 function readHash() {
@@ -157,6 +164,7 @@ function renderMap() {
     const status = record ? record.status : "none";
     path.setAttribute("class", `status-${status}`);
     path.classList.toggle("is-caveat", status === "passed" && !!(record && record.caveat));
+    path.classList.toggle("is-stalled", status === "progress" && !!(record && record.stalled));
     path.classList.toggle("is-selected", name === state.stateName);
     path.classList.toggle("is-match", status === state.filter);
     path.setAttribute("aria-label", `${name}, ${statusPhrase(name)}`);
@@ -194,6 +202,7 @@ function renderCountyMap() {
   for (const path of els.countyLayer.querySelectorAll("path[data-county]")) {
     path.setAttribute("class", `county status-${status}`);
     path.classList.toggle("is-caveat", isCaveat(state.stateName));
+    path.classList.toggle("is-stalled", isStalled(state.stateName));
     path.classList.toggle("is-match", status === state.filter);
     path.classList.toggle("is-current", path.dataset.county === state.countyName);
     path.setAttribute("aria-label", `${path.dataset.county}, ${statusPhrase(state.stateName)}`);
@@ -252,7 +261,7 @@ function overallBreakdown() {
     const progressStates = [];
     for (const [name, record] of Object.entries(bill.states)) {
       if (!started.has(name)) started.set(name, false);
-      const entry = { name, billId: record.billId || "", caveat: !!record.caveat };
+      const entry = { name, billId: record.billId || "", caveat: !!record.caveat, stalled: !!record.stalled };
       if (record.status === "passed") {
         passedStates.push(entry);
         started.set(name, true);
@@ -281,7 +290,8 @@ function statePills(states) {
       ? `<span class="pill-id">${escapeHtml(entry.billId.toUpperCase())}</span>`
       : "";
     const caveat = entry.caveat ? " is-caveat" : "";
-    return `<span class="pill${caveat}">${escapeHtml(entry.name)}${billNumber}</span>`;
+    const stalled = entry.stalled ? " is-stalled" : "";
+    return `<span class="pill${caveat}${stalled}">${escapeHtml(entry.name)}${billNumber}</span>`;
   }).join("");
 }
 
@@ -353,8 +363,15 @@ function renderDetail() {
   const record = bill.states[state.stateName] || { status: "none", billId: "", url: "" };
   const bits = [`<h3>${escapeHtml(state.stateName)}</h3>`];
   const caveat = record.status === "passed" && record.caveat;
-  bits.push(`<p class="status-line ${record.status}${caveat ? " caveat" : ""}">${STATUS_LABEL[record.status]}</p>`);
-  bits.push(`<p>${caveat ? "Marked passed, with a caveat." : STATUS_DETAIL[record.status]}</p>`);
+  const stalled = record.status === "progress" && record.stalled;
+  const statusLabel = stalled ? "Stalled" : STATUS_LABEL[record.status];
+  const statusDetail = caveat
+    ? "Marked passed, with a caveat."
+    : stalled
+      ? "This bill has stalled in the legislature."
+      : STATUS_DETAIL[record.status];
+  bits.push(`<p class="status-line ${record.status}${caveat ? " caveat" : ""}${stalled ? " stalled" : ""}">${statusLabel}</p>`);
+  bits.push(`<p>${statusDetail}</p>`);
   if (state.countyView) {
     bits.push("<p class=\"meta\">Counties use this state’s bill status. Status is not tracked county by county.</p>");
   }
@@ -562,8 +579,9 @@ function renderLists() {
       ? `<div class="chips${key === "none" ? " scroll" : ""}">${names.map((name) => {
           const current = name === state.stateName ? " is-current" : "";
           const caveat = bill.states[name].caveat ? " is-caveat" : "";
-          const label = caveat ? `${name}, passed with a caveat` : name;
-          return `<button type="button" class="chip${current}${caveat}" data-state="${name}" aria-label="${escapeHtml(label)}">${name}</button>`;
+          const stalled = bill.states[name].stalled ? " is-stalled" : "";
+          const label = caveat ? `${name}, passed with a caveat` : stalled ? `${name}, stalled` : name;
+          return `<button type="button" class="chip${current}${caveat}${stalled}" data-state="${name}" aria-label="${escapeHtml(label)}">${name}</button>`;
         }).join("")}</div>`
       : `<p class="empty">No states.</p>`;
     return `<section class="list-block"><h3>${label} · ${names.length}</h3>${body}</section>`;
@@ -720,7 +738,7 @@ function drawMap(paths) {
 
 async function init() {
   const [catalog, paths] = await Promise.all([
-    fetch("data/bills.json?v=8").then((response) => response.json()),
+    fetch("data/bills.json?v=9").then((response) => response.json()),
     fetch("data/paths.json").then((response) => response.json()),
   ]);
   state.catalog = catalog;

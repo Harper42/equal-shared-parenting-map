@@ -43,7 +43,8 @@
           "status": "progress",
           "billId": "SB 26-027",
           "url": "https://leg.colorado.gov/bills/sb26-027",
-          "detail": "Senate Bill 26-027 would have presumed equal parenting time when both parents live within 25 miles. A Senate committee postponed it indefinitely on February 3, 2026."
+          "detail": "Senate Bill 26-027 has stalled. A Senate committee postponed it indefinitely on February 3, 2026. It would have presumed equal parenting time when both parents live within 25 miles.",
+          "stalled": true
         },
         "Connecticut": {
           "status": "none",
@@ -126,7 +127,8 @@
           "status": "progress",
           "billId": "H 1710",
           "url": "https://malegislature.gov/Bills/194/H1710",
-          "detail": "House Bill 1710 would presume shared legal and shared physical custody, absent an emergency or abuse or neglect. On March 26, 2026, the House sent it to a study order."
+          "detail": "House Bill 1710 has stalled. On March 26, 2026, the House sent it to a study order. It would have presumed shared legal and shared physical custody, absent an emergency or abuse or neglect.",
+          "stalled": true
         },
         "Michigan": {
           "status": "progress",
@@ -779,7 +781,8 @@
           "status": "progress",
           "billId": "SB 2794",
           "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB2794",
-          "detail": "Senate Bill 2794 would have made a third custody-interference offense a state jail felony. Its last action was a House committee report on May 23, 2025, and it did not pass."
+          "detail": "Senate Bill 2794 has stalled. It did not pass the 2025 regular session. Its last action was a House committee report on May 23, 2025. It would have made a third custody-interference offense a state jail felony.",
+          "stalled": true
         },
         "Utah": {
           "status": "none",
