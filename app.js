@@ -547,9 +547,59 @@ function renderLists() {
   }).join("");
 }
 
+function currentView() {
+  return new URLSearchParams(location.search).get("tab") === "guide" ? "guide" : "map";
+}
+
+function showTab(tab, historyMode) {
+  const guide = tab === "guide";
+  document.body.dataset.view = guide ? "guide" : "map";
+  document.getElementById("panel-map").hidden = guide;
+  document.getElementById("panel-guide").hidden = !guide;
+  const mapTab = document.getElementById("tab-map");
+  const guideTab = document.getElementById("tab-guide");
+  mapTab.setAttribute("aria-selected", guide ? "false" : "true");
+  guideTab.setAttribute("aria-selected", guide ? "true" : "false");
+  mapTab.tabIndex = guide ? -1 : 0;
+  guideTab.tabIndex = guide ? 0 : -1;
+  const url = new URL(location.href);
+  if (guide) url.searchParams.set("tab", "guide");
+  else url.searchParams.delete("tab");
+  if (url.href !== location.href) {
+    if (historyMode === "push") history.pushState(null, "", url);
+    else history.replaceState(null, "", url);
+  }
+  if (guide) document.title = "Instructions · Family Court Reforms Map";
+  else if (state.catalog) document.title = `${currentBill().title} · Family Court Reforms Map`;
+}
+
+function setupTabs() {
+  showTab(currentView());
+  document.body.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-tab]");
+    if (!button) return;
+    showTab(button.dataset.tab, "push");
+  });
+  document.querySelector(".view-tabs").addEventListener("keydown", (event) => {
+    const buttons = [...document.querySelectorAll(".view-tab")];
+    const index = buttons.indexOf(document.activeElement);
+    if (index < 0) return;
+    let next = null;
+    if (event.key === "ArrowRight") next = buttons[(index + 1) % buttons.length];
+    if (event.key === "ArrowLeft") next = buttons[(index - 1 + buttons.length) % buttons.length];
+    if (event.key === "Home") next = buttons[0];
+    if (event.key === "End") next = buttons[buttons.length - 1];
+    if (!next) return;
+    event.preventDefault();
+    next.focus();
+    showTab(next.dataset.tab, "push");
+  });
+  window.addEventListener("popstate", () => showTab(currentView()));
+}
+
 function render() {
   const bill = currentBill();
-  document.title = `${bill.title} · Family Court Reforms Map`;
+  if (currentView() !== "guide") document.title = `${bill.title} · Family Court Reforms Map`;
   renderMap();
   renderCounts();
   renderOverallTotals();
@@ -682,6 +732,8 @@ async function init() {
   if (named) selectBill(state.billId, named);
   if (hash.counties && named) openCounties(named);
 }
+
+setupTabs();
 
 init().catch((error) => {
   els.summary.textContent = "The map data could not be loaded. Open this page from a local web server in the project folder.";

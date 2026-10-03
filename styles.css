@@ -33,6 +33,7 @@ a:hover { color: #143828; }
 
 .site-header,
 main,
+.guide,
 .site-footer {
   width: min(1720px, calc(100% - 2rem));
   margin-inline: auto;
@@ -58,12 +59,90 @@ h1 {
   line-height: 1.05;
 }
 
+.view-tabs {
+  display: flex;
+  gap: 0.25rem;
+  margin: 1.15rem 0 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.view-tab {
+  border: 0;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 0.45rem 0.85rem 0.5rem;
+  cursor: pointer;
+}
+
+.view-tab:hover { color: var(--ink); }
+
+.view-tab[aria-selected="true"] {
+  color: var(--ink);
+  border-bottom-color: var(--passed);
+}
+
+body[data-view="guide"] #map-lede { display: none; }
+
 .lede {
   max-width: 42rem;
   margin: 0.85rem 0 0;
   color: var(--muted);
   font-size: 1.12rem;
 }
+
+.guide-body {
+  max-width: 42rem;
+  padding-bottom: 0.5rem;
+}
+
+.guide-rules {
+  list-style: none;
+  margin: 1.35rem 0 0;
+  padding: 0;
+  counter-reset: guide;
+}
+
+.guide-rules li {
+  counter-increment: guide;
+  padding: 0.95rem 0 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.guide-rules h2 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.guide-rules h2::before {
+  content: counter(guide) ". ";
+  color: var(--progress);
+}
+
+.guide-rules p {
+  margin: 0.4rem 0 0;
+}
+
+.guide-next {
+  margin: 1.15rem 0 0.55rem;
+}
+
+.guide-back {
+  border: 0;
+  background: none;
+  padding: 0;
+  color: #1d4f36;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.guide-back:hover { color: #143828; }
 
 .totals { margin: 0.25rem 0 1.75rem; }
 

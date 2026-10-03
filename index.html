@@ -8,16 +8,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,640&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=18">
+  <link rel="stylesheet" href="styles.css?v=19">
 </head>
 <body>
   <header class="site-header">
     <p class="kicker">Family court reform · 50 states</p>
     <h1>Family Court Reforms Map</h1>
-    <p class="lede">Choose a bill from Robert Garza’s stack. The map shows where that kind of law is already passed, where a bill is moving, and where nothing has been introduced.</p>
+    <nav class="view-tabs" role="tablist" aria-label="Site sections">
+      <button type="button" class="view-tab" id="tab-map" role="tab" data-tab="map" aria-selected="true" aria-controls="panel-map">Map</button>
+      <button type="button" class="view-tab" id="tab-guide" role="tab" data-tab="guide" aria-selected="false" aria-controls="panel-guide" tabindex="-1">Instructions</button>
+    </nav>
+    <p class="lede" id="map-lede">Choose a bill from Robert Garza’s stack. The map shows where that kind of law is already passed, where a bill is moving, and where nothing has been introduced.</p>
   </header>
 
-  <main>
+  <main id="panel-map" role="tabpanel" aria-labelledby="tab-map">
     <section class="toolbar" aria-label="Bill and legend">
       <div class="bill-picker">
         <label for="bill">Bill</label>
@@ -92,6 +96,40 @@
     </section>
   </main>
 
+  <section id="panel-guide" class="guide" role="tabpanel" aria-labelledby="tab-guide" hidden>
+    <div class="guide-body">
+      <p class="lede">When you call or email a legislator about family court reform, you usually have about two minutes. These are the rules for using them.</p>
+      <ol class="guide-rules">
+        <li>
+          <h2>Keep your story to about two minutes</h2>
+          <p>You only have about two minutes to tell your personal story. Don’t overload them. One clear example is enough. If you walk through every hearing and every setback, it is easy for them to lose interest before you say what you want.</p>
+        </li>
+        <li>
+          <h2>Never be partisan</h2>
+          <p>Do not pit one side against the other. Being hyper-partisan generally only makes you enemies of one side or the other. Talk about the problem and the bill. Leave the party fight out of the call and the email.</p>
+        </li>
+        <li>
+          <h2>Be kind and professional</h2>
+          <p>Speak as if you were talking to a coworker. Be polite to the legislator and to the staffer who picks up. Kind and professional is how you get another conversation.</p>
+        </li>
+        <li>
+          <h2>Ask if they support your platform</h2>
+          <p>Ask them directly whether they support what you are asking for. If you are asking them to take action on a bill, ask them to follow up with you. A yes, a no, or a promise to look at it is more useful than a friendly call that ends with no commitment.</p>
+        </li>
+        <li>
+          <h2>Ask for a short Zoom call</h2>
+          <p>Ask if they could grant you 15 to 30 minutes on Zoom to speak about the issue or the bill. A short meeting is a specific request, and it gives you more time than the two minutes you get on a first call.</p>
+        </li>
+        <li>
+          <h2>Tell them you will follow up</h2>
+          <p>Let them know, kindly, that you will follow up with them again. Then do it. A polite second note keeps the conversation going.</p>
+        </li>
+      </ol>
+      <p class="guide-next">Find the senators and representatives for your county on the map. Their profile has the phone number and email.</p>
+      <p><button type="button" class="guide-back" data-tab="map">Back to the map</button></p>
+    </div>
+  </section>
+
   <footer class="site-footer">
     <p id="source-note"></p>
     <p><a id="source-link" href="https://robertgarza.us/family-court-reform-bills">Bill stack on RobertGarza.us</a></p>
@@ -105,6 +143,6 @@
     <div id="totals-dialog-body" class="totals-dialog-body"></div>
   </dialog>
 
-  <script src="app.js?v=18"></script>
+  <script src="app.js?v=19"></script>
 </body>
 </html>
