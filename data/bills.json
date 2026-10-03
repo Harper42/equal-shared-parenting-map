@@ -1,13 +1,13 @@
 {
   "updated": "2026-09-24",
   "sourcePage": "https://robertgarza.us/family-court-reform-bills",
-  "sourceNote": "Status comes from Robert Garza\u2019s public bill tracker, read on September 24, 2026. Passed means signed into law. In progress means a bill of this nature has been introduced. Not started means no bill yet.",
+  "sourceNote": "Status comes from Robert Garza’s public bill tracker, read on September 24, 2026. Passed means signed into law. In progress means a bill of this nature has been introduced. Not started means no bill yet.",
   "bills": [
     {
       "id": "a-new-start-at-equality",
       "title": "A New Start at Equality",
       "label": "Presumed 50/50 Custody",
-      "summary": "Creates a rebuttable presumption of equal custody \u2014 the foundation of 50/50 custody laws and shared parenting legislation \u2014 giving every child the benefit of both parents and every custody case a fair starting point.",
+      "summary": "Creates a rebuttable presumption of equal custody — the foundation of 50/50 custody laws and shared parenting legislation — giving every child the benefit of both parents and every custody case a fair starting point.",
       "page": "https://robertgarza.us/bill/a-new-start-at-equality",
       "states": {
         "Alabama": {
@@ -28,8 +28,9 @@
         },
         "Arkansas": {
           "status": "passed",
-          "billId": "",
-          "url": "https://docs.google.com/file/d/1uBZmU2c2Aa6Mib1YJEf__7SOb2JewJhc/view"
+          "billId": "Act 604",
+          "url": "https://www.arkleg.state.ar.us/Bills/Detail?id=SB18&ddBienniumSession=2021%2F2021R",
+          "detail": "Act 604 (Senate Bill 18, 2021) creates a rebuttable presumption that joint custody, an approximately equal division of time, is in the child’s best interest."
         },
         "California": {
           "status": "progress",
@@ -53,8 +54,9 @@
         },
         "Florida": {
           "status": "passed",
-          "billId": "",
-          "url": "https://docs.google.com/file/d/1i7-zp2dgvYbp7uf_CtHiMfgHdTu-wT40/view"
+          "billId": "HB 1301",
+          "url": "https://www.flsenate.gov/Session/Bill/2023/1301",
+          "detail": "House Bill 1301 (2023), effective July 1, 2023, creates a rebuttable presumption that equal time-sharing is in the child’s best interest."
         },
         "Georgia": {
           "status": "progress",
@@ -93,8 +95,9 @@
         },
         "Kentucky": {
           "status": "passed",
-          "billId": "",
-          "url": ""
+          "billId": "HB 528",
+          "url": "https://apps.legislature.ky.gov/record/18RS/HB528.html",
+          "detail": "House Bill 528 (2018) creates a rebuttable presumption that joint custody and equally shared parenting time are in the child’s best interest."
         },
         "Louisiana": {
           "status": "passed",
@@ -130,13 +133,15 @@
         },
         "Mississippi": {
           "status": "passed",
-          "billId": "",
-          "url": ""
+          "billId": "HB 1662",
+          "url": "https://billstatus.ls.state.ms.us/documents/2026/html/HB/1600-1699/HB1662SG.htm",
+          "detail": "House Bill 1662, signed in 2026 and effective July 1, 2026, creates a rebuttable presumption of joint custody with equal parenting time."
         },
         "Missouri": {
           "status": "passed",
-          "billId": "",
-          "url": ""
+          "billId": "SB 35",
+          "url": "https://www.senate.mo.gov/BillTracking/Bills/BillInformation?billid=44511&year=2023",
+          "detail": "Senate Bill 35, signed in 2023, creates a rebuttable presumption that equal or approximately equal parenting time is in the child’s best interest."
         },
         "Montana": {
           "status": "none",
@@ -250,8 +255,9 @@
         },
         "West Virginia": {
           "status": "passed",
-          "billId": "",
-          "url": ""
+          "billId": "SB 463",
+          "url": "https://www.wvlegislature.gov/Bill_Status/bills_history.cfm?input=463&year=2022&sessiontype=RS",
+          "detail": "Senate Bill 463 (2022) creates a rebuttable presumption that an equal 50/50 custodial allocation is in the child’s best interest."
         },
         "Wisconsin": {
           "status": "none",
@@ -490,8 +496,9 @@
         },
         "Utah": {
           "status": "passed",
-          "billId": "sb0304",
-          "url": ""
+          "billId": "SB 304",
+          "url": "https://le.utah.gov/~2026/bills/static/SB0304.html",
+          "detail": "Senate Bill 304, signed March 23, 2026, requires make-up parent-time when a parent lost time because the other parent knowingly falsified information to obtain a protective order."
         },
         "Vermont": {
           "status": "none",
@@ -530,7 +537,7 @@
       "id": "three-strikes",
       "title": "Three Strikes Law",
       "label": "Penalties for breaking custody orders",
-      "summary": "Creates escalating consequences for parents who repeatedly violate court-ordered custody \u2014 misdemeanor for the first two offenses, felony for the third \u2014 ensuring that custody orders are respected and children are protected from ongoing custody interference.",
+      "summary": "Creates escalating consequences for parents who repeatedly violate court-ordered custody — misdemeanor for the first two offenses, felony for the third — ensuring that custody orders are respected and children are protected from ongoing custody interference.",
       "page": "https://robertgarza.us/bill/three-strikes",
       "states": {
         "Alabama": {
@@ -790,7 +797,7 @@
       "id": "justice-delayed-is-justice-denied",
       "title": "Justice Delayed is Justice Denied",
       "label": "10-day ruling deadline",
-      "summary": "Requires family court judges to issue rulings within 10 business days of a hearing, with written justification required for any extension \u2014 because a custody case taking too long leaves families in legal limbo.",
+      "summary": "Requires family court judges to issue rulings within 10 business days of a hearing, with written justification required for any extension — because a custody case taking too long leaves families in legal limbo.",
       "page": "https://robertgarza.us/bill/justice-delayed-is-justice-denied",
       "states": {
         "Alabama": {
@@ -1050,7 +1057,7 @@
       "id": "cameras-in-courtrooms",
       "title": "Cameras in Courtrooms",
       "label": "Every hearing recorded",
-      "summary": "Requires video and audio recording of all court proceedings \u2014 including off-the-record moments \u2014 to ensure family court transparency, protect litigants, and provide appellate courts with a complete record of what happened.",
+      "summary": "Requires video and audio recording of all court proceedings — including off-the-record moments — to ensure family court transparency, protect litigants, and provide appellate courts with a complete record of what happened.",
       "page": "https://robertgarza.us/bill/cameras-in-courtrooms",
       "states": {
         "Alabama": {
@@ -1310,7 +1317,7 @@
       "id": "child-support-dual-calculation-reform",
       "title": "Child Support Dual Calculation Reform",
       "label": "Support offset by overnights",
-      "summary": "Modernizes child support calculations for 50/50 custody and shared parenting by requiring courts to compute each parent\u2019s obligation based on actual overnight parenting time, offset the amounts, and order only the difference \u2014 ending inconsistent outcomes that assume one primary household.",
+      "summary": "Modernizes child support calculations for 50/50 custody and shared parenting by requiring courts to compute each parent’s obligation based on actual overnight parenting time, offset the amounts, and order only the difference — ending inconsistent outcomes that assume one primary household.",
       "page": "https://robertgarza.us/bill/child-support-dual-calculation-reform",
       "states": {
         "Alabama": {
@@ -1830,7 +1837,7 @@
       "id": "appealable-temporary-orders",
       "title": "Appealable Temporary Orders",
       "label": "Temporary orders can be appealed",
-      "summary": "Creates a statutory right to a temporary custody order appeal for visitation and support \u2014 ending the practice of 'temporary' orders that function as permanent judgments without any appellate oversight.",
+      "summary": "Creates a statutory right to a temporary custody order appeal for visitation and support — ending the practice of 'temporary' orders that function as permanent judgments without any appellate oversight.",
       "page": "https://robertgarza.us/bill/appealable-temporary-orders",
       "states": {
         "Alabama": {
@@ -2090,7 +2097,7 @@
       "id": "reimbursement-fees-parental-alienation",
       "title": "Reimbursement of Fees for Parental Alienating Behaviors",
       "label": "Alienating parent pays legal fees",
-      "summary": "Requires courts to order full reimbursement of attorney\u2019s fees, therapy costs, and evaluator expenses when a parent is found to have engaged in alienating behavior \u2014 holding alienators financially accountable and funding the targeted parent\u2019s path to reunification.",
+      "summary": "Requires courts to order full reimbursement of attorney’s fees, therapy costs, and evaluator expenses when a parent is found to have engaged in alienating behavior — holding alienators financially accountable and funding the targeted parent’s path to reunification.",
       "page": "https://robertgarza.us/bill/reimbursement-fees-parental-alienation",
       "states": {
         "Alabama": {
@@ -2350,7 +2357,7 @@
       "id": "family-rights-due-process-act",
       "title": "The Family Rights and Due Process Act",
       "label": "Clear and convincing evidence standard in family court",
-      "summary": "Raises the evidentiary standard in family court from \u2018more likely than not\u2019 to \u2018clear and convincing evidence\u2019 and requires judges to issue written findings for every ruling \u2014 ensuring that non-custodial parent rights and all fundamental parental rights are protected by rigorous, transparent decision-making.",
+      "summary": "Raises the evidentiary standard in family court from ‘more likely than not’ to ‘clear and convincing evidence’ and requires judges to issue written findings for every ruling — ensuring that non-custodial parent rights and all fundamental parental rights are protected by rigorous, transparent decision-making.",
       "page": "https://robertgarza.us/bill/family-rights-due-process-act",
       "states": {
         "Alabama": {
@@ -2610,7 +2617,7 @@
       "id": "child-support-integrity-act",
       "title": "Child Support Integrity Act",
       "label": "DNA testing before child support",
-      "summary": "Requires genetic verification of parentage before any child support order can be entered and provides immediate relief when later DNA testing proves non-parentage \u2014 protecting children, preventing wrongful obligations based on false allegations in custody, and restoring integrity to the child support system.",
+      "summary": "Requires genetic verification of parentage before any child support order can be entered and provides immediate relief when later DNA testing proves non-parentage — protecting children, preventing wrongful obligations based on false allegations in custody, and restoring integrity to the child support system.",
       "page": "https://robertgarza.us/bill/child-support-integrity-act",
       "states": {
         "Alabama": {
@@ -2870,7 +2877,7 @@
       "id": "best-interest-of-the-child-definition-act",
       "title": "Best Interest of the Child Definition Act",
       "label": "Evidence-based best interest factors",
-      "summary": "Establishes a clear statutory definition of 'best interest of the child,' requiring courts to base custody decisions on evidence \u2014 not assumptions, speculation, or personal preference. Courts retain full authority to protect children from abuse, neglect, family violence, and harm; this definition ensures that authority is exercised consistently and reviewably across every state.",
+      "summary": "Establishes a clear statutory definition of 'best interest of the child,' requiring courts to base custody decisions on evidence — not assumptions, speculation, or personal preference. Courts retain full authority to protect children from abuse, neglect, family violence, and harm; this definition ensures that authority is exercised consistently and reviewably across every state.",
       "page": "https://robertgarza.us/bill/best-interest-of-the-child-definition-act",
       "states": {
         "Alabama": {

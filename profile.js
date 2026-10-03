@@ -163,7 +163,7 @@ async function init() {
   try {
     const [profileResponse, billResponse] = await Promise.all([
       fetch(`data/profiles/${stateSlug}.json`),
-      fetch("data/bills.json?v=4"),
+      fetch("data/bills.json?v=5"),
     ]);
     if (!profileResponse.ok) throw new Error("Profile file missing");
     const [profiles, catalog] = await Promise.all([profileResponse.json(), billResponse.json()]);
