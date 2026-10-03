@@ -539,6 +539,7 @@ h2 {
 }
 
 .map-svg path.status-passed { fill: var(--passed); }
+.map-svg path.status-passed.is-caveat { fill: url(#passed-hatch); }
 .map-svg path.status-progress { fill: url(#progress-hatch); }
 .map-svg path.status-none { fill: #ddd6c8; }
 
@@ -586,6 +587,16 @@ h2 {
 }
 
 .status-line.passed { color: var(--passed); }
+.status-line.passed.caveat::before {
+  content: "";
+  display: inline-block;
+  width: 0.95rem;
+  height: 0.95rem;
+  margin-right: 0.4rem;
+  vertical-align: -0.12rem;
+  background: repeating-linear-gradient(-45deg, #1d6b43, #1d6b43 3px, #d7efe3 3px, #d7efe3 6px);
+  border: 1px solid #1d6b43;
+}
 .status-line.progress { color: var(--progress); }
 .status-line.none { color: var(--none); }
 
@@ -696,6 +707,11 @@ h2 {
   font-size: 0.9rem;
   padding: 0.18rem 0.55rem;
   cursor: pointer;
+}
+
+.chip.is-caveat,
+.pill.is-caveat {
+  background: repeating-linear-gradient(-45deg, #fbf8f2, #fbf8f2 3px, #d7efe3 3px, #d7efe3 6px);
 }
 
 .chip.is-current {

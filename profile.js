@@ -53,12 +53,14 @@ function billLabel(bill, record) {
 
 function reformBlurb(person, catalog) {
   const passed = [];
+  const caveats = [];
   const progress = [];
   for (const bill of catalog.bills) {
     const record = bill.states[person.state];
     if (!record) continue;
     record.stateName = person.state;
-    if (record.status === "passed") passed.push(billLabel(bill, record));
+    if (record.status === "passed" && record.caveat) caveats.push(billLabel(bill, record));
+    else if (record.status === "passed") passed.push(billLabel(bill, record));
     if (record.status === "progress") progress.push(billLabel(bill, record));
   }
   const sentences = [];
@@ -71,6 +73,11 @@ function reformBlurb(person, catalog) {
     sentences.push(`${passed[0]} is already law in ${escapeHtml(person.state)}.`);
   } else if (passed.length > 1) {
     sentences.push(`These bills are already law in ${escapeHtml(person.state)}: ${passed.join("; ")}.`);
+  }
+  if (caveats.length === 1) {
+    sentences.push(`${caveats[0]} is marked passed in ${escapeHtml(person.state)}, with a caveat on the map.`);
+  } else if (caveats.length > 1) {
+    sentences.push(`These bills are marked passed in ${escapeHtml(person.state)}, with a caveat on the map: ${caveats.join("; ")}.`);
   }
   if (!sentences.length) {
     sentences.push(`None of the bills in this stack have been introduced or signed in ${escapeHtml(person.state)}.`);
@@ -163,7 +170,7 @@ async function init() {
   try {
     const [profileResponse, billResponse] = await Promise.all([
       fetch(`data/profiles/${stateSlug}.json`),
-      fetch("data/bills.json?v=6"),
+      fetch("data/bills.json?v=7"),
     ]);
     if (!profileResponse.ok) throw new Error("Profile file missing");
     const [profiles, catalog] = await Promise.all([profileResponse.json(), billResponse.json()]);

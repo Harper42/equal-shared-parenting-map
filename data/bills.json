@@ -235,8 +235,10 @@
         },
         "Utah": {
           "status": "passed",
-          "billId": "",
-          "url": ""
+          "billId": "§ 81-9-205",
+          "url": "https://le.utah.gov/xcode/Title81/Chapter9/81-9-S205.html",
+          "caveat": true,
+          "detail": "Section 81-9-205 presumes joint legal custody, not equal physical time. That section says joint legal custody is not an award of equal time, and §81-9-204 sets no preference for or against joint physical custody. A court may order an equal schedule only when it finds that is in the child’s best interest."
         },
         "Vermont": {
           "status": "progress",
@@ -447,7 +449,9 @@
         "North Dakota": {
           "status": "passed",
           "billId": "",
-          "url": "https://docs.google.com/file/d/1ffpxT-JJBYiM8YT1U0QN11XVZ4XrKC5o/view"
+          "url": "https://ndlegis.gov/assembly/69-2025/regular/bill-overview/bo2184.html",
+          "caveat": true,
+          "detail": "Senate Bill 2184 would have required makeup parenting time after a false allegation. It failed in the Senate, 18–26. The current law, Century Code §14-09-06.5, orders the accusing parent to pay court costs and attorney fees. It does not restore the lost time."
         },
         "Ohio": {
           "status": "none",
@@ -849,7 +853,9 @@
         "Georgia": {
           "status": "passed",
           "billId": "",
-          "url": ""
+          "url": "",
+          "caveat": true,
+          "detail": "The general deadline for a judge to decide a motion, O.C.G.A. §15-6-21, is 30 days in counties under 100,000 people and 90 days in larger counties. A 10-business-day family-court ruling rule was not found."
         },
         "Hawaii": {
           "status": "none",
@@ -1324,7 +1330,9 @@
         "Alabama": {
           "status": "passed",
           "billId": "",
-          "url": ""
+          "url": "",
+          "caveat": true,
+          "detail": "The tracker marks this passed. The Alabama court materials found on this point are a Rule 32 committee study of adding a shared-parenting adjustment, not a confirmed overnight offset."
         },
         "Alaska": {
           "status": "none",
@@ -1362,7 +1370,9 @@
         "Delaware": {
           "status": "passed",
           "billId": "",
-          "url": ""
+          "url": "",
+          "caveat": true,
+          "detail": "The tracker marks this passed. An official rule that offsets each parent’s support by the child’s overnights was not confirmed."
         },
         "Florida": {
           "status": "passed",
@@ -1373,7 +1383,9 @@
         "Georgia": {
           "status": "passed",
           "billId": "",
-          "url": ""
+          "url": "",
+          "caveat": true,
+          "detail": "The tracker marks this passed. An official rule that offsets each parent’s support by the child’s overnights was not confirmed."
         },
         "Hawaii": {
           "status": "passed",
@@ -1432,7 +1444,9 @@
         "Massachusetts": {
           "status": "passed",
           "billId": "",
-          "url": ""
+          "url": "",
+          "caveat": true,
+          "detail": "The tracker marks this passed. An official rule that offsets each parent’s support by the child’s overnights was not confirmed."
         },
         "Michigan": {
           "status": "none",
@@ -1457,7 +1471,9 @@
         "Montana": {
           "status": "passed",
           "billId": "",
-          "url": ""
+          "url": "",
+          "caveat": true,
+          "detail": "The tracker marks this passed. An official rule that offsets each parent’s support by the child’s overnights was not confirmed."
         },
         "Nebraska": {
           "status": "none",

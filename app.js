@@ -72,6 +72,15 @@ function statusFor(name) {
   return record ? record.status : "none";
 }
 
+function isCaveat(name) {
+  const record = currentBill().states[name];
+  return !!(record && record.status === "passed" && record.caveat);
+}
+
+function statusPhrase(name) {
+  return isCaveat(name) ? "Passed, with a caveat" : STATUS_LABEL[statusFor(name)];
+}
+
 function readHash() {
   const raw = decodeURIComponent(location.hash.replace(/^#/, ""));
   if (!raw) return { billId: null, stateSlug: null, counties: false };
@@ -90,7 +99,7 @@ function writeHash() {
 
 function setReadout(name) {
   if (state.countyView && state.stateName) {
-    const status = STATUS_LABEL[statusFor(state.stateName)];
+    const status = statusPhrase(state.stateName);
     const county = name || state.countyName;
     els.readout.textContent = county
       ? `${county} — ${status}`
@@ -99,11 +108,11 @@ function setReadout(name) {
   }
   if (!name) {
     els.readout.textContent = state.stateName
-      ? `${state.stateName} — ${STATUS_LABEL[statusFor(state.stateName)]}`
+      ? `${state.stateName} — ${statusPhrase(state.stateName)}`
       : "Hover or select a state. Double-click a state for counties.";
     return;
   }
-  els.readout.textContent = `${name} — ${STATUS_LABEL[statusFor(name)]}`;
+  els.readout.textContent = `${name} — ${statusPhrase(name)}`;
 }
 
 function selectCounty(name) {
@@ -144,11 +153,13 @@ function renderMap() {
   }
   for (const path of els.nation.querySelectorAll("path[data-name]")) {
     const name = path.dataset.name;
-    const status = bill.states[name] ? bill.states[name].status : "none";
+    const record = bill.states[name];
+    const status = record ? record.status : "none";
     path.setAttribute("class", `status-${status}`);
+    path.classList.toggle("is-caveat", status === "passed" && !!(record && record.caveat));
     path.classList.toggle("is-selected", name === state.stateName);
     path.classList.toggle("is-match", status === state.filter);
-    path.setAttribute("aria-label", `${name}, ${STATUS_LABEL[status]}`);
+    path.setAttribute("aria-label", `${name}, ${statusPhrase(name)}`);
     path.setAttribute("aria-pressed", name === state.stateName ? "true" : "false");
   }
 }
@@ -182,9 +193,10 @@ function renderCountyMap() {
   const status = statusFor(state.stateName);
   for (const path of els.countyLayer.querySelectorAll("path[data-county]")) {
     path.setAttribute("class", `county status-${status}`);
+    path.classList.toggle("is-caveat", isCaveat(state.stateName));
     path.classList.toggle("is-match", status === state.filter);
     path.classList.toggle("is-current", path.dataset.county === state.countyName);
-    path.setAttribute("aria-label", `${path.dataset.county}, ${STATUS_LABEL[status]}`);
+    path.setAttribute("aria-label", `${path.dataset.county}, ${statusPhrase(state.stateName)}`);
     path.setAttribute("aria-pressed", path.dataset.county === state.countyName ? "true" : "false");
   }
 }
@@ -240,7 +252,7 @@ function overallBreakdown() {
     const progressStates = [];
     for (const [name, record] of Object.entries(bill.states)) {
       if (!started.has(name)) started.set(name, false);
-      const entry = { name, billId: record.billId || "" };
+      const entry = { name, billId: record.billId || "", caveat: !!record.caveat };
       if (record.status === "passed") {
         passedStates.push(entry);
         started.set(name, true);
@@ -268,7 +280,8 @@ function statePills(states) {
     const billNumber = entry.billId
       ? `<span class="pill-id">${escapeHtml(entry.billId.toUpperCase())}</span>`
       : "";
-    return `<span class="pill">${escapeHtml(entry.name)}${billNumber}</span>`;
+    const caveat = entry.caveat ? " is-caveat" : "";
+    return `<span class="pill${caveat}">${escapeHtml(entry.name)}${billNumber}</span>`;
   }).join("");
 }
 
@@ -339,8 +352,9 @@ function renderDetail() {
 
   const record = bill.states[state.stateName] || { status: "none", billId: "", url: "" };
   const bits = [`<h3>${escapeHtml(state.stateName)}</h3>`];
-  bits.push(`<p class="status-line ${record.status}">${STATUS_LABEL[record.status]}</p>`);
-  bits.push(`<p>${STATUS_DETAIL[record.status]}</p>`);
+  const caveat = record.status === "passed" && record.caveat;
+  bits.push(`<p class="status-line ${record.status}${caveat ? " caveat" : ""}">${STATUS_LABEL[record.status]}</p>`);
+  bits.push(`<p>${caveat ? "Marked passed, with a caveat." : STATUS_DETAIL[record.status]}</p>`);
   if (state.countyView) {
     bits.push("<p class=\"meta\">Counties use this state’s bill status. Status is not tracked county by county.</p>");
   }
@@ -547,7 +561,9 @@ function renderLists() {
     const body = names.length
       ? `<div class="chips${key === "none" ? " scroll" : ""}">${names.map((name) => {
           const current = name === state.stateName ? " is-current" : "";
-          return `<button type="button" class="chip${current}" data-state="${name}">${name}</button>`;
+          const caveat = bill.states[name].caveat ? " is-caveat" : "";
+          const label = caveat ? `${name}, passed with a caveat` : name;
+          return `<button type="button" class="chip${current}${caveat}" data-state="${name}" aria-label="${escapeHtml(label)}">${name}</button>`;
         }).join("")}</div>`
       : `<p class="empty">No states.</p>`;
     return `<section class="list-block"><h3>${label} · ${names.length}</h3>${body}</section>`;
@@ -704,7 +720,7 @@ function drawMap(paths) {
 
 async function init() {
   const [catalog, paths] = await Promise.all([
-    fetch("data/bills.json?v=6").then((response) => response.json()),
+    fetch("data/bills.json?v=7").then((response) => response.json()),
     fetch("data/paths.json").then((response) => response.json()),
   ]);
   state.catalog = catalog;
