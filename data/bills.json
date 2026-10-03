@@ -96,9 +96,10 @@
           "url": ""
         },
         "Louisiana": {
-          "status": "none",
-          "billId": "",
-          "url": "https://docs.google.com/file/d/13voQtcVH-WvCe7vNZZiQc81dJWCRrXLO/view"
+          "status": "passed",
+          "billId": "Act 605",
+          "url": "https://www.legis.la.gov/Legis/ViewDocument.aspx?d=1480364",
+          "detail": "Act 605 (House Bill 1239), effective August 1, 2026, requires physical custody to be shared equally unless the court finds that is not feasible or not in the child’s best interest. It does not automatically change existing custody orders."
         },
         "Maine": {
           "status": "none",

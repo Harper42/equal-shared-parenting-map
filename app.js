@@ -343,6 +343,9 @@ function renderDetail() {
   if (record.note) {
     bits.push("<p class=\"meta\">Garza’s tracker marks this as a similar bill, not his model draft.</p>");
   }
+  if (record.detail) {
+    bits.push(`<p class="meta">${escapeHtml(record.detail)}</p>`);
+  }
   if (record.billId) {
     const billNumber = escapeHtml(record.billId.toUpperCase());
     const line = record.status === "none"
@@ -697,7 +700,7 @@ function drawMap(paths) {
 
 async function init() {
   const [catalog, paths] = await Promise.all([
-    fetch("data/bills.json").then((response) => response.json()),
+    fetch("data/bills.json?v=2").then((response) => response.json()),
     fetch("data/paths.json").then((response) => response.json()),
   ]);
   state.catalog = catalog;
