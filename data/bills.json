@@ -12,9 +12,10 @@
       "states": {
         "Alabama": {
           "status": "progress",
-          "billId": "",
-          "url": "https://docs.google.com/file/d/1nb2eOxo2OBHrIjpXDlG7ifGqQhSJcHY3/view",
-          "note": "similar bill, not this model draft"
+          "billId": "HB 19",
+          "url": "https://alison.legislature.state.al.us/files/pdf/SearchableInstruments/2026RS/HB19-int.pdf",
+          "note": "similar bill, not this model draft",
+          "detail": "House Bill 19 would presume joint legal custody and substantial parenting time. It says joint custody does not necessarily mean equal physical custody."
         },
         "Alaska": {
           "status": "none",
@@ -34,13 +35,15 @@
         },
         "California": {
           "status": "progress",
-          "billId": "ab1978",
-          "url": "https://docs.google.com/document/d/1p1kw1hGRVfFYmkTPXfdh5L_4wMVZAPTN/edit?usp=sharing&ouid=112759170355036278657&rtpof=true&sd=true"
+          "billId": "AB 1978",
+          "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB1978",
+          "detail": "Assembly Bill 1978, the California Equal Shared Parenting Act, would presume equal parenting time when both parents are fit and live within 25 miles of the child’s school. It is in the Assembly Judiciary Committee."
         },
         "Colorado": {
           "status": "progress",
-          "billId": "",
-          "url": "https://docs.google.com/file/d/1bI1hp8p32bf5AuREAkx_HsDfUJqbo5_6/view"
+          "billId": "SB 26-027",
+          "url": "https://leg.colorado.gov/bills/sb26-027",
+          "detail": "Senate Bill 26-027 would have presumed equal parenting time when both parents live within 25 miles. A Senate committee postponed it indefinitely on February 3, 2026."
         },
         "Connecticut": {
           "status": "none",
@@ -60,8 +63,9 @@
         },
         "Georgia": {
           "status": "progress",
-          "billId": "",
-          "url": "https://docs.google.com/file/d/1sMsEJ7hB-5RO1LGxN_RykyESMqLk2AIS/view"
+          "billId": "HB 1431",
+          "url": "https://www.legis.ga.gov/legislation/73534",
+          "detail": "House Bill 1431 would presume joint physical custody in a divorce, with exceptions. It had a second reading in the House on February 26, 2026."
         },
         "Hawaii": {
           "status": "none",
@@ -70,8 +74,9 @@
         },
         "Idaho": {
           "status": "progress",
-          "billId": "",
-          "url": "https://docs.google.com/file/d/1ldr_lg8Rt84lUdYkDhUIimGVj3UC8ALC/view"
+          "billId": "S 1395",
+          "url": "https://legislature.idaho.gov/sessioninfo/2026/legislation/S1395/",
+          "detail": "Senate Bill 1395 would presume substantially equal parenting time and joint legal custody, unless clear and convincing evidence shows otherwise."
         },
         "Illinois": {
           "status": "none",
@@ -80,8 +85,9 @@
         },
         "Indiana": {
           "status": "progress",
-          "billId": "",
-          "url": "https://docs.google.com/file/d/1M4-GfUUNmOPGfvnlFuYnOayD7KQqXY-Y/view"
+          "billId": "HB 1157",
+          "url": "https://iga.in.gov/legislative/2026/bills/house/1157",
+          "detail": "House Bill 1157 would require courts to give each parent the most parenting time that is practical. It does not create a presumption of equal time. It was referred to the House Judiciary Committee."
         },
         "Iowa": {
           "status": "none",
@@ -118,18 +124,21 @@
         },
         "Massachusetts": {
           "status": "progress",
-          "billId": "",
-          "url": "https://docs.google.com/file/d/1xEW-Xo6gITk_lWwKlSTgMOCexDzugX11/view"
+          "billId": "H 1710",
+          "url": "https://malegislature.gov/Bills/194/H1710",
+          "detail": "House Bill 1710 would presume shared legal and shared physical custody, absent an emergency or abuse or neglect. On March 26, 2026, the House sent it to a study order."
         },
         "Michigan": {
           "status": "progress",
-          "billId": "HB5211",
-          "url": "https://docs.google.com/file/d/12NB_rDpLhkgjgVKDE7hPO7NYJC6LxImu/view"
+          "billId": "HB 5211",
+          "url": "https://www.legislature.mi.gov/Bills/Bill?ObjectName=2025-HB-5211",
+          "detail": "House Bill 5211 would presume equal or approximately equal parenting time, rebuttable only by clear and convincing evidence. It was reported from committee and referred to second reading."
         },
         "Minnesota": {
           "status": "progress",
-          "billId": "",
-          "url": "https://docs.google.com/file/d/1zvI56OOHwSf_z64GblMpLVmtcaYc0bCR/view"
+          "billId": "SF 4343",
+          "url": "https://www.revisor.mn.gov/bills/94/2026/0/SF/4343/",
+          "detail": "Senate File 4343 would presume joint legal and physical custody when a parent requests it. Joint physical custody would not have to be an exactly equal split. It was referred to Judiciary and Public Safety."
         },
         "Mississippi": {
           "status": "passed",
@@ -166,7 +175,8 @@
         "New Jersey": {
           "status": "progress",
           "billId": "A2963",
-          "url": ""
+          "url": "https://www.njleg.state.nj.us/bill-search/2026/A2963",
+          "detail": "Assembly Bill 2963 would presume joint legal custody and equal or approximately equal physical custody."
         },
         "New Mexico": {
           "status": "none",
@@ -175,13 +185,15 @@
         },
         "New York": {
           "status": "progress",
-          "billId": "",
-          "url": "https://docs.google.com/file/d/1B4Ldo79LTOeBzM-SkYWzzboBZhhMtdlr/view"
+          "billId": "S4128",
+          "url": "https://assembly.state.ny.us/leg/?bn=S4128&term=2025",
+          "detail": "Senate Bill 4128 would presume shared parenting unless a parent alleges that shared parenting would harm the child. It was referred to Children and Families."
         },
         "North Carolina": {
           "status": "progress",
-          "billId": "",
-          "url": ""
+          "billId": "S 162",
+          "url": "https://www.ncleg.gov/BillLookUp/2025/S162",
+          "detail": "Senate Bill 162 is titled as a presumption of joint custody and shared parenting. It would make it state policy that a child spend as close as possible to equal time with each parent."
         },
         "North Dakota": {
           "status": "none",
@@ -195,8 +207,9 @@
         },
         "Oklahoma": {
           "status": "progress",
-          "billId": "",
-          "url": "https://docs.google.com/file/d/1od37yYnerM4fd8vfmrBbwr6lUY4ZQDoL/view"
+          "billId": "HB 3582",
+          "url": "https://www.oklegislature.gov/BillInfo.aspx?Bill=HB3582&Session=2600",
+          "detail": "House Bill 3582, the Equal Parenting Act, would presume joint custody and equally shared parenting time, with exceptions for abuse and domestic violence."
         },
         "Oregon": {
           "status": "none",
@@ -205,8 +218,9 @@
         },
         "Pennsylvania": {
           "status": "progress",
-          "billId": "HB1499",
-          "url": "https://docs.google.com/file/d/1v52dAHipH0txeGuKtmQDqXqOQmVQPVb5/view"
+          "billId": "HB 1499",
+          "url": "https://www.palegis.us/legislation/bills/2025/hb1499",
+          "detail": "House Bill 1499 would presume shared physical and legal custody and equal parenting time, unless clear and convincing evidence shows that is not in the child’s best interest. It was referred to the House Judiciary Committee."
         },
         "Rhode Island": {
           "status": "none",
@@ -215,13 +229,15 @@
         },
         "South Carolina": {
           "status": "progress",
-          "billId": "",
-          "url": "https://docs.google.com/file/d/1bfbGBbuV-6ktcNBM5-m_S3r5poY6h-SP/view"
+          "billId": "H 4622",
+          "url": "https://www.scstatehouse.gov/sess126_2025-2026/bills/4622.htm",
+          "detail": "House Bill 4622, the Equal Parenting Act, would presume equal parenting time is in the child’s best interest. It is in the House Judiciary Committee."
         },
         "South Dakota": {
           "status": "progress",
-          "billId": "hb1067",
-          "url": "https://docs.google.com/file/d/1cDjfV5jBVjF8VI1cS7R_T4UTnCy0Bsm4/view"
+          "billId": "HB 1067",
+          "url": "https://mylrc.sdlegislature.gov/api/Documents/294336.pdf",
+          "detail": "House Bill 1067 would presume joint physical custody, defined as approximately equal time, in an initial custody case."
         },
         "Tennessee": {
           "status": "none",
@@ -242,8 +258,9 @@
         },
         "Vermont": {
           "status": "progress",
-          "billId": "",
-          "url": "https://docs.google.com/file/d/15WKUt7J9RkjYti10rs7TkF39SE2ckv3q/view"
+          "billId": "S.304",
+          "url": "https://legislature.vermont.gov/bill/status/2026/S.304",
+          "detail": "Senate Bill 304 would presume that shared parental rights and responsibilities are in the child’s best interest."
         },
         "Virginia": {
           "status": "none",
@@ -338,8 +355,9 @@
         },
         "Idaho": {
           "status": "progress",
-          "billId": "",
-          "url": "https://docs.google.com/file/d/1NfjM-W-HWoQB3juAOcwIQ2yZgtilF7dQ/view"
+          "billId": "H 524",
+          "url": "https://legislature.idaho.gov/sessioninfo/2026/legislation/H0524/",
+          "detail": "House Bill 524 would require courts to restore parenting time lost to custody interference or an investigation that does not find abuse or neglect. Repeat interference would carry higher penalties."
         },
         "Illinois": {
           "status": "none",
@@ -378,8 +396,9 @@
         },
         "Maryland": {
           "status": "progress",
-          "billId": "HB481 & SB481",
-          "url": "https://docs.google.com/file/d/1OPuaN3H374lnVmmFbMx0i4qWY6uOQZQI/view"
+          "billId": "HB 481",
+          "url": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/HB0481?ys=2026RS",
+          "detail": "House Bill 481, cross-filed as Senate Bill 481, would require makeup visitation of the same type and double the lost time when a court finds visitation was unjustifiably denied."
         },
         "Massachusetts": {
           "status": "none",
@@ -667,8 +686,9 @@
         },
         "Missouri": {
           "status": "progress",
-          "billId": "",
-          "url": "https://docs.google.com/file/d/1cxWVKTCH_GrCMZk9LJ_8sH0OUlYXP-15/view"
+          "billId": "HB 2040",
+          "url": "https://house.mo.gov/Bill.aspx?bill=HB2040&year=2026&code=R",
+          "detail": "House Bill 2040 would raise the penalty for interfering with a child’s custody, including a higher penalty when the child is taken out of state. It was referred to the House Emerging Issues Committee."
         },
         "Montana": {
           "status": "none",
@@ -757,8 +777,9 @@
         },
         "Texas": {
           "status": "progress",
-          "billId": "",
-          "url": "https://docs.google.com/file/d/1cra3K4G8YTriIAeJV4Cdq9TkDLo9-WN_/view"
+          "billId": "SB 2794",
+          "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB2794",
+          "detail": "Senate Bill 2794 would have made a third custody-interference offense a state jail felony. Its last action was a House committee report on May 23, 2025, and it did not pass."
         },
         "Utah": {
           "status": "none",
@@ -1254,8 +1275,9 @@
         },
         "Pennsylvania": {
           "status": "progress",
-          "billId": "HB1397",
-          "url": "https://docs.google.com/file/d/1x7eBaaqjXRwmdA2j_8uHqnho1yXj4oAA/view"
+          "billId": "HB 1397",
+          "url": "https://www.palegis.us/legislation/bills/2025/hb1397",
+          "detail": "House Bill 1397 would allow media devices, including cameras, in court proceedings. It was referred to the House Judiciary Committee."
         },
         "Rhode Island": {
           "status": "none",
