@@ -87,6 +87,16 @@ h1 {
   border-bottom-color: var(--passed);
 }
 
+#tab-guide,
+#tab-guide:hover,
+#tab-guide[aria-selected="true"] {
+  color: #e10600;
+}
+
+#tab-guide[aria-selected="true"] {
+  border-bottom-color: #e10600;
+}
+
 body[data-view="guide"] #map-lede,
 body[data-view="directory"] #map-lede { display: none; }
 
