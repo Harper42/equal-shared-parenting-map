@@ -576,6 +576,37 @@ function showTab(tab, historyMode) {
   else if (state.catalog) document.title = `${currentBill().title} · Family Court Reforms Map`;
 }
 
+function loadVisitorCount() {
+  const line = document.getElementById("visitor-count");
+  const valueEl = document.getElementById("visitor-count-value");
+  if (!line || !valueEl) return;
+  const storageKey = "fcrm-counted-visit";
+  const base = "https://countapi.mileshilliard.com/api/v1";
+  const key = "harper42-family-court-reforms-map";
+  let counted = false;
+  try { counted = sessionStorage.getItem(storageKey) === "1"; } catch { counted = false; }
+
+  const show = (value) => {
+    valueEl.textContent = Number(value).toLocaleString();
+    line.hidden = false;
+    try { sessionStorage.setItem(storageKey, "1"); } catch { /* private browsing can block storage */ }
+  };
+  const hit = () => fetch(`${base}/hit/${key}`)
+    .then((response) => (response.ok ? response.json() : null))
+    .then((data) => {
+      if (data && Number.isFinite(Number(data.value))) show(data.value);
+    });
+  const request = counted
+    ? fetch(`${base}/get/${key}`)
+      .then((response) => (response.ok ? response.json() : null))
+      .then((data) => {
+        if (data && Number.isFinite(Number(data.value))) show(data.value);
+        else return hit();
+      })
+    : hit();
+  request.catch(() => {});
+}
+
 function setupTabs() {
   showTab(currentView());
   document.body.addEventListener("click", (event) => {
@@ -737,6 +768,7 @@ async function init() {
 }
 
 setupTabs();
+loadVisitorCount();
 
 init().catch((error) => {
   els.summary.textContent = "The map data could not be loaded. Open this page from a local web server in the project folder.";

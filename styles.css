@@ -688,6 +688,8 @@ h2 {
 
 .site-footer p { margin: 0.2rem 0; }
 
+#visitor-count-value { font-variant-numeric: tabular-nums; }
+
 .profile-back { margin: 0.75rem 0 0; font-weight: 700; }
 .profile-page {
   width: min(44rem, calc(100% - 2rem));
