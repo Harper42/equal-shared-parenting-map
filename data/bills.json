@@ -491,8 +491,9 @@
         },
         "Texas": {
           "status": "passed",
-          "billId": "",
-          "url": ""
+          "billId": "§ 157.168",
+          "url": "https://statutes.capitol.texas.gov/Docs/FA/htm/FA.157.htm",
+          "detail": "Family Code §157.168 requires makeup possession when court-ordered time is denied, unless there is good cause not to order it. After three contempt findings for that child, the makeup time is twice what was denied."
         },
         "Utah": {
           "status": "passed",
@@ -1332,8 +1333,9 @@
         },
         "Arizona": {
           "status": "passed",
-          "billId": "",
-          "url": ""
+          "billId": "AO 2022-116",
+          "url": "https://www.azcourts.gov/Portals/0/22/admorder/Orders22/2022-116.pdf",
+          "detail": "Arizona’s child support guidelines give a parenting-time credit based on the number of days the child spends with each parent."
         },
         "Arkansas": {
           "status": "none",
@@ -1342,13 +1344,15 @@
         },
         "California": {
           "status": "passed",
-          "billId": "",
-          "url": "https://docs.google.com/document/d/1cL9wO8BchmXb8tb8PWCRzrXN4g-iH6yd/edit?usp=sharing&ouid=112759170355036278657&rtpof=true&sd=true"
+          "billId": "§ 4055",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FAM&sectionNum=4055.",
+          "detail": "Family Code §4055 counts the higher-earning parent’s share of time with the child in the support formula."
         },
         "Colorado": {
           "status": "passed",
-          "billId": "",
-          "url": "https://docs.google.com/document/d/1bS3BcSOcxLiuFiCbOapf1-9nxPQyx1TE/edit?usp=sharing&ouid=112759170355036278657&rtpof=true&sd=true"
+          "billId": "§ 14-10-115",
+          "url": "https://leg.colorado.gov/sites/default/files/images/olls/crs2024-title-14.pdf",
+          "detail": "Section 14-10-115, when each parent has the child for more than 92 overnights, figures support for both parents and orders the difference."
         },
         "Connecticut": {
           "status": "none",
@@ -1362,8 +1366,9 @@
         },
         "Florida": {
           "status": "passed",
-          "billId": "",
-          "url": ""
+          "billId": "§ 61.30",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2025/61.30",
+          "detail": "Section 61.30, when a child spends a substantial number of overnights with each parent, figures support for both parents and orders the difference."
         },
         "Georgia": {
           "status": "passed",
@@ -1372,8 +1377,9 @@
         },
         "Hawaii": {
           "status": "passed",
-          "billId": "",
-          "url": ""
+          "billId": "2024 CSG",
+          "url": "https://www.courts.state.hi.us/wp-content/uploads/2020/10/Child_Support_Guidelines_2024.pdf",
+          "detail": "Hawaii’s 2024 child support guidelines use a separate worksheet for equal time-sharing and for a parent with more than 143 overnights, and the parent with the higher obligation pays the difference."
         },
         "Idaho": {
           "status": "none",
@@ -1382,13 +1388,15 @@
         },
         "Illinois": {
           "status": "passed",
-          "billId": "",
-          "url": ""
+          "billId": "750 ILCS 5/505",
+          "url": "https://www.ilga.gov/documents/legislation/ilcs/documents/075000050K505.htm",
+          "detail": "When each parent has the child for at least 146 overnights, the Marriage and Dissolution of Marriage Act figures support for both parents and orders the difference."
         },
         "Indiana": {
           "status": "passed",
-          "billId": "",
-          "url": ""
+          "billId": "Guideline 6",
+          "url": "https://rules.incourts.gov/Content/child-support/guideline6/current.htm",
+          "detail": "Indiana’s child support guidelines give a parenting-time credit based on the number of overnights the child spends with the parent who pays support."
         },
         "Iowa": {
           "status": "none",
@@ -1417,8 +1425,9 @@
         },
         "Maryland": {
           "status": "passed",
-          "billId": "",
-          "url": ""
+          "billId": "§ 12-204",
+          "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gfl&section=12-204&enactments=false",
+          "detail": "Family Law §12-204, when each parent has the child for more than 25 percent of overnights, figures support for both parents and orders the difference."
         },
         "Massachusetts": {
           "status": "passed",
@@ -1517,8 +1526,9 @@
         },
         "South Carolina": {
           "status": "passed",
-          "billId": "",
-          "url": "https://docs.google.com/document/d/1El8_asAJfE6BrfHYdVKTQjaCaMvylVPrASxirdUNyIE/edit?usp=sharing"
+          "billId": "114-4730",
+          "url": "https://www.scstatehouse.gov/coderegs/Chapter%20114.pdf",
+          "detail": "Regulation 114-4730, when each parent has the child for more than 109 overnights, figures support for both parents and orders the difference."
         },
         "South Dakota": {
           "status": "none",
@@ -1937,8 +1947,9 @@
         },
         "Maryland": {
           "status": "passed",
-          "billId": "",
-          "url": "https://docs.google.com/file/d/1-h4HqO2xjsds9ZVd-sWw8YQbwUJD0An-/view"
+          "billId": "§ 12-303",
+          "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&section=12-303&enactments=false",
+          "detail": "Courts and Judicial Proceedings §12-303 allows an appeal before final judgment from an order that takes away or changes a parent’s custody, and from an order requiring payment of money, including temporary child support."
         },
         "Massachusetts": {
           "status": "none",
@@ -2977,8 +2988,9 @@
         },
         "Maryland": {
           "status": "passed",
-          "billId": "",
-          "url": "https://docs.google.com/document/d/1ByahdjXzWTPM1N3ZJ86GNaladT4XIFGOljXzUM2Hfhc/edit?usp=sharing"
+          "billId": "HB 1191",
+          "url": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/HB1191?ys=2025RS",
+          "detail": "House Bill 1191, effective October 1, 2025, lists the factors a court may consider in deciding legal and physical custody and requires the court to state its findings."
         },
         "Massachusetts": {
           "status": "none",
