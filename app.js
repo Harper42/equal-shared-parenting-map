@@ -143,6 +143,8 @@ function renderMap() {
   els.map.classList.toggle("is-filtering", Boolean(state.filter));
   els.nation.style.display = counties ? "none" : "";
   els.countyLayer.style.display = counties ? "" : "none";
+  const federal = document.getElementById("federal");
+  if (federal) federal.style.display = counties ? "none" : "";
   els.heading.textContent = counties ? state.stateName : "United States";
   els.backNation.hidden = !counties;
   els.openCounties.hidden = !state.stateName || counties;
@@ -759,6 +761,23 @@ function stateFromSlug(slug) {
   return Object.keys(currentBill().states).find((name) => slugify(name) === slug) || null;
 }
 
+function bindFederalSpot() {
+  const federal = document.getElementById("federal");
+  if (!federal) return;
+  const show = () => {
+    els.readout.textContent = "Washington, D.C. — Federal";
+  };
+  federal.addEventListener("mouseenter", show);
+  federal.addEventListener("focus", show);
+  federal.addEventListener("mouseleave", () => setReadout(null));
+  federal.addEventListener("blur", () => setReadout(null));
+  federal.addEventListener("click", (event) => {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
+    event.preventDefault();
+    window.location.href = federal.getAttribute("href");
+  });
+}
+
 function drawMap(paths) {
   const svgNS = "http://www.w3.org/2000/svg";
   els.map.setAttribute("viewBox", `0 0 ${paths.width} ${paths.height}`);
@@ -807,6 +826,7 @@ async function init() {
   }
 
   drawMap(paths);
+  bindFederalSpot();
 
   els.bill.addEventListener("change", () => {
     selectBill(els.bill.value, state.stateName);

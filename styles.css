@@ -564,6 +564,70 @@ h2 {
 .map-svg path.status-progress.is-stalled { fill: url(#stalled-hatch); }
 .map-svg path.status-none { fill: #ddd6c8; }
 
+.federal-spot {
+  cursor: pointer;
+}
+
+.federal-spot rect {
+  fill: #1c3a5f;
+  stroke: #fbf8f2;
+  stroke-width: 1.4;
+}
+
+.federal-spot text {
+  fill: #fbf8f2;
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.federal-spot .federal-sub {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+
+.federal-spot:hover rect,
+.federal-spot:focus rect,
+.federal-spot:focus-visible rect {
+  fill: #142940;
+}
+
+.federal-spot:focus-visible {
+  outline: none;
+}
+
+.federal-cta {
+  margin-top: 1.6rem;
+  padding: 0.95rem 1rem 1rem;
+  background: #f6efe2;
+  border: 3px dotted #c23b2e;
+}
+
+.federal-cta h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.35rem;
+}
+
+.federal-cta h2::before { content: none; }
+
+.federal-cta ol {
+  margin: 0.35rem 0 0;
+  padding-left: 1.35rem;
+}
+
+.federal-cta li { margin: 0.4rem 0; }
+
+.federal-sources {
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.federal-sources li { margin: 0.25rem 0; }
+
 .map-svg path.is-selected,
 .map-svg path.county.is-current {
   stroke: var(--ink);

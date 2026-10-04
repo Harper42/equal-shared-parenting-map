@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,640&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=32">
+  <link rel="stylesheet" href="styles.css?v=33">
 </head>
 <body>
   <header class="site-header">
@@ -58,7 +58,7 @@
           </div>
           <p id="hover-readout" class="hover-readout" aria-live="polite">Hover or select a state. Double-click a state for counties.</p>
         </div>
-        <svg id="map" class="map-svg" role="group" aria-label="United States map. Choose a state to see its bill status. Double-click a state to see its counties.">
+        <svg id="map" class="map-svg" viewBox="0 0 975 610" role="group" aria-label="United States map. Choose a state to see its bill status. Double-click a state to see its counties.">
           <defs>
             <pattern id="progress-hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
               <rect width="7" height="7" fill="#f6e2c0"></rect>
@@ -75,6 +75,12 @@
           </defs>
           <g id="nation"></g>
           <g id="counties" style="display: none"></g>
+          <a id="federal" class="federal-spot" href="federal.html" aria-label="Washington, D.C. Federal page.">
+            <title>Washington, D.C. — Federal</title>
+            <rect x="868" y="508" width="96" height="74" rx="6"></rect>
+            <text x="916" y="542" text-anchor="middle">D.C.</text>
+            <text class="federal-sub" x="916" y="562" text-anchor="middle">Federal</text>
+          </a>
         </svg>
       </section>
 
@@ -248,6 +254,6 @@
     <div id="totals-dialog-body" class="totals-dialog-body"></div>
   </dialog>
 
-  <script src="app.js?v=35"></script>
+  <script src="app.js?v=38"></script>
 </body>
 </html>
