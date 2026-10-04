@@ -642,7 +642,7 @@ function renderLists() {
   }).join("");
 }
 
-const VIEWS = ["map", "guide", "directory"];
+const VIEWS = ["map", "guide", "directory", "history"];
 
 function currentView() {
   const tab = new URLSearchParams(location.search).get("tab");
@@ -668,6 +668,7 @@ function showTab(tab, historyMode) {
   }
   if (view === "guide") document.title = "CALL TO ACTION! · Family Court Reforms Map";
   else if (view === "directory") document.title = "Advocate Directory · Family Court Reforms Map";
+  else if (view === "history") document.title = "History of Family Court · Family Court Reforms Map";
   else if (state.catalog) document.title = `${billName(currentBill())} · Family Court Reforms Map`;
 }
 

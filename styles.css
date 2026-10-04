@@ -98,7 +98,8 @@ h1 {
 }
 
 body[data-view="guide"] #map-lede,
-body[data-view="directory"] #map-lede { display: none; }
+body[data-view="directory"] #map-lede,
+body[data-view="history"] #map-lede { display: none; }
 
 .lede {
   max-width: 42rem;
