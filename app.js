@@ -39,7 +39,6 @@ const els = {
   detail: document.getElementById("detail"),
   officials: document.getElementById("county-officials"),
   lists: document.getElementById("lists"),
-  source: document.getElementById("source-note"),
   sourceLink: document.getElementById("source-link"),
 };
 
@@ -815,7 +814,6 @@ async function init() {
   ]);
   state.catalog = catalog;
   state.paths = paths;
-  els.source.textContent = catalog.sourceNote;
   els.sourceLink.href = catalog.sourcePage;
   renderOverallTotals();
 
