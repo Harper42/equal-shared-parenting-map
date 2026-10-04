@@ -694,6 +694,21 @@ h2 {
   padding: 0.08rem 0;
   border-bottom: 0;
 }
+
+.officials .cta-sponsor-steps {
+  margin: 0.15rem 0 0.85rem;
+  padding-left: 1.35rem;
+}
+
+.officials .cta-sponsor-steps li {
+  display: list-item;
+  padding: 0.18rem 0;
+  border-bottom: 0;
+}
+
+.officials .cta-sponsor-steps a {
+  font-weight: 700;
+}
 .officials .cta-people li {
   justify-content: space-between;
   gap: 0.3rem 1rem;

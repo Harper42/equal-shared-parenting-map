@@ -444,6 +444,38 @@ function telHref(phone) {
   return digits ? `tel:${digits}` : "";
 }
 
+function localStateLegislators(county, stateName) {
+  return [
+    ...county.stateSenate.map((person) => ({ ...person, role: "State senator" })),
+    ...county.stateHouse.map((person) => ({
+      ...person,
+      role: stateName === "Nebraska" ? "State senator" : "State representative",
+    })),
+  ].filter((person) => person.name && person.name !== "Vacant seat");
+}
+
+function ctaPeopleHtml(people, subject) {
+  return people.map((person) => {
+    const meta = [person.role, person.district, person.party].filter(Boolean).join(" · ");
+    const actions = [];
+    const href = profileHref(person);
+    if (href) actions.push(`<a href="${escapeHtml(href)}">Profile</a>`);
+    const phoneLink = person.phone ? telHref(person.phone) : "";
+    if (phoneLink) actions.push(`<a href="${phoneLink}">Call ${escapeHtml(person.phone)}</a>`);
+    if (person.email) {
+      const mail = subject
+        ? `mailto:${person.email}?subject=${encodeURIComponent(subject)}`
+        : `mailto:${person.email}`;
+      actions.push(`<a href="${escapeHtml(mail)}">Email</a>`);
+    }
+    const actionHtml = actions.length ? `<span class="cta-actions">${actions.join("")}</span>` : "";
+    const name = href
+      ? `<a href="${escapeHtml(href)}">${escapeHtml(person.name)}</a>`
+      : escapeHtml(person.name);
+    return `<li><span class="cta-person">${name}<span class="official-meta">${escapeHtml(meta)}</span></span>${actionHtml}</li>`;
+  }).join("");
+}
+
 function callToAction(county, countyName, stateName) {
   if (statusFor(stateName) !== "progress") return "";
   const bills = inProgressBills(stateName);
@@ -463,38 +495,53 @@ function callToAction(county, countyName, stateName) {
   const billList = ordered.length > 1
     ? `<ul class="cta-bills">${ordered.map((bill) => `<li>${escapeHtml(billMention(bill, stateName))}</li>`).join("")}</ul>`
     : "";
-
-  const local = [
-    ...county.stateSenate.map((person) => ({ ...person, role: "State senator" })),
-    ...county.stateHouse.map((person) => ({
-      ...person,
-      role: stateName === "Nebraska" ? "State senator" : "State representative",
-    })),
-  ].filter((person) => person.name && person.name !== "Vacant seat");
-
-  const people = local.map((person) => {
-    const meta = [person.role, person.district, person.party].filter(Boolean).join(" · ");
-    const actions = [];
-    const href = profileHref(person);
-    if (href) actions.push(`<a href="${escapeHtml(href)}">Profile</a>`);
-    const phoneLink = person.phone ? telHref(person.phone) : "";
-    if (phoneLink) actions.push(`<a href="${phoneLink}">Call ${escapeHtml(person.phone)}</a>`);
-    if (person.email) {
-      const mail = `mailto:${person.email}?subject=${encodeURIComponent(subject)}`;
-      actions.push(`<a href="${escapeHtml(mail)}">Email</a>`);
-    }
-    const actionHtml = actions.length ? `<span class="cta-actions">${actions.join("")}</span>` : "";
-    const name = href
-      ? `<a href="${escapeHtml(href)}">${escapeHtml(person.name)}</a>`
-      : escapeHtml(person.name);
-    return `<li><span class="cta-person">${name}<span class="official-meta">${escapeHtml(meta)}</span></span>${actionHtml}</li>`;
-  }).join("");
+  const people = ctaPeopleHtml(localStateLegislators(county, stateName), subject);
 
   return `
     <section class="cta">
       <h4>This is YOUR Call to Action!</h4>
       <p>${escapeHtml(ask)}</p>
       ${billList}
+      ${people ? `<ul class="cta-people">${people}</ul>` : ""}
+    </section>
+  `;
+}
+
+function sponsorCallToAction(county, countyName, stateName) {
+  if (statusFor(stateName) !== "none") return "";
+  const bill = currentBill();
+  const chamber = stateName === "Nebraska" ? "state senator" : "state senator or representative";
+  const documentUrl = stateBillPage(bill, stateName);
+  const meetingUrl = "https://robertgarza.us/legislator-meetings";
+  const steps = [
+    "Go to the map.",
+    "Double-click your state.",
+    "Click your county.",
+    "Follow the link to the representative you would like to contact.",
+    "Copy their email.",
+    "Open your email app.",
+    "Paste their email on the To line.",
+    `Go to <a href="${escapeHtml(documentUrl)}">this bill’s document on Robert Garza’s site</a>.`,
+    "Copy the subject line for the bill into your email’s subject line.",
+    "Copy the email and bill contents into the body of your email.",
+    "Update the section for your information, the legislator’s or senator’s name, and the office address so they match the representative you chose. Add your name at the bottom of the email.",
+    "Double-check that you filled in every blank in the bill email.",
+    "Do not add more argument or fill the email with your particular story. Too much text will not be read and will likely just be deleted.",
+    "Be kind and non-partisan.",
+    "Send the email.",
+    `If you receive a positive reply for a meeting, return to Robert Garza’s site and request that someone from Robert’s team join you for the scheduled Zoom meeting. They have experience meeting with legislators. <a href="${escapeHtml(meetingUrl)}">Request a legislator meeting</a>.`,
+    "Fill out the request form there. It is free. They will be in touch if they can take the meeting.",
+    "If you have to take the meeting yourself, be professional, prompt, and non-partisan, and put your best foot forward for the cause. Do not argue, and do not make an opponent of the legislator.",
+  ];
+  const people = ctaPeopleHtml(localStateLegislators(county, stateName), "");
+  const ask = `${billName(bill)} has not been introduced in ${stateName}. Ask a ${chamber} for ${countyName} to sponsor it.`;
+
+  return `
+    <section class="cta">
+      <h4>This is YOUR Call to Action!</h4>
+      <p>${escapeHtml(ask)}</p>
+      <p>Steps to ask for a Zoom call to request that they sponsor this family court reform bill:</p>
+      <ol class="cta-sponsor-steps">${steps.map((step) => `<li>${step}</li>`).join("")}</ol>
       ${people ? `<ul class="cta-people">${people}</ul>` : ""}
     </section>
   `;
@@ -538,6 +585,7 @@ function renderOfficials() {
     <div class="official-groups">${sections.join("")}</div>
     <p class="meta source-note">Current legislators whose districts include part of this county. U.S. senators represent the whole state. A district is listed when it covers at least 1% of the county.</p>
     ${callToAction(county, countyName, state.stateName)}
+    ${sponsorCallToAction(county, countyName, state.stateName)}
   `;
 }
 
