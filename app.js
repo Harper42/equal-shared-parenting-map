@@ -541,7 +541,7 @@ function sponsorCallToAction(county, countyName, stateName) {
     <section class="cta">
       <h4>This is YOUR Call to Action!</h4>
       <p>${escapeHtml(ask)}</p>
-      <p>Steps to ask for a Zoom call to request that they sponsor this family court reform bill:</p>
+      <p>Steps to email your ${escapeHtml(chamber)} and ask them to sponsor this bill:</p>
       <ol class="cta-sponsor-steps">${steps.map((step) => `<li>${step}</li>`).join("")}</ol>
       ${people ? `<ul class="cta-people">${people}</ul>` : ""}
     </section>
