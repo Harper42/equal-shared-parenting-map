@@ -454,7 +454,7 @@ function localStateLegislators(county, stateName) {
   ].filter((person) => person.name && person.name !== "Vacant seat");
 }
 
-function ctaPeopleHtml(people, subject) {
+function ctaPeopleHtml(people, subject, options = {}) {
   return people.map((person) => {
     const meta = [person.role, person.district, person.party].filter(Boolean).join(" · ");
     const actions = [];
@@ -463,10 +463,14 @@ function ctaPeopleHtml(people, subject) {
     const phoneLink = person.phone ? telHref(person.phone) : "";
     if (phoneLink) actions.push(`<a href="${phoneLink}">Call ${escapeHtml(person.phone)}</a>`);
     if (person.email) {
-      const mail = subject
-        ? `mailto:${person.email}?subject=${encodeURIComponent(subject)}`
-        : `mailto:${person.email}`;
-      actions.push(`<a href="${escapeHtml(mail)}">Email</a>`);
+      if (options.emailAsText) {
+        actions.push(`<span class="cta-email">${escapeHtml(person.email)}</span>`);
+      } else {
+        const mail = subject
+          ? `mailto:${person.email}?subject=${encodeURIComponent(subject)}`
+          : `mailto:${person.email}`;
+        actions.push(`<a href="${escapeHtml(mail)}">Email</a>`);
+      }
     }
     const actionHtml = actions.length ? `<span class="cta-actions">${actions.join("")}</span>` : "";
     const name = href
@@ -514,10 +518,6 @@ function sponsorCallToAction(county, countyName, stateName) {
   const documentUrl = stateBillPage(bill, stateName);
   const meetingUrl = "https://robertgarza.us/legislator-meetings";
   const steps = [
-    "Go to the map.",
-    "Double-click your state.",
-    "Click your county.",
-    "Follow the link to the representative you would like to contact.",
     "Copy their email.",
     "Open your email app.",
     "Paste their email on the To line.",
@@ -533,7 +533,7 @@ function sponsorCallToAction(county, countyName, stateName) {
     "Fill out the request form there. It is free. They will be in touch if they can take the meeting.",
     "If you have to take the meeting yourself, be professional, prompt, and non-partisan, and put your best foot forward for the cause. Do not argue, and do not make an opponent of the legislator.",
   ];
-  const people = ctaPeopleHtml(localStateLegislators(county, stateName), "");
+  const people = ctaPeopleHtml(localStateLegislators(county, stateName), "", { emailAsText: true });
   const ask = `${billName(bill)} has not been introduced in ${stateName}. Ask a ${chamber} for ${countyName} to sponsor it.`;
 
   return `
