@@ -139,7 +139,7 @@ function countyMapReady() {
 function renderMap() {
   const bill = currentBill();
   const counties = countyMapReady();
-  els.map.classList.toggle("is-filtering", Boolean(state.filter));
+  els.map.classList.toggle("is-filtering", Boolean(state.filter) && !counties);
   els.nation.style.display = counties ? "none" : "";
   els.countyLayer.style.display = counties ? "" : "none";
   const federal = document.getElementById("federal");
@@ -208,7 +208,6 @@ function renderCountyMap() {
     path.setAttribute("class", `county status-${status}`);
     path.classList.toggle("is-caveat", isCaveat(state.stateName));
     path.classList.toggle("is-stalled", isStalled(state.stateName));
-    path.classList.toggle("is-match", status === state.filter);
     path.classList.toggle("is-current", path.dataset.county === state.countyName);
     path.setAttribute("aria-label", `${path.dataset.county}, ${statusPhrase(state.stateName)}`);
     path.setAttribute("aria-pressed", path.dataset.county === state.countyName ? "true" : "false");
@@ -342,12 +341,87 @@ function renderOverallTotals() {
   document.getElementById("total-states").textContent = String(data.needing.length);
 }
 
-function renderCounts() {
-  const bill = currentBill();
+function nationalCounts() {
   const counts = { passed: 0, progress: 0, none: 0 };
-  for (const record of Object.values(bill.states)) counts[record.status] += 1;
+  for (const record of Object.values(currentBill().states)) counts[record.status] += 1;
+  return counts;
+}
+
+function stateBillCounts(stateName) {
+  const counts = { passed: 0, progress: 0, none: 0 };
+  for (const bill of state.catalog.bills) {
+    const record = bill.states[stateName];
+    counts[record ? record.status : "none"] += 1;
+  }
+  return counts;
+}
+
+function billsInState(stateName, status) {
+  return state.catalog.bills.filter((bill) => {
+    const record = bill.states[stateName];
+    return (record ? record.status : "none") === status;
+  });
+}
+
+const STATE_BILL_TITLES = {
+  passed: (name) => `Bills passed in ${name}`,
+  progress: (name) => `Bills in progress in ${name}`,
+  none: (name) => `No bill yet in ${name}`,
+};
+
+const STATE_BILL_EMPTY = {
+  passed: (name) => `None of these bills have been signed in ${name}.`,
+  progress: (name) => `None of these bills are in the ${name} legislature.`,
+  none: (name) => `Every bill in the stack has been introduced or signed in ${name}.`,
+};
+
+function stateBillsMarkup(status) {
+  const name = state.stateName;
+  const bills = billsInState(name, status);
+  if (!bills.length) return `<p class="modal-lead">${escapeHtml(STATE_BILL_EMPTY[status](name))}</p>`;
+  const items = bills.map((bill) => {
+    const record = bill.states[name] || {};
+    const bits = [];
+    if (record.billId) bits.push(record.billId.toUpperCase());
+    if (record.caveat) bits.push("Passed with a caveat");
+    if (record.stalled) bits.push("Stalled");
+    if (record.note) bits.push("Similar bill, not the model draft");
+    const meta = bits.length ? `<p class="meta">${escapeHtml(bits.join(" · "))}</p>` : "";
+    const detail = record.detail ? `<p>${escapeHtml(record.detail)}</p>` : "";
+    const href = stateBillPage(bill, name);
+    return `<li><h3>${escapeHtml(billName(bill))}</h3>${meta}${detail}<p class="links"><a href="${escapeHtml(href)}">About this bill</a></p></li>`;
+  }).join("");
+  return `<ul class="modal-bills">${items}</ul>`;
+}
+
+function openStateBillsDialog(status) {
+  const dialog = document.getElementById("totals-dialog");
+  document.getElementById("totals-dialog-title").textContent = STATE_BILL_TITLES[status](state.stateName);
+  document.getElementById("totals-dialog-body").innerHTML = stateBillsMarkup(status);
+  if (!dialog.open) dialog.showModal();
+}
+
+function renderCounts() {
+  const counties = countyMapReady();
+  const legend = document.querySelector(".legend");
+  const labels = counties
+    ? { passed: "Bills passed", progress: "Bills in progress", none: "No bill yet" }
+    : { passed: "Passed", progress: "Bill in progress", none: "No bill yet" };
+  legend.setAttribute("aria-label", counties ? `Bills in ${state.stateName}` : "Filter by status");
+  const counts = counties ? stateBillCounts(state.stateName) : nationalCounts();
   for (const key of Object.keys(counts)) {
     document.querySelector(`[data-count="${key}"]`).textContent = String(counts[key]);
+    const button = document.querySelector(`.legend-btn[data-status="${key}"]`);
+    button.querySelector(".legend-label").textContent = labels[key];
+    if (counties) {
+      button.setAttribute("aria-pressed", "false");
+      button.setAttribute("aria-haspopup", "dialog");
+      button.setAttribute("aria-label", `${labels[key]} in ${state.stateName}, ${counts[key]}. Show these bills.`);
+    } else {
+      button.removeAttribute("aria-haspopup");
+      button.removeAttribute("aria-label");
+      button.setAttribute("aria-pressed", button.dataset.status === state.filter ? "true" : "false");
+    }
   }
   return counts;
 }
@@ -737,9 +811,6 @@ function render() {
   renderLists();
   setReadout(null);
   writeHash();
-  for (const button of document.querySelectorAll(".legend-btn")) {
-    button.setAttribute("aria-pressed", button.dataset.status === state.filter ? "true" : "false");
-  }
 }
 
 function selectBill(billId, stateName) {
@@ -848,6 +919,10 @@ async function init() {
   document.querySelector(".legend").addEventListener("click", (event) => {
     const button = event.target.closest(".legend-btn");
     if (!button) return;
+    if (countyMapReady()) {
+      openStateBillsDialog(button.dataset.status);
+      return;
+    }
     state.filter = state.filter === button.dataset.status ? null : button.dataset.status;
     render();
   });

@@ -373,6 +373,35 @@ body[data-view="history"] #map-lede { display: none; }
   font-weight: 700;
 }
 
+.modal-bills {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-bills li {
+  margin: 0;
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.modal-bills li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.modal-bills h3 {
+  margin: 0;
+  font-family: Fraunces, Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 560;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.modal-bills p { margin: 0.3rem 0 0; }
+.modal-bills .meta { color: var(--muted); }
+
 .pills {
   display: flex;
   flex-wrap: wrap;
