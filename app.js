@@ -800,9 +800,19 @@ function setupTabs() {
   window.addEventListener("popstate", () => showTab(currentView()));
 }
 
+const NATION_LEDE = "Choose a bill. The map shows where that kind of law has passed, where a bill is moving, and where nothing has been introduced. Double-click your state to find your representative and senators, then write them about moving family court reform forward.";
+const COUNTY_LEDE = "Choose a bill to see if it’s been passed or is progressing in your state. Click on your county to learn about your state reps and senators. Follow the steps in the call to action there to help move legislation forward.";
+
+function renderLede() {
+  const lede = document.getElementById("map-lede");
+  if (!lede) return;
+  lede.textContent = countyMapReady() ? COUNTY_LEDE : NATION_LEDE;
+}
+
 function render() {
   const bill = currentBill();
   if (currentView() === "map") document.title = `${billName(bill)} · Family Court Reforms Map`;
+  renderLede();
   renderMap();
   renderCounts();
   renderOverallTotals();
