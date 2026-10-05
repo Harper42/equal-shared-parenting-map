@@ -99,6 +99,7 @@ function readHash() {
 }
 
 function writeHash() {
+  if (currentView() !== "map") return;
   let next = state.billId;
   if (state.stateName) next += `/${slugify(state.stateName)}`;
   if (state.countyView && state.stateName) next += "/counties";
@@ -715,7 +716,7 @@ function renderLists() {
   }).join("");
 }
 
-const VIEWS = ["map", "guide", "directory", "history"];
+const VIEWS = ["map", "guide", "directory", "history", "research"];
 
 function currentView() {
   const tab = new URLSearchParams(location.search).get("tab");
@@ -739,9 +740,11 @@ function showTab(tab, historyMode) {
     if (historyMode === "push") history.pushState(null, "", url);
     else history.replaceState(null, "", url);
   }
+  if (view === "map" && state.billId) writeHash();
   if (view === "guide") document.title = "CALL TO ACTION! · Family Court Reforms Map";
   else if (view === "directory") document.title = "Advocate Directory · Family Court Reforms Map";
   else if (view === "history") document.title = "History of Family Court · Family Court Reforms Map";
+  else if (view === "research") document.title = "Statistics · Family Court Reforms Map";
   else if (state.catalog) document.title = `${billName(currentBill())} · Family Court Reforms Map`;
 }
 
