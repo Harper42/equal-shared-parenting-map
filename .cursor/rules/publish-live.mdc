@@ -1,0 +1,14 @@
+---
+description: Publish site changes to the live GitHub Pages site without waiting to be asked
+alwaysApply: true
+---
+
+# Publish site changes
+
+This site is served from the `main` branch by GitHub Pages: https://harper42.github.io/equal-shared-parenting-map/
+
+When the user asks for a change to the site, commit it and push `main` in the same turn. Do not stop after editing the files, and do not wait for a separate request to publish, push, or go live.
+
+A push to `main` starts the Pages workflow. Leave that run alone. Do not request a second Pages build while one is already queued or running, because GitHub cancels the first.
+
+Still do not commit or push work the user did not ask for, secrets, or an empty commit.
