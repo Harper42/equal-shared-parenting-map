@@ -770,8 +770,29 @@ h2 {
 .cta-person a { font-weight: 700; text-decoration: underline; }
 .officials .source-note { margin-top: 0.8rem; }
 
+.groupchat-banner {
+  display: block;
+  margin: 0.9rem 0 1rem;
+  padding: 0.9rem 1.15rem;
+  background: #e10600;
+  border: 2px solid #9a0500;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.12rem;
+  line-height: 1.35;
+  text-align: center;
+  text-decoration: none;
+}
+
+.groupchat-banner:hover,
+.groupchat-banner:focus-visible {
+  background: #c10500;
+  color: #fff;
+  text-decoration: underline;
+}
+
 .officials .cta {
-  margin-top: 1rem;
+  margin-top: 0.85rem;
   padding: 0.95rem 1rem 0.85rem;
   background: #f6efe2;
   border: 3px dotted #c23b2e;

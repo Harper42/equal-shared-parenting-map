@@ -556,6 +556,10 @@ function ctaPeopleHtml(people, subject, options = {}) {
   }).join("");
 }
 
+function groupChatBanner() {
+  return `<a class="groupchat-banner" href="https://m.me/cm/AbZlwjVEA-yf4JnK/?send_source=cm%3Acopy_invite_link" target="_blank" rel="noopener noreferrer">Join your states groupchat to learn more about how to get involved with family court reform today</a>`;
+}
+
 function callToAction(county, countyName, stateName) {
   if (statusFor(stateName) !== "progress") return "";
   const bills = inProgressBills(stateName);
@@ -635,6 +639,7 @@ function renderOfficials() {
   if (!data) {
     els.officials.innerHTML = `
       <h3>${escapeHtml(countyName)}</h3>
+      ${groupChatBanner()}
       <p class="meta">Loading legislators…</p>
     `;
     loadOfficials(state.stateName);
@@ -644,6 +649,7 @@ function renderOfficials() {
   if (!county) {
     els.officials.innerHTML = `
       <h3>${escapeHtml(countyName)}</h3>
+      ${groupChatBanner()}
       <p class="meta">Legislators for this county are not in the current roster.</p>
     `;
     return;
@@ -658,10 +664,11 @@ function renderOfficials() {
   sections.push(officialGroup("U.S. representatives", county.federalHouse));
   els.officials.innerHTML = `
     <h3>${escapeHtml(countyName)}</h3>
-    <div class="official-groups">${sections.join("")}</div>
-    <p class="meta source-note">Current legislators whose districts include part of this county. U.S. senators represent the whole state. A district is listed when it covers at least 1% of the county.</p>
     ${callToAction(county, countyName, state.stateName)}
     ${sponsorCallToAction(county, countyName, state.stateName)}
+    ${groupChatBanner()}
+    <div class="official-groups">${sections.join("")}</div>
+    <p class="meta source-note">Current legislators whose districts include part of this county. U.S. senators represent the whole state. A district is listed when it covers at least 1% of the county.</p>
   `;
 }
 
@@ -683,6 +690,7 @@ async function loadOfficials(stateName) {
     els.officials.hidden = false;
     els.officials.innerHTML = `
       <h3>${escapeHtml(state.countyName)}</h3>
+      ${groupChatBanner()}
       <p class="meta">Legislators for this county could not be loaded.</p>
     `;
   } finally {
