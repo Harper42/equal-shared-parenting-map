@@ -598,7 +598,7 @@ function sponsorCallToAction(county, countyName, stateName) {
   const documentUrl = stateBillPage(bill, stateName);
   const meetingUrl = "https://robertgarza.us/legislator-meetings";
   const steps = [
-    "Copy their email.",
+    "Copy their email below.",
     "Open your email app.",
     "Paste their email on the To line.",
     `Go to <a href="${escapeHtml(documentUrl)}">this bill’s document on Robert Garza’s site</a>.`,
