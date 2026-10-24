@@ -51,49 +51,106 @@ function billLabel(bill, record) {
   return `<a href="${escapeHtml(href)}">${escapeHtml(billName(bill) + number)}</a>`;
 }
 
-function reformBlurb(person, catalog) {
+function labelMatchesPerson(person, label, people, chamberHint) {
+  const parsed = personQueries(label);
+  const chamber = parsed.chamber || chamberHint || "";
+  return parsed.queries.some((query) => {
+    let match = matchLegislator(query, people, parsed.district, chamber);
+    if (!match && chamber && hasGivenName(query)) {
+      match = matchLegislator(query, people, parsed.district, "");
+    }
+    return match && match.id === person.id;
+  });
+}
+
+function billRole(person, bill, billProfiles, people) {
+  const profile = billProfiles && billProfiles[bill.id] && billProfiles[bill.id][person.state];
+  if (!profile) return "";
+  if (profile.introducedBy && labelMatchesPerson(person, profile.introducedBy, people, "")) return "sponsored";
+  const chamberHint = chamberOfText(profile.introducedBy || "");
+  for (const label of profile.sponsors || []) {
+    if (!labelMatchesPerson(person, label, people, chamberHint)) continue;
+    if (/\bco-?authors?\b/i.test(label)) return "cosponsored";
+    if (/\bsponsor\b/i.test(label) && !/co-?sponsor/i.test(label)) return "sponsored";
+    return "cosponsored";
+  }
+  return "";
+}
+
+function joinList(items) {
+  if (items.length <= 1) return items[0] || "";
+  if (items.length === 2) return `${items[0]} and ${items[1]}`;
+  return `${items.slice(0, -1).join(", ")}, and ${items[items.length - 1]}`;
+}
+
+function reformBlurb(person, catalog, billProfiles, people) {
   const passed = [];
   const caveats = [];
   const progress = [];
   const stalled = [];
+  const sponsored = [];
+  const cosponsored = [];
   for (const bill of catalog.bills) {
     const record = bill.states[person.state];
-    if (!record) continue;
+    if (!record || (record.status !== "passed" && record.status !== "progress")) continue;
     record.stateName = person.state;
-    if (record.status === "passed" && record.caveat) caveats.push(billLabel(bill, record));
-    else if (record.status === "passed") passed.push(billLabel(bill, record));
-    if (record.status === "progress" && record.stalled) stalled.push(billLabel(bill, record));
-    else if (record.status === "progress") progress.push(billLabel(bill, record));
+    const label = billLabel(bill, record);
+    if (record.status === "passed" && record.caveat) caveats.push(label);
+    else if (record.status === "passed") passed.push(label);
+    if (record.status === "progress" && record.stalled) stalled.push(label);
+    else if (record.status === "progress") progress.push(label);
+    const role = billRole(person, bill, billProfiles, people);
+    if (role === "sponsored") sponsored.push(label);
+    else if (role === "cosponsored") cosponsored.push(label);
   }
   const sentences = [];
+  const state = escapeHtml(person.state);
   if (progress.length === 1) {
-    sentences.push(`${progress[0]} is in the ${escapeHtml(person.state)} legislature.`);
+    sentences.push(`${progress[0]} is in the ${state} legislature.`);
   } else if (progress.length > 1) {
-    sentences.push(`These bills are in the ${escapeHtml(person.state)} legislature: ${progress.join("; ")}.`);
+    sentences.push(`These bills are in the ${state} legislature: ${progress.join("; ")}.`);
   }
   if (passed.length === 1) {
-    sentences.push(`${passed[0]} is already law in ${escapeHtml(person.state)}.`);
+    sentences.push(`${passed[0]} is already law in ${state}.`);
   } else if (passed.length > 1) {
-    sentences.push(`These bills are already law in ${escapeHtml(person.state)}: ${passed.join("; ")}.`);
+    sentences.push(`These bills are already law in ${state}: ${passed.join("; ")}.`);
   }
   if (stalled.length === 1) {
-    sentences.push(`${stalled[0]} has stalled in the ${escapeHtml(person.state)} legislature.`);
+    sentences.push(`${stalled[0]} has stalled in the ${state} legislature.`);
   } else if (stalled.length > 1) {
-    sentences.push(`These bills have stalled in the ${escapeHtml(person.state)} legislature: ${stalled.join("; ")}.`);
+    sentences.push(`These bills have stalled in the ${state} legislature: ${stalled.join("; ")}.`);
   }
   if (caveats.length === 1) {
-    sentences.push(`${caveats[0]} is marked passed in ${escapeHtml(person.state)}, with a caveat on the map.`);
+    sentences.push(`${caveats[0]} is marked passed in ${state}, with a caveat on the map.`);
   } else if (caveats.length > 1) {
-    sentences.push(`These bills are marked passed in ${escapeHtml(person.state)}, with a caveat on the map: ${caveats.join("; ")}.`);
+    sentences.push(`These bills are marked passed in ${state}, with a caveat on the map: ${caveats.join("; ")}.`);
   }
   if (!sentences.length) {
-    sentences.push(`None of the bills in this stack have been introduced or signed in ${escapeHtml(person.state)}.`);
+    sentences.push(`None of the bills in this stack have been introduced or signed in ${state}.`);
   }
-  sentences.push(`A public position from ${escapeHtml(person.name)} on these bills is not in this directory. The contact details above are the way to ask where they stand.`);
+  const mentioned = passed.length + caveats.length + progress.length + stalled.length;
+  const credited = sponsored.length + cosponsored.length;
+  const name = escapeHtml(person.name);
+  if (credited === 1 && mentioned === 1) {
+    sentences.push(`${name} ${sponsored.length ? "sponsored" : "cosponsored"} it.`);
+  } else if (credited) {
+    const parts = [];
+    if (sponsored.length) parts.push(`sponsored ${joinList(sponsored)}`);
+    if (cosponsored.length) parts.push(`cosponsored ${joinList(cosponsored)}`);
+    sentences.push(`${name} ${parts.join(" and ")}.`);
+  }
+  const others = mentioned - credited;
+  if (credited === 0) {
+    sentences.push(`A public position from ${name} on these bills is not in this directory. The contact details above are the way to ask where they stand.`);
+  } else if (others === 1) {
+    sentences.push(`A public position from ${name} on the other bill is not in this directory. The contact details above are the way to ask where they stand.`);
+  } else if (others > 1) {
+    sentences.push(`A public position from ${name} on the other bills is not in this directory. The contact details above are the way to ask where they stand.`);
+  }
   return sentences.join(" ");
 }
 
-function renderProfile(person, catalog) {
+function renderProfile(person, catalog, billProfiles, people) {
   const place = person.district === "Statewide"
     ? person.state
     : `${person.district} · ${person.state}`;
@@ -137,7 +194,7 @@ function renderProfile(person, catalog) {
       ${links.length ? `<div class="profile-links">${links.join("")}</div>` : ""}
       <section class="profile-stance">
         <h2>Family court reform</h2>
-        <p>${reformBlurb(person, catalog)}</p>
+        <p>${reformBlurb(person, catalog, billProfiles, people)}</p>
       </section>
     </article>
   `;
@@ -174,18 +231,23 @@ async function init() {
   const stateSlug = raw.slice(0, slash);
   const id = raw.slice(slash + 1);
   try {
-    const [profileResponse, billResponse] = await Promise.all([
+    const [profileResponse, billResponse, sponsorResponse] = await Promise.all([
       fetch(`data/profiles/${stateSlug}.json`),
       fetch("data/bills.json?v=9"),
+      fetch("data/bill-profiles.json?v=1"),
     ]);
     if (!profileResponse.ok) throw new Error("Profile file missing");
-    const [profiles, catalog] = await Promise.all([profileResponse.json(), billResponse.json()]);
+    const [profiles, catalog, billProfiles] = await Promise.all([
+      profileResponse.json(),
+      billResponse.json(),
+      sponsorResponse.ok ? sponsorResponse.json() : {},
+    ]);
     const person = profiles.people && profiles.people[id];
     if (!person) {
       showMessage("This legislator is not in the directory.");
       return;
     }
-    renderProfile(person, catalog);
+    renderProfile(person, catalog, billProfiles, Object.values(profiles.people || {}));
   } catch (error) {
     console.error(error);
     showMessage("This profile could not be loaded.");
