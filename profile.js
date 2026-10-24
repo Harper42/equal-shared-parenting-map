@@ -139,7 +139,6 @@ function renderProfile(person, catalog) {
         <h2>Family court reform</h2>
         <p>${reformBlurb(person, catalog)}</p>
       </section>
-      <p class="meta profile-source">Term dates, party, phone, and links come from Open States for state legislators and from the congress-legislators project for members of Congress. Bill status is from Robert Garza’s tracker, read on September 24, 2026.</p>
     </article>
   `;
   const image = document.querySelector(".profile-photo");
