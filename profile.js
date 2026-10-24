@@ -41,14 +41,52 @@ function fact(label, valueHtml) {
   return `<div class="profile-fact"><dt>${escapeHtml(label)}</dt><dd>${valueHtml}</dd></div>`;
 }
 
-function billName(bill) {
-  return bill.label ? `${bill.title} (${bill.label})` : bill.title;
+function partyTag(party) {
+  const text = String(party || "").split("/")[0].trim();
+  return text ? ` (${escapeHtml(text)})` : "";
 }
 
-function billLabel(bill, record) {
-  const number = record.billId ? ` (${record.billId.toUpperCase()})` : "";
+function gloss(label) {
+  return String(label).replace(/[A-Za-z][A-Za-z'’-]+/g, (word) => {
+    if (word === word.toUpperCase() && word.length <= 4) return word;
+    return word.toLowerCase();
+  });
+}
+
+function billMention(bill, record) {
   const href = `bill.html?bill=${encodeURIComponent(bill.id)}&state=${encodeURIComponent(record.stateName)}`;
-  return `<a href="${escapeHtml(href)}">${escapeHtml(billName(bill) + number)}</a>`;
+  const number = record.billId ? record.billId.toUpperCase() : "";
+  const glossText = bill.label ? ` (${escapeHtml(gloss(bill.label))})` : "";
+  if (number) {
+    return `<a href="${escapeHtml(href)}">${escapeHtml(number)}</a>, ${escapeHtml(bill.title)}${glossText}`;
+  }
+  return `<a href="${escapeHtml(href)}">${escapeHtml(bill.title)}</a>${glossText}`;
+}
+
+function statusWords(record, stateName) {
+  const state = escapeHtml(stateName);
+  if (record.status === "passed" && record.caveat) {
+    return {
+      sentence: `It is marked passed in ${state}, with a caveat on the map.`,
+      inline: `marked passed in ${state}, with a caveat on the map`,
+    };
+  }
+  if (record.status === "passed") {
+    return {
+      sentence: `It is already law in ${state}.`,
+      inline: `already law in ${state}`,
+    };
+  }
+  if (record.stalled) {
+    return {
+      sentence: `It has stalled in the ${state} legislature.`,
+      inline: `stalled in the ${state} legislature`,
+    };
+  }
+  return {
+    sentence: `It is still pending in the ${state} legislature.`,
+    inline: `still pending in the ${state} legislature`,
+  };
 }
 
 function labelMatchesPerson(person, label, people, chamberHint) {
@@ -84,70 +122,37 @@ function joinList(items) {
 }
 
 function reformBlurb(person, catalog, billProfiles, people) {
-  const passed = [];
-  const caveats = [];
-  const progress = [];
-  const stalled = [];
   const sponsored = [];
   const cosponsored = [];
   for (const bill of catalog.bills) {
     const record = bill.states[person.state];
     if (!record || (record.status !== "passed" && record.status !== "progress")) continue;
-    record.stateName = person.state;
-    const label = billLabel(bill, record);
-    if (record.status === "passed" && record.caveat) caveats.push(label);
-    else if (record.status === "passed") passed.push(label);
-    if (record.status === "progress" && record.stalled) stalled.push(label);
-    else if (record.status === "progress") progress.push(label);
     const role = billRole(person, bill, billProfiles, people);
-    if (role === "sponsored") sponsored.push(label);
-    else if (role === "cosponsored") cosponsored.push(label);
+    if (!role) continue;
+    record.stateName = person.state;
+    const entry = {
+      verb: role,
+      name: billMention(bill, record),
+      status: statusWords(record, person.state),
+    };
+    if (role === "sponsored") sponsored.push(entry);
+    else cosponsored.push(entry);
   }
-  const sentences = [];
-  const state = escapeHtml(person.state);
-  if (progress.length === 1) {
-    sentences.push(`${progress[0]} is in the ${state} legislature.`);
-  } else if (progress.length > 1) {
-    sentences.push(`These bills are in the ${state} legislature: ${progress.join("; ")}.`);
+  const entries = sponsored.concat(cosponsored);
+  if (!entries.length) return "";
+  const who = `${escapeHtml(person.name)}${partyTag(person.party)}`;
+  if (entries.length === 1) {
+    const entry = entries[0];
+    return `${who} ${entry.verb} ${entry.name}. ${entry.status.sentence}`;
   }
-  if (passed.length === 1) {
-    sentences.push(`${passed[0]} is already law in ${state}.`);
-  } else if (passed.length > 1) {
-    sentences.push(`These bills are already law in ${state}: ${passed.join("; ")}.`);
+  const parts = [];
+  if (sponsored.length) {
+    parts.push(`sponsored ${joinList(sponsored.map((entry) => `${entry.name}, ${entry.status.inline}`))}`);
   }
-  if (stalled.length === 1) {
-    sentences.push(`${stalled[0]} has stalled in the ${state} legislature.`);
-  } else if (stalled.length > 1) {
-    sentences.push(`These bills have stalled in the ${state} legislature: ${stalled.join("; ")}.`);
+  if (cosponsored.length) {
+    parts.push(`cosponsored ${joinList(cosponsored.map((entry) => `${entry.name}, ${entry.status.inline}`))}`);
   }
-  if (caveats.length === 1) {
-    sentences.push(`${caveats[0]} is marked passed in ${state}, with a caveat on the map.`);
-  } else if (caveats.length > 1) {
-    sentences.push(`These bills are marked passed in ${state}, with a caveat on the map: ${caveats.join("; ")}.`);
-  }
-  if (!sentences.length) {
-    sentences.push(`None of the bills in this stack have been introduced or signed in ${state}.`);
-  }
-  const mentioned = passed.length + caveats.length + progress.length + stalled.length;
-  const credited = sponsored.length + cosponsored.length;
-  const name = escapeHtml(person.name);
-  if (credited === 1 && mentioned === 1) {
-    sentences.push(`${name} ${sponsored.length ? "sponsored" : "cosponsored"} it.`);
-  } else if (credited) {
-    const parts = [];
-    if (sponsored.length) parts.push(`sponsored ${joinList(sponsored)}`);
-    if (cosponsored.length) parts.push(`cosponsored ${joinList(cosponsored)}`);
-    sentences.push(`${name} ${parts.join(" and ")}.`);
-  }
-  const others = mentioned - credited;
-  if (credited === 0) {
-    sentences.push(`A public position from ${name} on these bills is not in this directory. The contact details above are the way to ask where they stand.`);
-  } else if (others === 1) {
-    sentences.push(`A public position from ${name} on the other bill is not in this directory. The contact details above are the way to ask where they stand.`);
-  } else if (others > 1) {
-    sentences.push(`A public position from ${name} on the other bills is not in this directory. The contact details above are the way to ask where they stand.`);
-  }
-  return sentences.join(" ");
+  return `${who} ${parts.join(" and ")}.`;
 }
 
 function renderProfile(person, catalog, billProfiles, people) {
@@ -180,6 +185,7 @@ function renderProfile(person, catalog, billProfiles, people) {
     fact("Phone", phone),
   ].join("");
 
+  const reform = reformBlurb(person, catalog, billProfiles, people);
   document.title = `${person.name} · Family Court Reforms Map`;
   document.getElementById("profile").innerHTML = `
     <article class="profile-card">
@@ -192,10 +198,7 @@ function renderProfile(person, catalog, billProfiles, people) {
       </div>
       <dl class="profile-facts">${facts}</dl>
       ${links.length ? `<div class="profile-links">${links.join("")}</div>` : ""}
-      <section class="profile-stance">
-        <h2>Family court reform</h2>
-        <p>${reformBlurb(person, catalog, billProfiles, people)}</p>
-      </section>
+      ${reform ? `<section class="profile-stance"><h2>Family court reform</h2><p>${reform}</p></section>` : ""}
     </article>
   `;
   const image = document.querySelector(".profile-photo");
