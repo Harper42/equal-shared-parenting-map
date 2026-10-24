@@ -47,7 +47,7 @@ function billName(bill) {
 
 function billLabel(bill, record) {
   const number = record.billId ? ` (${record.billId.toUpperCase()})` : "";
-  const href = `index.html#${bill.id}/${slugify(record.stateName)}`;
+  const href = `bill.html?bill=${encodeURIComponent(bill.id)}&state=${encodeURIComponent(record.stateName)}`;
   return `<a href="${escapeHtml(href)}">${escapeHtml(billName(bill) + number)}</a>`;
 }
 
